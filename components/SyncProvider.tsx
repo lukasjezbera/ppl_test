@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { pull, push, isDirty } from "@/lib/sync";
+import { pull, push, pushBeacon, isDirty } from "@/lib/sync";
 
 export default function SyncProvider({
   children,
@@ -14,29 +14,29 @@ export default function SyncProvider({
 
     function handleVisibilityChange() {
       if (document.visibilityState === "hidden" && isDirty()) {
-        push();
+        // Use sendBeacon — more reliable when tab is being hidden
+        pushBeacon();
       }
     }
 
     function handleBeforeUnload() {
       if (isDirty()) {
-        // Use sendBeacon-style sync via navigator if available
-        const data = localStorage.getItem("ppl-quiz-scores");
-        if (data && navigator.sendBeacon) {
-          navigator.sendBeacon(
-            "/api/sync",
-            new Blob([data], { type: "application/json" })
-          );
-        }
+        pushBeacon();
       }
     }
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
     window.addEventListener("beforeunload", handleBeforeUnload);
 
+    // Periodic push every 30s as safety net
+    const interval = setInterval(() => {
+      if (isDirty()) push();
+    }, 30_000);
+
     return () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
       window.removeEventListener("beforeunload", handleBeforeUnload);
+      clearInterval(interval);
     };
   }, []);
 

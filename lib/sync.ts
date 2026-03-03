@@ -1,7 +1,8 @@
 import { getScoreData, saveScoreData, type ScoreData } from "./scoring";
 
 let dirty = false;
-let syncing = false;
+let pulling = false;
+let pushing = false;
 
 export function markDirty(): void {
   dirty = true;
@@ -13,8 +14,8 @@ export function isDirty(): boolean {
 
 /** Pull data from Google Sheet and merge into localStorage */
 export async function pull(): Promise<void> {
-  if (syncing) return;
-  syncing = true;
+  if (pulling) return;
+  pulling = true;
   try {
     const res = await fetch("/api/sync");
     if (!res.ok) return;
@@ -26,14 +27,14 @@ export async function pull(): Promise<void> {
   } catch {
     // offline or error — silently ignore, localStorage stays as-is
   } finally {
-    syncing = false;
+    pulling = false;
   }
 }
 
 /** Push localStorage data to Google Sheet */
 export async function push(): Promise<void> {
-  if (syncing || !dirty) return;
-  syncing = true;
+  if (pushing || !dirty) return;
+  pushing = true;
   try {
     const data = getScoreData();
     const res = await fetch("/api/sync", {
@@ -47,7 +48,20 @@ export async function push(): Promise<void> {
   } catch {
     // offline — will retry on next push
   } finally {
-    syncing = false;
+    pushing = false;
+  }
+}
+
+/** Push using sendBeacon (fire-and-forget, works during page unload) */
+export function pushBeacon(): void {
+  if (!dirty) return;
+  const data = localStorage.getItem("ppl-quiz-scores");
+  if (data && navigator.sendBeacon) {
+    const sent = navigator.sendBeacon(
+      "/api/sync",
+      new Blob([data], { type: "application/json" })
+    );
+    if (sent) dirty = false;
   }
 }
 
