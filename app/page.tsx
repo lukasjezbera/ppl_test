@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { getCategories, getAllQuestions } from "@/lib/questions";
 import { getCategoryStats, getOverallStats, hasErrors } from "@/lib/scoring";
+import { getErrorCount } from "@/lib/prioritization";
 
 export default function Dashboard() {
   const router = useRouter();
@@ -83,60 +84,83 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {categories.map((cat) => {
           const stats = getCategoryStats(cat.id);
+          const errorCount = getErrorCount(cat.id);
           return (
-            <button
+            <div
               key={cat.id}
-              onClick={() => handleCategoryClick(cat.id)}
-              className="bg-white/10 hover:bg-white/15 backdrop-blur border border-white/10 rounded-xl p-5 text-left transition-all hover:scale-[1.02]"
+              className="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-5 text-left"
             >
-              <div className="flex items-start justify-between mb-2">
-                <span className="text-accent font-bold text-lg">
-                  {cat.id}.
-                </span>
-                <span className="text-white/40 text-sm">
-                  {cat.questionCount} otázek
-                </span>
-              </div>
-              <h3 className="font-semibold text-white mb-3">{cat.name}</h3>
-              {stats.percentage >= 0 && (
-                <div>
-                  <div className="flex justify-between text-sm text-white/60 mb-1">
-                    <span>Úspěšnost</span>
-                    <span>{stats.percentage}%</span>
-                  </div>
-                  <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                    <div
-                      className="h-full rounded-full transition-all"
-                      style={{
-                        width: `${stats.percentage}%`,
-                        backgroundColor:
-                          stats.percentage >= 75
-                            ? "#22C55E"
-                            : stats.percentage >= 50
-                              ? "#F59E0B"
-                              : "#EF4444",
-                      }}
-                    />
-                  </div>
+              <button
+                onClick={() => handleCategoryClick(cat.id)}
+                className="w-full text-left transition-all hover:opacity-80"
+              >
+                <div className="flex items-start justify-between mb-2">
+                  <span className="text-accent font-bold text-lg">
+                    {cat.id}.
+                  </span>
+                  <span className="text-white/40 text-sm">
+                    {cat.questionCount} otázek
+                  </span>
                 </div>
+                <h3 className="font-semibold text-white mb-3">{cat.name}</h3>
+                {stats.percentage >= 0 && (
+                  <div>
+                    <div className="flex justify-between text-sm text-white/60 mb-1">
+                      <span>Úspěšnost</span>
+                      <span>{stats.percentage}%</span>
+                    </div>
+                    <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div
+                        className="h-full rounded-full transition-all"
+                        style={{
+                          width: `${stats.percentage}%`,
+                          backgroundColor:
+                            stats.percentage >= 75
+                              ? "#22C55E"
+                              : stats.percentage >= 50
+                                ? "#F59E0B"
+                                : "#EF4444",
+                        }}
+                      />
+                    </div>
+                  </div>
+                )}
+              </button>
+              {errorCount > 0 && (
+                <button
+                  onClick={() => router.push(`/quiz/${cat.id}?mode=errors`)}
+                  className="mt-3 text-sm text-accent hover:text-accent-hover transition-colors"
+                >
+                  Opakovat chyby ({errorCount})
+                </button>
               )}
-            </button>
+            </div>
           );
         })}
 
         {/* Mix all */}
-        <button
-          onClick={() => handleCategoryClick("mix")}
-          className="bg-accent/20 hover:bg-accent/30 border border-accent/30 rounded-xl p-5 text-left transition-all hover:scale-[1.02]"
-        >
-          <div className="flex items-start justify-between mb-2">
-            <span className="text-accent font-bold text-lg">Mix</span>
-            <span className="text-white/40 text-sm">
-              {totalQuestions} otázek
-            </span>
-          </div>
-          <h3 className="font-semibold text-white">Mix všech okruhů</h3>
-        </button>
+        <div className="bg-accent/20 border border-accent/30 rounded-xl p-5 text-left">
+          <button
+            onClick={() => handleCategoryClick("mix")}
+            className="w-full text-left transition-all hover:opacity-80"
+          >
+            <div className="flex items-start justify-between mb-2">
+              <span className="text-accent font-bold text-lg">Mix</span>
+              <span className="text-white/40 text-sm">
+                {totalQuestions} otázek
+              </span>
+            </div>
+            <h3 className="font-semibold text-white">Mix všech okruhů</h3>
+          </button>
+          {getErrorCount() > 0 && (
+            <button
+              onClick={() => router.push("/quiz/mix?mode=errors")}
+              className="mt-3 text-sm text-accent hover:text-accent-hover transition-colors"
+            >
+              Opakovat chyby ({getErrorCount()})
+            </button>
+          )}
+        </div>
 
         {/* Error review */}
         {showErrors && (

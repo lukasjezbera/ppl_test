@@ -13,6 +13,10 @@ export function getErrorQuestions(categoryId?: number): Question[] {
   return questions;
 }
 
+export function getErrorCount(categoryId?: number): number {
+  return getErrorQuestionIds(categoryId).length;
+}
+
 export function getPrioritizedSet(
   categoryId: number | "mix",
   count: number

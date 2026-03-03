@@ -35,6 +35,7 @@ export default function QuizPage({
     const count = searchParams.get("count");
     const countNum = count ? parseInt(count) : undefined;
     const repeat = searchParams.get("repeat");
+    const mode = searchParams.get("mode");
 
     let qs: Question[];
 
@@ -51,6 +52,13 @@ export default function QuizPage({
       } catch {
         qs = [];
       }
+    } else if (mode === "errors") {
+      // Error review for a specific category or all
+      const catId = rawCategoryId === "mix" ? undefined : parseInt(rawCategoryId);
+      qs = getErrorQuestions(catId);
+      if (countNum) qs = qs.slice(0, countNum);
+      const cat = catId ? getCategories().find((c) => c.id === catId) : undefined;
+      setCategoryName(cat ? `Chyby — ${cat.name}` : "Opakování chyb");
     } else if (rawCategoryId === "errors") {
       qs = getErrorQuestions();
       if (countNum) qs = qs.slice(0, countNum);
