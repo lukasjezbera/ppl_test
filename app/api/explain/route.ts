@@ -1,12 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
+import { readFile } from "fs/promises";
+import path from "path";
 
 const client = new Anthropic();
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { question, options, correctIndex, selectedIndex } = body;
+    const { question, options, correctIndex, selectedIndex, image } = body;
 
     if (
       !question ||
@@ -33,12 +35,31 @@ export async function POST(request: NextRequest) {
       ? `Otázka: ${question}\n\nMožnosti:\n${optionsText}\n\nStudent odpověděl správně (${String.fromCharCode(65 + correctIndex)}). Vysvětli proč je to správně.`
       : `Otázka: ${question}\n\nMožnosti:\n${optionsText}\n\nStudent zvolil ${String.fromCharCode(65 + selectedIndex)}, ale správná odpověď je ${String.fromCharCode(65 + correctIndex)}. Vysvětli proč je správná odpověď správná a proč studentova volba není správná.`;
 
+    // Build message content — include image if available
+    const content: Anthropic.MessageCreateParams["messages"][0]["content"] = [];
+
+    if (image && typeof image === "string") {
+      try {
+        const imagePath = path.join(process.cwd(), "public", "images", path.basename(image));
+        const imageBuffer = await readFile(imagePath);
+        const base64 = imageBuffer.toString("base64");
+        content.push({
+          type: "image",
+          source: { type: "base64", media_type: "image/jpeg", data: base64 },
+        });
+      } catch {
+        // Image not found — continue without it
+      }
+    }
+
+    content.push({ type: "text", text: userMessage });
+
     const message = await client.messages.create({
       model: "claude-sonnet-4-5-20250929",
       max_tokens: 300,
       system:
-        "Jsi zkušený letecký instruktor a pomáháš studentovi s přípravou na zkoušku PPL. Odpovídej česky, stručně a jasně — max 2-3 věty. Vysvětli proč je správná odpověď správná. Pokud student odpověděl špatně, krátce vysvětli proč jeho volba není správná. Mluv jako učitel, který chce aby to student pochopil, ne jako encyklopedie.",
-      messages: [{ role: "user", content: userMessage }],
+        "Jsi zkušený letecký instruktor a pomáháš studentovi s přípravou na zkoušku PPL. Odpovídej česky, stručně a jasně — max 2-3 věty. Vysvětli proč je správná odpověď správná. Pokud student odpověděl špatně, krátce vysvětli proč jeho volba není správná. Mluv jako učitel, který chce aby to student pochopil, ne jako encyklopedie. Pokud je přiložený obrázek, popiš co na něm vidíš v kontextu otázky.",
+      messages: [{ role: "user", content }],
     });
 
     const explanation =

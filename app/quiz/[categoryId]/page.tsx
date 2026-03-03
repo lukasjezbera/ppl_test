@@ -142,6 +142,7 @@ export default function QuizPage({
           options: currentQuestion.options,
           correctIndex: currentQuestion.correctIndex,
           selectedIndex: selectedAnswer,
+          image: currentQuestion.image,
         }),
       });
       const data = await res.json();

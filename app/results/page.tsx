@@ -67,6 +67,7 @@ export default function ResultsPage() {
           options: q.options,
           correctIndex: wrong.correctIndex,
           selectedIndex: wrong.selectedIndex,
+          image: q.image,
         }),
       });
       const data = await res.json();
