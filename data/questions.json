@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Letecký zákon a postupy ATC – letoun",
-      "questionCount": 94
+      "questionCount": 95
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
     {
       "id": 4,
       "name": "Letové zásady – letoun",
-      "questionCount": 96
+      "questionCount": 97
     },
     {
       "id": 5,
@@ -38,7 +38,7 @@
     {
       "id": 8,
       "name": "Obecné znalosti o letadle – letoun",
-      "questionCount": 126
+      "questionCount": 127
     },
     {
       "id": 9,
@@ -187,7 +187,19 @@
         "12 měsíců",
         "60 měsíců",
         "48 měsíců",
-        "24 měsíců\nJak lze prodloužit platnost třídní kvalifikace SEP land (jednomotorový pístový pozemní letoun), když jste\n14\nnesplnil požadovanou dobu letu?"
+        "24 měsíců"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "1-14",
+      "categoryId": 1,
+      "question": "Jak lze prodloužit platnost třídní kvalifikace SEP land (jednomotorový pístový pozemní letoun), když jste\n14\nnesplnil požadovanou dobu letu?",
+      "options": [
+        "přezkoušení odborné způsobilosti s examinátorem",
+        "požadovanou dobu letu je třeba splnit pod dohledem letového instruktora",
+        "ATO může prodloužit kvalifikaci po výcvikovém letu s letovým instruktorem",
+        "podle nalétaných hodin je třeba provést několik výcvikových letů pod dohledem ATO"
       ],
       "correctIndex": 0
     },
@@ -367,14 +379,14 @@
         "špatné meteorologické podmínky v blízkosti letiště",
         "vzlet nebo přistání na letišti",
         "odhoz vlečených předmětů na letišti",
-        "přiblížení bez přistání na letišti\nJednomotorový pístový a turbovrtulový letoun letí proti sobě ve stejné výšce. Který z nich má změnit"
+        "přiblížení bez přistání na letišti"
       ],
       "correctIndex": 0
     },
     {
       "id": "1-30",
       "categoryId": 1,
-      "question": "kurz, aby se vyhnul srážce?",
+      "question": "Jednomotorový pístový a turbovrtulový letoun letí proti sobě ve stejné výšce. Který z nich má změnit\nkurz, aby se vyhnul srážce?",
       "options": [
         "turbovrtulový letoun má dát přednost jednomotorovému pístovému letounu",
         "obě letadla mají uhnout doprava",
@@ -5741,7 +5753,19 @@
         "pohybuje se dolů",
         "pohybuje se nahoru",
         "to závisí na poloze těžiště",
-        "pohybuje se ve směru výchylky směrovky\nJakým směrem se pohybuje odlehčovací ploška vzhledem k výchylce řídící plochy, ke které je\n35\npřipevněna?"
+        "pohybuje se ve směru výchylky směrovky"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "8-35",
+      "categoryId": 8,
+      "question": "Jakým směrem se pohybuje odlehčovací ploška vzhledem k výchylce řídící plochy, ke které je\n35\npřipevněna?",
+      "options": [
+        "v opačném směru",
+        "ve stejném směru",
+        "do úhlu 90°",
+        "do úhlu 45°"
       ],
       "correctIndex": 0
     },
@@ -6320,14 +6344,14 @@
         "větší než skutečná",
         "menší než skutečná",
         "stejná jako skutečná",
-        "stejná jako standardní výška\nZa letu ve vzduchu, jehož teplota je stejná jako dle Mezinárodní standardní atmosféry, a se"
+        "stejná jako standardní výška"
       ],
       "correctIndex": 0
     },
     {
       "id": "8-84",
       "categoryId": 8,
-      "question": "správně nastaveným QNH, je indikovaná výška:",
+      "question": "Za letu ve vzduchu, jehož teplota je stejná jako dle Mezinárodní standardní atmosféry, a se\nsprávně nastaveným QNH, je indikovaná výška:",
       "options": [
         "větší než skutečná",
         "menší než skutečná",
@@ -9768,9 +9792,21 @@
         "při zvětšení úhlu náběhu se posune dopředu",
         "jeho poloha nezávisí na úhlu náběhu",
         "při zvětšení úhlu náběhu se posune dozadu",
-        "se nachází přibližně ve 25% tětivy, měřeno od odtokové hrany\nKam se posune působiště vztlaku profilu s kladným prohnutím střední čáry, zvětší-li se úhel\n22\nnáběhu?"
+        "se nachází přibližně ve 25% tětivy, měřeno od odtokové hrany"
       ],
       "correctIndex": 0
+    },
+    {
+      "id": "4-22",
+      "categoryId": 4,
+      "question": "Kam se posune působiště vztlaku profilu s kladným prohnutím střední čáry, zvětší-li se úhel\n22\nnáběhu?",
+      "options": [
+        "nejprve dopředu, pak dozadu",
+        "dozadu, dokud nebyl dosažen kritický úhel náběhu",
+        "dopředu, dokud nebyl dosažen kritický úhel náběhu",
+        "směrem ke konci křídla"
+      ],
+      "correctIndex": 2
     },
     {
       "id": "4-23",

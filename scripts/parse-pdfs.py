@@ -296,8 +296,21 @@ def parse_pdf(filepath):
                         "state": "question",
                     }
                     claimed_checkboxes = set()
-                elif current_q["state"] == "options" and current_q["options"]:
-                    # Might be bold text that's part of an answer (unusual)
+                elif len(current_q["options"]) >= 4:
+                    # Already have 4 options — bold text is the start of a new
+                    # question whose number is on the next page (page split).
+                    all_questions.append(current_q)
+                    current_q = {
+                        "number": current_q["number"] + 1,  # provisional
+                        "question_lines": [text],
+                        "options": [],
+                        "option_y_positions": [],
+                        "page": page_num,
+                        "state": "question",
+                    }
+                    claimed_checkboxes = set()
+                elif current_q["options"]:
+                    # < 4 options: bold text that's part of an answer (unusual)
                     current_q["options"][-1] += "\n" + text
 
             elif not line["bold"]:
