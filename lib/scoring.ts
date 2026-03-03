@@ -52,7 +52,12 @@ export function recordAnswer(questionId: string, isCorrect: boolean): void {
   saveScoreData(data);
 
   // Lazy-import to avoid circular dependency
-  import("./sync").then((m) => m.markDirty()).catch(() => {});
+  import("./sync")
+    .then((m) => {
+      m.markDirty();
+      m.push();
+    })
+    .catch(() => {});
 }
 
 export function recordSession(
