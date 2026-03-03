@@ -1,24 +1,24 @@
 const STORAGE_KEY = "ppl-quiz-scores";
 
-interface QuestionStats {
+export interface QuestionStats {
   correct: number;
   wrong: number;
   last: string;
 }
 
-interface SessionRecord {
+export interface SessionRecord {
   date: string;
   categoryId: number | "mix" | "errors";
   total: number;
   correct: number;
 }
 
-interface ScoreData {
+export interface ScoreData {
   questions: Record<string, QuestionStats>;
   sessions: SessionRecord[];
 }
 
-function getScoreData(): ScoreData {
+export function getScoreData(): ScoreData {
   if (typeof window === "undefined") {
     return { questions: {}, sessions: [] };
   }
@@ -33,7 +33,7 @@ function getScoreData(): ScoreData {
   return { questions: {}, sessions: [] };
 }
 
-function saveScoreData(data: ScoreData): void {
+export function saveScoreData(data: ScoreData): void {
   if (typeof window === "undefined") return;
   localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
 }
@@ -50,6 +50,9 @@ export function recordAnswer(questionId: string, isCorrect: boolean): void {
   }
   data.questions[questionId].last = new Date().toISOString();
   saveScoreData(data);
+
+  // Lazy-import to avoid circular dependency
+  import("./sync").then((m) => m.markDirty()).catch(() => {});
 }
 
 export function recordSession(
@@ -65,6 +68,14 @@ export function recordSession(
     correct,
   });
   saveScoreData(data);
+
+  // Push to remote at end of session
+  import("./sync")
+    .then((m) => {
+      m.markDirty();
+      m.push();
+    })
+    .catch(() => {});
 }
 
 export function getQuestionStats(
