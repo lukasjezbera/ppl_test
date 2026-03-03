@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { Question, getShuffledSet, getCategories, getQuestionById } from "@/lib/questions";
 import { getErrorQuestions } from "@/lib/prioritization";
 import { recordAnswer } from "@/lib/scoring";
+import QuestionImage from "@/components/QuestionImage";
 
 interface QuizResult {
   questionId: string;
@@ -215,6 +216,14 @@ export default function QuizPage({
         <p className="text-white text-lg whitespace-pre-line leading-relaxed">
           {currentQuestion.question}
         </p>
+        {currentQuestion.image && (
+          <div className="mt-4">
+            <QuestionImage
+              src={`/images/${currentQuestion.image}`}
+              alt={currentQuestion.image}
+            />
+          </div>
+        )}
       </div>
 
       {/* Options */}

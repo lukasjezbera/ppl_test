@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { getQuestionById } from "@/lib/questions";
 import { recordSession } from "@/lib/scoring";
+import QuestionImage from "@/components/QuestionImage";
 
 interface WrongAnswer {
   questionId: string;
@@ -146,6 +147,14 @@ export default function ResultsPage() {
                       ? q.question.slice(0, 150) + "..."
                       : q.question}
                   </p>
+                  {q.image && (
+                    <div className="mb-2">
+                      <QuestionImage
+                        src={`/images/${q.image}`}
+                        alt={q.image}
+                      />
+                    </div>
+                  )}
                   <div className="text-sm space-y-1 mb-3">
                     <p className="text-incorrect">
                       Tvoje: {String.fromCharCode(65 + wrong.selectedIndex)}) {q.options[wrong.selectedIndex]?.slice(0, 80)}

@@ -6,6 +6,7 @@ export interface Question {
   question: string;
   options: string[];
   correctIndex: number;
+  image?: string;
 }
 
 export interface Category {

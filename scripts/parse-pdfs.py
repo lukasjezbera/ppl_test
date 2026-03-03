@@ -13,6 +13,8 @@ import json
 import re
 import fitz  # PyMuPDF
 
+IMAGE_REF_PATTERN = re.compile(r'\(([A-Z]{2,4}-\d{3})\)')
+
 # --- Config ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_PDF_DIR = os.path.join(SCRIPT_DIR, "..", "..", "testy_pdf")
@@ -421,13 +423,20 @@ def main():
                 warnings.append(f"Q{q['number']} correctIndex out of range (skipping)")
                 continue
 
-            valid_questions.append({
+            question_dict = {
                 "id": f"{cat_id}-{q['number']}",
                 "categoryId": cat_id,
                 "question": q_text,
                 "options": options,
                 "correctIndex": correct_idx,
-            })
+            }
+
+            # Detect image reference in question text
+            image_match = IMAGE_REF_PATTERN.search(q_text)
+            if image_match:
+                question_dict["image"] = image_match.group(1) + ".jpg"
+
+            valid_questions.append(question_dict)
 
         categories.append({
             "id": cat_id,

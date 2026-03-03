@@ -1089,7 +1089,8 @@
         "bod A na pojížděcí dráze",
         "parkovací místo A"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "ALW-019.jpg"
     },
     {
       "id": "1-90",
@@ -1101,7 +1102,8 @@
         "od této křižovatky je použitelná délka dráhy v daném směru 2500 m",
         "celková použitelná délka dráhy je v daném směru 2500 m"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "ALW-020.jpg"
     },
     {
       "id": "1-91",
@@ -1113,7 +1115,8 @@
         "probíhají lety kluzáků",
         "po vzletu a před přistáním mají být všechny zatáčky provedeny doprava"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "ALW-011.jpg"
     },
     {
       "id": "1-92",
@@ -1125,7 +1128,8 @@
         "pohyb po zemi omezen na zpevněné povrchy",
         "po vzletu a před přistáním je třeba provádět všechny zatáčky doprava"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "ALW-012.jpg"
     },
     {
       "id": "1-93",
@@ -1833,7 +1837,8 @@
         "bod C",
         "bod D"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "HPL-002.jpg"
     },
     {
       "id": "2-57",
@@ -2529,7 +2534,8 @@
         "nimbostratus",
         "kumulonimbus"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "MET-001.jpg"
     },
     {
       "id": "3-57",
@@ -2541,7 +2547,8 @@
         "cirus",
         "altus"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "MET-002.jpg"
     },
     {
       "id": "3-58",
@@ -2553,7 +2560,8 @@
         "cirus",
         "altokumulus"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "MET-004.jpg"
     },
     {
       "id": "3-59",
@@ -2697,7 +2705,8 @@
         "okluze",
         "studená fronta"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "MET-005.jpg"
     },
     {
       "id": "3-71",
@@ -2709,7 +2718,8 @@
         "okluze",
         "studená fronta"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "MET-005.jpg"
     },
     {
       "id": "3-72",
@@ -2721,7 +2731,8 @@
         "okluze",
         "studená fronta"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "MET-005.jpg"
     },
     {
       "id": "3-75",
@@ -3669,7 +3680,8 @@
         "zmenšení úhlu klesání",
         "stejný úhel klesání"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "OPR-001.jpg"
     },
     {
       "id": "6-26",
@@ -3681,7 +3693,8 @@
         "pokles stoupavosti",
         "konstantní rychlost klesání"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "OPR-001.jpg"
     },
     {
       "id": "6-27",
@@ -4473,7 +4486,8 @@
         "3",
         "4"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-003.jpg"
     },
     {
       "id": "7-33",
@@ -4485,7 +4499,8 @@
         "3",
         "4"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-004.jpg"
     },
     {
       "id": "7-34",
@@ -4497,7 +4512,8 @@
         "3",
         "4"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFP-005.jpg"
     },
     {
       "id": "7-36",
@@ -4509,7 +4525,8 @@
         "letadlo A má větší tlak v pneumatikách než letadlo B",
         "letadlo B má větší tlak v pneumatikách než letadlo A"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-007.jpg"
     },
     {
       "id": "7-37",
@@ -4641,7 +4658,8 @@
         "vFE: maximální rychlost s vysunutými klapkami",
         "vNO: maximální rychlost pro normální provoz"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFP-008.jpg"
     },
     {
       "id": "7-49",
@@ -4653,7 +4671,8 @@
         "vFE: maximální rychlost s vysunutými klapkami",
         "vNO: maximální rychlost pro normální provoz"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFP-008.jpg"
     },
     {
       "id": "7-50",
@@ -4665,7 +4684,8 @@
         "vFE: maximální rychlost s vysunutými klapkami",
         "vNO: maximální rychlost pro normální provoz"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-008.jpg"
     },
     {
       "id": "7-51",
@@ -4701,7 +4721,8 @@
         "450 m",
         "380 m"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFP-009.jpg"
     },
     {
       "id": "7-54",
@@ -4725,7 +4746,8 @@
         "630 m",
         "320 m"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-009.jpg"
     },
     {
       "id": "7-56",
@@ -4737,7 +4759,8 @@
         "720 m",
         "880 m"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFP-009.jpg"
     },
     {
       "id": "7-57",
@@ -4761,7 +4784,8 @@
         "19.1 l/h",
         "19.5 l/h"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFP-012.jpg"
     },
     {
       "id": "7-59",
@@ -4773,7 +4797,8 @@
         "390 ft/min",
         "450 ft/min"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-011.jpg"
     },
     {
       "id": "7-60",
@@ -4785,7 +4810,8 @@
         "482 NM",
         "444 NM"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-013.jpg"
     },
     {
       "id": "7-61",
@@ -4797,7 +4823,8 @@
         "480 NM",
         "550 NM"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFP-013.jpg"
     },
     {
       "id": "7-62",
@@ -4809,7 +4836,8 @@
         "100 kt",
         "92 kt"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFP-014.jpg"
     },
     {
       "id": "7-63",
@@ -4821,7 +4849,8 @@
         "110 kt",
         "95 kt"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFP-014.jpg"
     },
     {
       "id": "7-64",
@@ -4833,7 +4862,8 @@
         "350 ft/min",
         "250 ft/min"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-011.jpg"
     },
     {
       "id": "7-65",
@@ -4845,7 +4875,8 @@
         "400 ft / min",
         "800 ft / min"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFP-011.jpg"
     },
     {
       "id": "7-66",
@@ -4869,7 +4900,8 @@
         "105 kt. 21.5 l/h",
         "110 kt. 23.9 l/h"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFP-012.jpg"
     },
     {
       "id": "7-68",
@@ -4881,7 +4913,8 @@
         "spotřeba paliva: 17 l. TAS: 81 kt",
         "spotřeba paliva: 17.5 l. TAS: 83 kt"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFP-014.jpg"
     },
     {
       "id": "7-69",
@@ -4905,7 +4938,8 @@
         "3 GAL",
         "6 GAL"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFP-023.jpg"
     },
     {
       "id": "7-71",
@@ -4917,7 +4951,8 @@
         "16 NM",
         "3 NM"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFP-023.jpg"
     },
     {
       "id": "7-72",
@@ -4929,7 +4964,8 @@
         "7 NM",
         "4 NM"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-023.jpg"
     },
     {
       "id": "7-74",
@@ -4977,7 +5013,8 @@
         "1,500 ft MSL",
         "1,500 ft GND"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-056.jpg"
     },
     {
       "id": "7-78",
@@ -4989,7 +5026,8 @@
         "1,500 ft MSL",
         "1,500 ft AGL"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-030.jpg"
     },
     {
       "id": "7-79",
@@ -5025,7 +5063,8 @@
         "možná",
         "nevím"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-026.jpg"
     },
     {
       "id": "7-82",
@@ -5037,7 +5076,8 @@
         "nadmořská výška 9500 m MSL",
         "výška 9500 ft nad zemí"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-024.jpg"
     },
     {
       "id": "7-83",
@@ -5073,7 +5113,8 @@
         "100 kt",
         "1000 kt"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-051.jpg"
     },
     {
       "id": "7-86",
@@ -5289,7 +5330,8 @@
         "hornoplošník",
         "vzpěrový hornoplošník"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "AGK-002.jpg"
     },
     {
       "id": "8-5",
@@ -5313,7 +5355,8 @@
         "tvaru V",
         "ocasní plochy spojené s trupem"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "AGK-003.jpg"
     },
     {
       "id": "8-7",
@@ -5433,7 +5476,8 @@
         "nůžky",
         "vnitřní tlumič"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "AGK-005.jpg"
     },
     {
       "id": "8-17",
@@ -5457,7 +5501,8 @@
         "nůžky",
         "Pístnici tlumiče"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "AGK-005.jpg"
     },
     {
       "id": "8-19",
@@ -5505,7 +5550,8 @@
         "pracovní tlak v duši kola",
         "správná poloha vnějších izolačních vrstev"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "AGK-006.jpg"
     },
     {
       "id": "8-23",
@@ -5805,7 +5851,8 @@
         "výbuch",
         "výfuk"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "AGK-007.jpg"
     },
     {
       "id": "8-50",
@@ -5817,7 +5864,8 @@
         "výbuch",
         "výfuk"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "AGK-008.jpg"
     },
     {
       "id": "8-51",
@@ -5997,7 +6045,8 @@
         "geometrické zkroucení listu",
         "aerodynamické zkroucení listu"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "AGK-011.jpg"
     },
     {
       "id": "8-66",
@@ -7197,7 +7246,8 @@
         "gyro (gyroskopické) a circuit breaker (jistič)",
         "turning Instruments (přístroje indikující zatáčku) a circuit breaker (jistič)"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-004.jpg"
     },
     {
       "id": "9-41",
@@ -7281,7 +7331,8 @@
         "024°",
         "204°"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-031.jpg"
     },
     {
       "id": "9-48",
@@ -7305,7 +7356,8 @@
         "52°20'N, 10°10'E",
         "52°10'N, 10°20'E"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-031.jpg"
     },
     {
       "id": "9-50",
@@ -7317,7 +7369,8 @@
         "42 NM",
         "42 km"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-031.jpg"
     },
     {
       "id": "9-51",
@@ -7473,7 +7526,8 @@
         "055°",
         "235°"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-031.jpg"
     },
     {
       "id": "9-64",
@@ -7497,7 +7551,8 @@
         "78 NM",
         "78 km"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-031.jpg"
     },
     {
       "id": "9-66",
@@ -7725,7 +7780,8 @@
         "zeměpisný kurz (TH): 185°. Magnetický kurz (MH): 185°. Magnetická trať (MC): 180°",
         "zeměpisný kurz (TH): 173°. Magnetický kurz (MH): 184°. Magnetická trať (MC): 178°"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-014.jpg"
     },
     {
       "id": "9-85",
@@ -7737,7 +7793,8 @@
         "DME",
         "VDF"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-017.jpg"
     },
     {
       "id": "9-86",
@@ -8037,7 +8094,8 @@
         "080°",
         "260°"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "NAV-019.jpg"
     },
     {
       "id": "9-111",
@@ -8169,7 +8227,8 @@
         "jihozápadně",
         "severozápadně"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-022.jpg"
     },
     {
       "id": "9-122",
@@ -8181,7 +8240,8 @@
         "060°",
         "066°"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "NAV-024.jpg"
     },
     {
       "id": "9-123",
@@ -9489,7 +9549,8 @@
         "hloubku profilu",
         "tloušťku profilu"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFA-010.jpg"
     },
     {
       "id": "4-12",
@@ -9501,7 +9562,8 @@
         "hloubku profilu",
         "tloušťku profilu"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFA-010.jpg"
     },
     {
       "id": "4-13",
@@ -9537,7 +9599,8 @@
         "stagnační bod",
         "aerodynamický střed"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFA-009.jpg"
     },
     {
       "id": "4-16",
@@ -9549,7 +9612,8 @@
         "stagnační bod",
         "aerodynamický střed"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "PFA-009.jpg"
     },
     {
       "id": "4-17",
@@ -9573,7 +9637,8 @@
         "stagnační bod",
         "aerodynamický střed"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFA-009.jpg"
     },
     {
       "id": "4-19",
@@ -9657,7 +9722,8 @@
         "úhel inklinace",
         "úhel náběhu"
       ],
-      "correctIndex": 3
+      "correctIndex": 3,
+      "image": "PFA-003.jpg"
     },
     {
       "id": "4-27",
@@ -9777,7 +9843,8 @@
         "3",
         "4"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFA-011.jpg"
     },
     {
       "id": "4-37",
@@ -10461,7 +10528,8 @@
         "let na zádech",
         "pád"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFA-008.jpg"
     },
     {
       "id": "4-94",
@@ -10473,7 +10541,8 @@
         "let na zádech",
         "pád"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFA-008.jpg"
     },
     {
       "id": "4-95",
