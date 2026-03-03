@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Letecký zákon a postupy ATC – letoun",
-      "questionCount": 95
+      "questionCount": 94
     },
     {
       "id": 2,
@@ -13,32 +13,32 @@
     {
       "id": 3,
       "name": "Meteorologie – letoun",
-      "questionCount": 126
+      "questionCount": 129
     },
     {
       "id": 4,
       "name": "Letové zásady – letoun",
-      "questionCount": 97
+      "questionCount": 96
     },
     {
       "id": 5,
       "name": "Komunikace",
-      "questionCount": 85
+      "questionCount": 86
     },
     {
       "id": 6,
       "name": "Provozní postupy – letoun",
-      "questionCount": 60
+      "questionCount": 59
     },
     {
       "id": 7,
       "name": "Výkonnost a plánování letu – letoun",
-      "questionCount": 96
+      "questionCount": 99
     },
     {
       "id": 8,
       "name": "Obecné znalosti o letadle – letoun",
-      "questionCount": 123
+      "questionCount": 126
     },
     {
       "id": 9,
@@ -178,18 +178,6 @@
         "21 let"
       ],
       "correctIndex": 1
-    },
-    {
-      "id": "1-12",
-      "categoryId": 1,
-      "question": "Jaké jsou mimo jiné požadavky na získání kvalifikace pro lety VFR v noci?",
-      "options": [
-        "nejméně 10 hodin letu v noci, 3 z nich s instruktorem a nejméně 1 navigační let a 5 sólo vzletů a přistání s",
-        "úplným zastavením",
-        "nejméně 5 hodin letu v noci, 3 z nich s instruktorem a nejméně 1 navigační let a 5 sólo vzletů a přistání s",
-        "úplným zastavením"
-      ],
-      "correctIndex": 3
     },
     {
       "id": "1-13",
@@ -508,12 +496,12 @@
       "categoryId": 1,
       "question": "Pojem výška základny nejnižší význačné vrstvy oblačnosti je definován jako:",
       "options": [
-        "nadmořská výška základny nejnižší vrstvy oblačnosti pokrývající více než jednu polovinu oblohy pod 20000",
-        "ft",
+        "nadmořská výška základny nejnižší vrstvy oblačnosti pokrývající více než jednu polovinu oblohy pod 20000\nft",
         "výška nad zemí základny nejnižší vrstvy oblačnosti pokrývající více než jednu polovinu oblohy pod 20000 ft",
-        "výška nad zemí základny nejnižší vrstvy oblačnosti pokrývající více než jednu polovinu oblohy pod 10000 ft"
+        "výška nad zemí základny nejnižší vrstvy oblačnosti pokrývající více než jednu polovinu oblohy pod 10000 ft",
+        "nadmořská výška základny nejnižší vrstvy oblačnosti pokrývající více než jednu polovinu oblohy pod 10000\nft"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": "1-41",
@@ -736,12 +724,12 @@
       "categoryId": 1,
       "question": "Jaké informace obsahuje část GEN (všeobecně) Letecké informační příručky (AIP)?",
       "options": [
-        "mapové značky, seznam radionavigačních zařízení, časy východu a západu slunce, letištní poplatky,",
-        "poplatky za služby řízení letového provozu",
+        "mapové značky, seznam radionavigačních zařízení, časy východu a západu slunce, letištní poplatky,\npoplatky za služby řízení letového provozu",
         "letecké výstrahy, vzdušné prostory a tratě, omezené a nebezpečné prostory",
-        "obsah, seznam letišť s příslušnými mapami, přibližovací mapy, mapy pro pojíždění, omezené a nebezpečné"
+        "obsah, seznam letišť s příslušnými mapami, přibližovací mapy, mapy pro pojíždění, omezené a nebezpečné\nprostory",
+        "omezení přístupu na letištích, kontroly cestujících, požadavky na piloty, vzory průkazů a doby jejich\nplatnosti"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": "1-60",
@@ -760,12 +748,12 @@
       "categoryId": 1,
       "question": "Jaké informace jsou v části AD Letecké informační příručky (AIP)?",
       "options": [
-        "mapové značky, seznam radionavigačních zařízení, časy východu a západu slunce, letištní poplatky,",
-        "poplatky za služby řízení letového provozu",
+        "mapové značky, seznam radionavigačních zařízení, časy východu a západu slunce, letištní poplatky,\npoplatky za služby řízení letového provozu",
         "letecké výstrahy, prostory a tratě služeb letového provozu, omezené a nebezpečné prostory",
-        "obsah, seznam letišť s příslušnými mapami, přibližovací mapy, mapy pro pojíždění"
+        "obsah, seznam letišť s příslušnými mapami, přibližovací mapy, mapy pro pojíždění",
+        "omezení přístupu na letiště, kontroly cestujících, požadavky na piloty, vzory průkazů a doby jejich\nplatnosti"
       ],
-      "correctIndex": 3
+      "correctIndex": 2
     },
     {
       "id": "1-62",
@@ -822,8 +810,8 @@
       "options": [
         "vyčkávací bod při pojíždění je oblast, kde musí letadlo zastavit, dokud nedostane povolení pokračovat",
         "vyčkávací bod při pojíždění je bod, ve kterém musí letadlo zastavit, dokud nedostane povolení pokračovat",
-        "vyčkávací bod při pojíždění je navržen, aby označil začátek bezpečnostní oblasti a může být přejet, když",
-        "bylo vydáno povolení pojíždět"
+        "vyčkávací bod při pojíždění je navržen, aby označil začátek bezpečnostní oblasti a může být přejet, když\nbylo vydáno povolení pojíždět",
+        "vyčkávací bod při pojíždění slouží pouze pro provoz IFR, když převažují podmínky pro let podle přístrojů"
       ],
       "correctIndex": 1
     },
@@ -2735,6 +2723,30 @@
       "image": "MET-005.jpg"
     },
     {
+      "id": "3-73",
+      "categoryId": 3,
+      "question": "Jaký sled oblačnosti lze typicky pozorovat při přechodu teplé fronty?",
+      "options": [
+        "húlava s dešťovými přeháňkami a bouřky (Cb), nárazový vítr následováno kumulovitou\noblačností s izolovanými dešťovými přeháňkami",
+        "ve dne v pobřežních oblastech vítr od pobřeží a tvorbou kupovité oblačnosti, večer a v noci\nrozpady oblačnosti",
+        "v létě slábnoucí vítr, rozpady oblačnosti a narůst teploty, v zimě tvorba vysokých vrstev mlhy",
+        "cirus, ztenčující se altostratus a altokumulus, snižující se základna oblačnosti s deštěm,\nnimbostratus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "3-74",
+      "categoryId": 3,
+      "question": "Jakou oblačnost a jaké počasí lze typicky pozorovat při přechodu studené fronty?",
+      "options": [
+        "silně vyvinuté kumuly (Cb) s přeháňkami a bouřkami, nárazový vítr a následně kumulovitá\noblačnost s izolovanými dešťovými přeháňkami",
+        "v pobřežních oblastech ve dne vítr od pobřeží a tvorba kumulovité oblačnosti, večer a v noci\nrozpady oblačnosti",
+        "v létě slábnoucí vítr, rozpady oblačnosti a nárůst teploty, v zimě tvorba vysokých vrstev mlhy",
+        "cirus, ztenčující se altostratus a altokumulus, snižující se základna oblačnosti s deštěm,\nnimbostratus"
+      ],
+      "correctIndex": 2
+    },
+    {
       "id": "3-75",
       "categoryId": 3,
       "question": "Jakou dohlednost za letu lze očekávat uvnitř teplého sektoru polární fronty v létě?",
@@ -2783,6 +2795,18 @@
       "correctIndex": 1
     },
     {
+      "id": "3-79",
+      "categoryId": 3,
+      "question": "Jak se mění tlak vzduchu při přechodu polární frontální níže?",
+      "options": [
+        "stoupající tlak před teplou frontou, konstantní tlak v teplém sektoru, stoupající tlak za studenou\nfrontou",
+        "klesající tlak před teplou frontou, konstantní tlak v teplém sektoru, klesající tlak za studenou\nfrontou",
+        "klesající tlak před teplou frontou, konstantní tlak v teplém sektoru, stoupající tlak za studenou\nfrontou",
+        "stoupající tlak před teplou frontou, stoupající tlak v teplém sektoru, klesající tlak za studenou\nfrontou"
+      ],
+      "correctIndex": 2
+    },
+    {
       "id": "3-80",
       "categoryId": 3,
       "question": "Jak se mění tlak vzduchu při přechodu studené fronty?",
@@ -2799,12 +2823,12 @@
       "categoryId": 3,
       "question": "Jak se změní směr větru při přechodu polární frontální níže ve střední Evropě?",
       "options": [
-        "stáčení proti směru hodinových ručiček při přechodu teplé fronty, stáčení proti směru",
-        "hodinových ručiček při přechodu studené fronty",
-        "stáčení po směru hodinových ručiček při přechodu teplé fronty, stáčení po směru hodinových",
-        "ručiček při přechodu studené fronty"
+        "stáčení proti směru hodinových ručiček při přechodu teplé fronty, stáčení proti směru\nhodinových ručiček při přechodu studené fronty",
+        "stáčení po směru hodinových ručiček při přechodu teplé fronty, stáčení po směru hodinových\nručiček při přechodu studené fronty",
+        "stáčení proti směru hodinových ručiček při přechodu teplé fronty, stáčení po směru hodinových\nručiček při přechodu studené fronty",
+        "stáčení po směru hodinových ručiček při přechodu teplé fronty, stáčení proti směru hodinových\nručiček při přechodu studené fronty"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": "3-82",
@@ -3365,8 +3389,8 @@
       "options": [
         "oblačnost Ns v jižních Alpách, rotorová oblačnost na závětrné straně, teplý a suchý vítr",
         "oblačnost Ns v severních Alpách, rotorová oblačnost na návětrné straně, teplý a suchý vítr",
-        "oblast vysokého tlaku vzduchu nad Biskajským zálivem a oblast nízkého tlaku vzduchu ve",
-        "východní Evropě"
+        "oblast vysokého tlaku vzduchu nad Biskajským zálivem a oblast nízkého tlaku vzduchu ve\nvýchodní Evropě",
+        "studený vlhký vítr vanoucí z hor na závětrné straně Alp, malé změny tlaku vzduchu"
       ],
       "correctIndex": 0
     },
@@ -3389,8 +3413,8 @@
       "options": [
         "celková doba od okamžiku, kdy se letoun pohne, dokud se po skončení letu nezastaví",
         "doba od zahájení vzletu do dosednutí při přistání",
-        "celková doba od prvního vzletu do posledního přistání v souvislosti s jedním nebo více po sobě",
-        "následujícími lety"
+        "celková doba od prvního vzletu do posledního přistání v souvislosti s jedním nebo více po sobě\nnásledujícími lety",
+        "doba od spuštění motoru za účelem vzletu do opuštění letadla po vypnutí motoru"
       ],
       "correctIndex": 0
     },
@@ -3423,10 +3447,10 @@
       "categoryId": 6,
       "question": "Jak může pilot motorového letadla snížit na minimum hluk vydávaný při sestupu a přiblížení?",
       "options": [
-        "vysoké přiblížení s nastavením minimálního výkonu, pozdější sestup, pozdější konfigurace,",
-        "dodržení stanovených příletových tratí",
-        "nízké přiblížení s nastavením minimálního výkonu, pozdější konfigurace, strmé přiblížení,",
-        "dodržení stanovených příletových tratí"
+        "vysoké přiblížení s nastavením minimálního výkonu, pozdější sestup, pozdější konfigurace,\ndodržení stanovených příletových tratí",
+        "nízké přiblížení s nastavením minimálního výkonu, pozdější konfigurace, strmé přiblížení,\ndodržení stanovených příletových tratí",
+        "normální přiblížení s nastavením normálního výkonu, konfigurace před zahájením klesání,\nnejkratší možná příletová trať",
+        "klesání a přiblížení v přistávací konfiguraci, dodržení úhlu sestupu 3°, přímé přiblížení kdykoliv je\nto možné"
       ],
       "correctIndex": 0
     },
@@ -3665,8 +3689,8 @@
       "options": [
         "náhlé změny polohy letadla, rychlosti letu a stoupavosti",
         "náhlé změny kurzu, rychlosti zatáčení, otáček motoru a teploty oleje",
-        "nečekaný nástup kouřma související s vysokými straty, které následují oblohu bez oblačnosti a s",
-        "bezvětřím"
+        "nečekaný nástup kouřma související s vysokými straty, které následují oblohu bez oblačnosti a s\nbezvětřím",
+        "náhlé změny tlaku oleje, teploty oleje, otáček motoru a nadmořské výšky"
       ],
       "correctIndex": 0
     },
@@ -3731,18 +3755,6 @@
         "pokles stoupavosti a nárůst rychlosti letu"
       ],
       "correctIndex": 0
-    },
-    {
-      "id": "6-30",
-      "categoryId": 6,
-      "question": "Letadlo ihned po vzletu vlétne nečekaně do mikroburstu. Jak se lze vyhnout nechtěnému\nklesání?",
-      "options": [
-        "nastavit maximální výkon, zachovat stávající konfiguraci, udržet optimální rychlost pro",
-        "maximální stoupavost",
-        "nastavit maximální výkon, zasunout klapky a podvozek, zvětšit podélný sklon až do dosažení",
-        "optimální stoupací rychlosti"
-      ],
-      "correctIndex": 1
     },
     {
       "id": "6-31",
@@ -3845,10 +3857,10 @@
       "categoryId": 6,
       "question": "Lehké letadlo má přistát za dopravním letadlem náležícím do kategorie turbulence v úplavu\n\"střední\" nebo \"těžké\" na dlouhou přistávací dráhu. Jek se může vyhnout turbulenci v úplavu\nod dopravního letadla?",
       "options": [
-        "strmým přiblížením a dotykem se zemí až za bodem dotyku příďového podvozku dopravního",
-        "letadla",
-        "nízkým přiblížením a velmi krátkým přistáním. Lehké letadlo by mělo být schopné zastavit před",
-        "bodem dotyku dopravního letadla"
+        "strmým přiblížením a dotykem se zemí až za bodem dotyku příďového podvozku dopravního\nletadla",
+        "nízkým přiblížením a velmi krátkým přistáním. Lehké letadlo by mělo být schopné zastavit před\nbodem dotyku dopravního letadla",
+        "nízkým přiblížením a dlouhým přistáním s dotykem se zemí za bodem dotyku příďového\npodvozku dopravního letadla",
+        "strmým přiblížením a velmi krátkým přistáním. Lehké letadlo by mělo být schopné zastavit před\nbodem dotyku se zemí dopravního letadla"
       ],
       "correctIndex": 0
     },
@@ -3869,10 +3881,10 @@
       "categoryId": 6,
       "question": "Technický problém vyžaduje provést nouzové přistání mimo letiště. Co je třeba učinit s\nohledem na letovou příručku?",
       "options": [
-        "zvolit vhodnou plochu pro přistání, naplánovat přiblížení, provést příslušné nouzové úkony,",
-        "vyhlásit stav nouze, zahájit přiblížení ve vhodnou dobu a soustředit se na něj",
-        "vyhlásit stav nouze, provést příslušné nouzové úkony, doletět co nejblíže k letišti, aby záchranné",
-        "složky byly v blízkosti"
+        "zvolit vhodnou plochu pro přistání, naplánovat přiblížení, provést příslušné nouzové úkony,\nvyhlásit stav nouze, zahájit přiblížení ve vhodnou dobu a soustředit se na něj",
+        "vyhlásit stav nouze, provést příslušné nouzové úkony, doletět co nejblíže k letišti, aby záchranné\nsložky byly v blízkosti",
+        "informovat služby řízení letového provozu a vyžádat technickou pomoc, v letové příručce\nvyhledat odkaz na danou situaci a provést nouzové přistání",
+        "snížit rychlost a letadlo uvést do konfigurace pro přistání, aby pilot získal čas, vyhlásit stav\nnouze, provést příslušné nouzové úkony a nouzové přistání"
       ],
       "correctIndex": 0
     },
@@ -3966,9 +3978,9 @@
       "question": "Co má obsahovat instruktáž pro cestující v případě neodkladného nouzového přistání?",
       "options": [
         "druh nebezpečí, úmysl, bezpečnostní poloha, evakuační cesty, činnost po přistání",
-        "jak pracuje palubní radiostanice, kód nouzového majáku polohy, telefonní číslo na příslušné",
-        "stanoviště pátrání a záchrany",
-        "jak číst seznam nouzových úkonů, jak vypnout motor, telefonní číslo na domácí letiště"
+        "jak pracuje palubní radiostanice, kód nouzového majáku polohy, telefonní číslo na příslušné\nstanoviště pátrání a záchrany",
+        "jak číst seznam nouzových úkonů, jak vypnout motor, telefonní číslo na domácí letiště",
+        "krevní skupiny osob na palubě, umístění soupravy pro první pomoc"
       ],
       "correctIndex": 0
     },
@@ -4025,10 +4037,10 @@
       "categoryId": 6,
       "question": "Kdy je vzletová a přistávací dráha považována za znečistěnou?",
       "options": [
-        "je-li více než 25 % povrchu pokryto vodou, rozbředlým sněhem, sněhem nebo ledem silnějším",
-        "než 3 mm",
-        "je-li více než 50 % povrchu požadované délky a šířky dráhy pokryto vodou, rozbředlým sněhem",
-        "nebo ledem více než 3 mm hlubokým"
+        "je-li více než 25 % povrchu pokryto vodou, rozbředlým sněhem, sněhem nebo ledem silnějším\nnež 3 mm",
+        "je-li více než 50 % povrchu požadované délky a šířky dráhy pokryto vodou, rozbředlým sněhem\nnebo ledem více než 3 mm hlubokým",
+        "je-li více než 75 % požadované délky a šířky dráhy pokryto znečištěním jako sníh, zmrazky, led,\npísek",
+        "je-li více než 50 % požadované délky a šířky dráhy pokryto znečištěním jako sníh, zmrazky, led,\npísek"
       ],
       "correctIndex": 0
     },
@@ -4086,9 +4098,9 @@
       "question": "Jak se chovat při očekáváném akvaplaninku po přistání?",
       "options": [
         "otáčejí-li se všechna kola, brzděte mírně a směr udržujte kormidly",
-        "intenzivně brzděte, abyste snížili rychlost letadla pod kritickou rychlost akvaplaninku, a pak",
-        "pokračujte normálně v přistávání",
-        "přidejte výkon a pro brzdění využijte klapky a spoilery"
+        "intenzivně brzděte, abyste snížili rychlost letadla pod kritickou rychlost akvaplaninku, a pak\npokračujte normálně v přistávání",
+        "přidejte výkon a pro brzdění využijte klapky a spoilery",
+        "vybočte letadlo výchylkou křidélek a opačnou výchylkou směrovky, abyste využil trup letadla k\naerodynamickému brzdění"
       ],
       "correctIndex": 0
     },
@@ -4097,10 +4109,10 @@
       "categoryId": 6,
       "question": "Jak má být provedeno přistání na znečištěnou dráhu, je-li nevyhnutelné?",
       "options": [
-        "přiblížení s minimální možnou boční složkou větru, maximální nastavení klapek, pevný dotyk na",
-        "minimální rychlosti, brzdit opatrně",
-        "přiblížení na minimální možné boční složce větru, minimální nastavení klapek, měkký dotyk na",
-        "minimální rychlosti, nebrzdit"
+        "přiblížení s minimální možnou boční složkou větru, maximální nastavení klapek, pevný dotyk na\nminimální rychlosti, brzdit opatrně",
+        "přiblížení na minimální možné boční složce větru, minimální nastavení klapek, měkký dotyk na\nminimální rychlosti, nebrzdit",
+        "přiblížení na minimální možné boční složce větru, minimální nastavení klapek, měkký dotyk s\npozitivním podélným sklonem a minimální rychlostí, nebrzdit",
+        "přiblížení na minimální možné boční složce větru, minimální nastavení klapek, dotyk s\nnegativním podélným sklonem a na minimální rychlosti, brzdit opatrně"
       ],
       "correctIndex": 0
     },
@@ -4193,12 +4205,12 @@
       "categoryId": 7,
       "question": "Základní prázdná hmotnost letadla zahrnuje:",
       "options": [
-        "hmotnost letadla plus standardní položky jako nevyčerpatelný zbytek paliva a dalších kapalin,",
-        "olej v motoru a pomocných agregátech, hasicí přístroje, pyrotechnika, nouzové kyslíkové",
-        "vybavení, doplňkové elektronické vybavení",
-        "celkovou hmotnost letadla připraveného pro určitý druh provozu kromě nevyužitelného zbytku"
+        "hmotnost letadla plus standardní položky jako nevyčerpatelný zbytek paliva a dalších kapalin,\nolej v motoru a pomocných agregátech, hasicí přístroje, pyrotechnika, nouzové kyslíkové\nvybavení, doplňkové elektronické vybavení",
+        "celkovou hmotnost letadla připraveného pro určitý druh provozu kromě nevyužitelného zbytku\npaliva a provozního zatížení. Tato hmotnost zahrnuje takové položky jako posádku a její\nzavazadla",
+        "celkovou hmotnost letadla připraveného pro určitý druh provozu včetně požadovaného paliva a\nposádky, ale bez provozního zatížení",
+        "celkovou hmotnost letadla připraveného pro určitý druh provozu včetně posádky, navigačních\npřístrojů a krytu motorů"
       ],
-      "correctIndex": 1
+      "correctIndex": 2
     },
     {
       "id": "7-9",
@@ -4208,7 +4220,7 @@
         "vážením",
         "výpočtem",
         "pomocí dat dodaných výrobcem letadla",
-        "pouze pro jedno letadlo daného typu, protože všechna letadla stejného typu mají stejnou"
+        "pouze pro jedno letadlo daného typu, protože všechna letadla stejného typu mají stejnou\nhmotnost a polohu těžiště"
       ],
       "correctIndex": 0
     },
@@ -4529,18 +4541,6 @@
       "image": "PFP-007.jpg"
     },
     {
-      "id": "7-37",
-      "categoryId": 7,
-      "question": "Jaký vliv má nastavení vztlakových klapek na výkonnost letadla při vzletu?",
-      "options": [
-        "větší výchylka klapek zkracuje rozjezd po zemi, snižuje rychlost odpoutání, ale zhoršuje",
-        "výkonnost při stoupání",
-        "větší výchylka klapek zkracuje rozjezd po zemi, snižuje rychlost odpoutání a zvyšuje výkonnost",
-        "při stoupání"
-      ],
-      "correctIndex": 1
-    },
-    {
       "id": "7-38",
       "categoryId": 7,
       "question": "Jaký vliv na výkonnost při vzletu má vítr?",
@@ -4577,6 +4577,18 @@
       "correctIndex": 0
     },
     {
+      "id": "7-41",
+      "categoryId": 7,
+      "question": "Pokud pro to letadlo není schváleno a odpovídajícím způsobem vybaveno:",
+      "options": [
+        "let do známých podmínek námrazy je zakázán a vstoupí-li do takových podmínek neúmyslně,\nmá je neprodleně opustit",
+        "let ve známých podmínkách námrazy je povolen pouze po dobu, během které nenastane pokles\njeho výkonnosti",
+        "let do oblastí srážek je zakázán",
+        "let do známých podmínek námrazy je zakázán a vstoupí-li do takových podmínek letadlo\nneúmyslně, lze v nich pokračovat, dokud existují podmínky pro let za vidu"
+      ],
+      "correctIndex": 2
+    },
+    {
       "id": "7-42",
       "categoryId": 7,
       "question": "Rychlost vX znamená:",
@@ -4594,9 +4606,9 @@
       "question": "Úhel sestupu je definován jako:",
       "options": [
         "úhel mezi horizontální rovinou a trajektorií letu, vyjádřeno ve stupních (°)",
-        "poměr mezi změnou výšky nad zemí a uletěnou horizontální vzdáleností za stejný čas, vyjádřeno",
-        "v procentech (%)",
-        "úhel mezi horizontální rovinou a trajektorií letu, vyjádřeno v procentech (%)"
+        "poměr mezi změnou výšky nad zemí a uletěnou horizontální vzdáleností za stejný čas, vyjádřeno\nv procentech (%)",
+        "úhel mezi horizontální rovinou a trajektorií letu, vyjádřeno v procentech (%)",
+        "poměr mezi změnou výšky nad zemí a uletěnou horizontální vzdáleností za stejný čas, vyjádřeno\nve stupních (°)"
       ],
       "correctIndex": 0
     },
@@ -4968,6 +4980,18 @@
       "image": "PFP-023.jpg"
     },
     {
+      "id": "7-73",
+      "categoryId": 7,
+      "question": "Pojem maximální hodnota nadmořské výšky terénu (maximum elevation figure – MEF) je\ndefinován jako:",
+      "options": [
+        "nejvyšší nadmořská výška terénu v oblasti pokrývající 30 minut zeměpisné šířky a délky plus\nbezpečnostní rezerva, zaokrouhleno na nejbližších vyšších 100 ft",
+        "nejvyšší nadmořská výška terénu pokrývající oblast 30 minut zeměpisné šířky a délky plus\nbezpečnostní rezerva 1000 ft (305 m), zaokrouhleno na nejbližších vyšších 100 ft",
+        "největší nadmořská výška terénu v oblasti pokrývající 30 minut zeměpisné šířky a délky",
+        "největší nadmořská výška terénu pokrývající oblast 1 stupně zeměpisné šířky a délky plus\nbezpečnostní rezerva zaokrouhlená na nejbližších nižších 100 ft"
+      ],
+      "correctIndex": 2
+    },
+    {
       "id": "7-74",
       "categoryId": 7,
       "question": "Jaký je účel čar protínajících trať letu při srovnávací navigaci?",
@@ -4975,7 +4999,7 @@
         "pro vizualizaci omezení doletu od letiště odletu",
         "slouží jako snadno rozpoznatelná pomůcka při možné ztrátě orientace",
         "za letu označují další použitelné letiště na trati",
-        "pomáhají pokračovat v letu, klesne-li dohlednost pod minima pro let podle pravidel letu za"
+        "pomáhají pokračovat v letu, klesne-li dohlednost pod minima pro let podle pravidel letu za\nviditelnosti"
       ],
       "correctIndex": 1
     },
@@ -5249,6 +5273,30 @@
       "correctIndex": 0
     },
     {
+      "id": "7-97",
+      "categoryId": 7,
+      "question": "Pro let je dáno: Traťové palivo = 70 US galonů, palivo pro mimořádné okolnosti = 5 %\ntraťového paliva, palivo pro let na náhradní letiště a konečná záloha paliva = 20 US galonů,\nvyužitelné palivo při vzletu = 95 US galonů. Po uletění poloviny vzdálenosti bylo spotřebováno\n40 US galonů. Předpokládejte, že se spotřeba paliva nezmění. Který výrok je pravdivý?",
+      "options": [
+        "zbývající palivo nestačí pro přistání na cílovém letišti se zbývajícím palivem pro let na náhradní\nletiště a s konečnou zálohou paliva",
+        "po přistání zbyde 15.0 US galonů paliva plus palivo pro let na náhradní letiště a konečná záloha\npaliva",
+        "po přistání zbyde 5.0 US galonů plus palivo pro let na náhradní letiště a konečná záloha paliva",
+        "po přistání zbyde celkem 40.0 US galonů paliva"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "7-98",
+      "categoryId": 7,
+      "question": "Pro let je dáno: Traťové palivo = 70 US galonů, palivo pro mimořádné okolnosti = 5 %\ntraťového paliva, palivo pro let na náhradní letiště a konečná zásoba paliva = 20 US galonů.\nVyužitelné palivo při vzletu = 90 US galonů. Po uletění poloviny vzdálenosti bylo\nspotřebováno 30 US galonů. Předpokládejte, že spotřeba paliva zůstane nezměněna. Který\nvýrok je pravdivý?",
+      "options": [
+        "po přistání bude zbytek paliva 10.0 US galonů plus palivo pro let na náhradní letiště a konečná\nzáloha paliva",
+        "zbývající palivo nestačí pro přistání na cílovém letišti se zbytkem paliva pro let na náhradní\nletiště a konečnou zálohou paliva",
+        "po přistání zbyde 30.0 US galonů plus palivo pro let na náhradní letiště a konečná záloha paliva",
+        "po přistání zbyde celkem 10.0 US galonů paliva"
+      ],
+      "correctIndex": 2
+    },
+    {
       "id": "7-99",
       "categoryId": 7,
       "question": "(Pro tuto otázku použijte přílohu PFP-061) Jaký symbol dle ICAO označuje skupinu\nneosvětlených překážek?",
@@ -5436,9 +5484,9 @@
       "question": "Co je třeba učinit, byla-li překročena povolená provozní omezení?",
       "options": [
         "před dalším letem musí být letadlo prohlédnuto kvalifikovaným technikem",
-        "letadlo musí být prohlédnuto velitelem letadla a není-li zjištěna závada, není třeba žádný",
-        "zvláštní zápis do technického deníku",
-        "letadlo musí být prohlédnuto alespoň dvěma piloty s typovou kvalifikací, jeden z nich musí být"
+        "letadlo musí být prohlédnuto velitelem letadla a není-li zjištěna závada, není třeba žádný\nzvláštní zápis do technického deníku",
+        "letadlo musí být prohlédnuto alespoň dvěma piloty s typovou kvalifikací, jeden z nich musí být\nvelitel letadla",
+        "letadlo musí být dvakrát prohlédnuto dvěma techniky"
       ],
       "correctIndex": 0
     },
@@ -5608,8 +5656,8 @@
       "options": [
         "na ocasních plochách působí zvětšená síla směrem dolů a způsobí pohyb přídě směrem nahoru",
         "na ocasních plochách působí zvětšená síla směrem dolů a způsobí pokles přídě letadla",
-        "na ocasních plochách působí zvětšená síla směrem nahoru a způsobí pohyb přídě směrem",
-        "nahoru"
+        "na ocasních plochách působí zvětšená síla směrem nahoru a způsobí pohyb přídě směrem\nnahoru",
+        "na ocasních plochách působí zvětšená síla směrem nahoru a způsobí pokles přídě"
       ],
       "correctIndex": 0
     },
@@ -5620,8 +5668,8 @@
       "options": [
         "na ocasních plochách působí zvětšená síla směrem dolů a způsobí pohyb přídě směrem nahoru",
         "na ocasních plochách působí zvětšená síla dolů a způsobí pokles přídě",
-        "na ocasních plochách působí zvětšená síla směrem nahoru a způsobí pohyb přídě směrem",
-        "nahoru"
+        "na ocasních plochách působí zvětšená síla směrem nahoru a způsobí pohyb přídě směrem\nnahoru",
+        "na ocasních plochách působí zvětšená síla směrem nahoru a způsobí pokles přídě"
       ],
       "correctIndex": 0
     },
@@ -5660,6 +5708,18 @@
         "vytvořit systém zpětné vazby pro prvky primárního řízení"
       ],
       "correctIndex": 0
+    },
+    {
+      "id": "8-32",
+      "categoryId": 8,
+      "question": "Jaký účel mají na zemi nastavitelné vyvažovací plošky?",
+      "options": [
+        "je to nepohyblivá kovová ploška na řídící ploše, která se nastavuje na zemi pro snížení trvalých\nsil v řízení při určitém režimu letu",
+        "je přednastavena na zemi a dále nastavována za letu, aby se zmenšila potřeba pořád vyvažovat\ntrimem letadlo",
+        "je nastavena na zemi pro opravu režimů letu, které by nešly jinak vyvážit kvůli poloze těžiště",
+        "používá se pro optimalizaci vlastností letadla při manipulaci s letadlem na zemi"
+      ],
+      "correctIndex": 2
     },
     {
       "id": "8-33",
@@ -6113,12 +6173,36 @@
       "categoryId": 8,
       "question": "Jaké přístroje měří v letadle teplotu?",
       "options": [
-        "teploměr oleje, teploměr chladící kapaliny motoru, teploměr hlav válců, teploměr výstupních",
-        "plynů, teploměr vnějšího vzduchu, teploměr vzduchu v kabině",
-        "teploměr oleje, teploměr hlav válců, teploměr výstupních plynů, teploměr vzduchu v sání,",
-        "teploměr vnějšího vzduchu, teploměr vzduchu v kabině"
+        "teploměr oleje, teploměr chladící kapaliny motoru, teploměr hlav válců, teploměr výstupních\nplynů, teploměr vnějšího vzduchu, teploměr vzduchu v kabině",
+        "teploměr oleje, teploměr hlav válců, teploměr výstupních plynů, teploměr vzduchu v sání,\nteploměr vnějšího vzduchu, teploměr vzduchu v kabině",
+        "teploměr oleje, teploměr hlav válců, teploměr výstupních plynů, výškoměr, rychloměr,\nvariometr",
+        "teploměr oleje, teploměr výstupních plynů, teploměr vnějšího vzduchu, teploměr vzduchu v\nkabině, směrový setrvačník"
       ],
       "correctIndex": 0
+    },
+    {
+      "id": "8-72",
+      "categoryId": 8,
+      "question": "Množství paliva se v malých letadlech většinou měří pomocí snímače hladiny. Evropské\nCertifikační specifikace CS 23 požadují:",
+      "options": [
+        "aby ukazatel množství paliva byl k dispozici pro každou nádrž, ukazatel musí být kalibrován tak,\naby ukazoval nulu při rovném letu, když je množství zbývajícího paliva v nádrži rovné\nnevyčerpatelnému zbytku",
+        "musí být k dispozici alespoň jeden ukazatel množství paliva ukazující celkové množství paliva na\npalubě letadla. Tento ukazatel musí být kalibrovaný tak, aby ukazoval správné množství paliva\nve všech fázích letu",
+        "pokud pilot nemá za letu k dispozici ukazatel stavu paliva, musí kontrolovat stav paliva před\nzahájením letu a přepočítávat zbytek paliva na palubě za letu v pravidelných intervalech",
+        "selže-li ukazatel stavu paliva, pilot musí přistát na nejbližším vhodném letišti"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "8-73",
+      "categoryId": 8,
+      "question": "Který z uvedených přístrojů získává údaje měřením tlaku?",
+      "options": [
+        "tlakoměr oleje, tlakoměr paliva, ukazatel plnícího tlaku, výškoměr, variometr, rychloměr,\nukazatel tlaku sání",
+        "tlakoměr oleje, tlakoměr paliva, palivoměr, ukazatel plnícího tlaku, ukazatel rozdílu tlaku,\nvýškoměr",
+        "rychloměr, variometr, výškoměr, směrový setrvačník, zatáčkoměr, tlakoměr oleje, tlakoměr\npaliva",
+        "rychloměr, variometr, výškoměr, magnetický kompas, tlakoměr oleje, tlakoměr paliva"
+      ],
+      "correctIndex": 3
     },
     {
       "id": "8-74",
@@ -6173,22 +6257,22 @@
       "categoryId": 8,
       "question": "Co je účelem pomocné stupnice výškoměru?",
       "options": [
-        "nastavit výškoměr na stanovenou tlakovou hladinu, např. hladinu moře, úroveň letiště,",
-        "tlakovou hladinu 1013.25 hPa",
+        "nastavit výškoměr na stanovenou tlakovou hladinu, např. hladinu moře, úroveň letiště,\ntlakovou hladinu 1013.25 hPa",
         "opravit indikaci výškoměru o nestandardní teploty",
-        "opravit indikaci výškoměru o systémové chyby"
+        "opravit indikaci výškoměru o systémové chyby",
+        "nastavit referenční hladinu pro dekodér výšky odpovídače sekundárního radaru"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": "8-79",
       "categoryId": 8,
       "question": "Jak může nesprávně nastavené QNH na výškoměru vést k nesprávné indikaci výškoměru?",
       "options": [
-        "Je-li nastaven vyšší tlak než správný, indikace je příliš vysoká. To může vést k větší blízkosti",
-        "země, než bylo zamýšleno",
-        "je-li nastaven nižší tlak než správný, indikace je příliš nízká. To může vést k větší blízkosti země,",
-        "než bylo zamýšleno"
+        "Je-li nastaven vyšší tlak než správný, indikace je příliš vysoká. To může vést k větší blízkosti\nzemě, než bylo zamýšleno",
+        "je-li nastaven nižší tlak než správný, indikace je příliš nízká. To může vést k větší blízkosti země,\nnež bylo zamýšleno",
+        "je-li nastaven vyšší tlak než správný, indikace je příliš nízká. To může vést k mnohem větším\nvýškám letu nad zemí, než bylo zamýšleno",
+        "je-li nastaven nižší tlak než správný, indikace je příliš vysoká. To může vést k mnohem větší\nblízkosti země, než bylo zamýšleno"
       ],
       "correctIndex": 0
     },
@@ -6199,8 +6283,8 @@
       "options": [
         "k příliš vysoké indikaci výšky",
         "k příliš nízké indikaci výšky",
-        "ke správné indikaci výšky, je-li sekundární stupnice výškoměru nastavena na správnou",
-        "nestandardní teplotu"
+        "ke správné indikaci výšky, je-li sekundární stupnice výškoměru nastavena na správnou\nnestandardní teplotu",
+        "k zablokování Pitotovy trubice ledem, a to způsobí stále stejnou indikaci výškoměru na stejné\nhodnotě"
       ],
       "correctIndex": 0
     },
@@ -6785,12 +6869,12 @@
       "categoryId": 9,
       "question": "Který výrok o polární ose Země je pravdivý?",
       "options": [
-        "polární osa Země prochází magnetickým jižním pólem a magnetickým severním pólem a je",
-        "kolmá na rovinu rovníku",
-        "polární osa Země prochází zeměpisným jižním pólem a zeměpisným severním pólem a je kolmá",
-        "na rovinu rovníku"
+        "polární osa Země prochází magnetickým jižním pólem a magnetickým severním pólem a je\nkolmá na rovinu rovníku",
+        "polární osa Země prochází zeměpisným jižním pólem a zeměpisným severním pólem a je kolmá\nna rovinu rovníku",
+        "polární osa Země prochází magnetickým severním pólem a magnetickým jižním pólem a s\nrovinou rovníku svírá úhel 66.5°",
+        "polární osa Země prochází zeměpisným severním pólem a zeměpisným jižním pólem a s rovinou\nrovníku svírá úhel 23.5°"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": "9-3",
@@ -7025,10 +7109,10 @@
       "categoryId": 9,
       "question": "Pojem \"občanský soumrak\" je definován jako:",
       "options": [
-        "doba po západu slunce, během které je střed slunečního disku 6° nebo méně pod zeměpisným",
-        "horizontem",
-        "doba po západu slunce, během které je střed slunečního disku 6° nebo méně pod viditelným",
-        "horizontem"
+        "doba po západu slunce, během které je střed slunečního disku 6° nebo méně pod zeměpisným\nhorizontem",
+        "doba po západu slunce, během které je střed slunečního disku 6° nebo méně pod viditelným\nhorizontem",
+        "doba po západu slunce, během které je střed slunečního disku 12° nebo méně pod zeměpisným\nhorizontem",
+        "doba po západu slunce, během které je střed slunečního disku 12° nebo méně pod viditelným\nhorizontem"
       ],
       "correctIndex": 0
     },
@@ -7272,18 +7356,6 @@
         "rychloměru"
       ],
       "correctIndex": 2
-    },
-    {
-      "id": "9-43",
-      "categoryId": 9,
-      "question": "Jaké jsou vlastnosti mapy s Mercatorovým zobrazením?",
-      "options": [
-        "měřítko se zvětšuje se zeměpisnou šířkou, velké kružnice jsou zobrazeny jako křivky, loxodromy",
-        "jsou zobrazeny jako přímky",
-        "měřítko se zvětšuje se zeměpisnou šířkou, velké kružnice jsou zobrazeny jako přímky,",
-        "loxodromy jsou zobrazeny jako křivky"
-      ],
-      "correctIndex": 1
     },
     {
       "id": "9-44",
@@ -8328,6 +8400,18 @@
       "correctIndex": 1
     },
     {
+      "id": "9-130",
+      "categoryId": 9,
+      "question": "Jaký je rozdíl mezi primárním a sekundárním radarem?",
+      "options": [
+        "pulzy primárního radaru mají proměnnou amplitudovou modulaci, pulzy sekundárního radaru\nmají statickou pulzní modulaci",
+        "pulzy primárního radaru mají proměnnou pulzní modulaci, pulzy sekundárního radaru mají\nstatickou amplitudovou modulaci",
+        "pulzy primárního radaru odráží povrch letadla, na pulzy sekundárního radaru odpovídá\nodpovídač",
+        "primární radar zobrazuje cíle na obrazovce, sekundární radar na stripu řídícího letového\nprovozu"
+      ],
+      "correctIndex": 2
+    },
+    {
       "id": "9-131",
       "categoryId": 9,
       "question": "Kód odpovídače sekundárního radaru pro únos je:",
@@ -8380,10 +8464,10 @@
       "categoryId": 9,
       "question": "Při použití GPS pro let k dalšímu traťovému bodu je indikována odchylka od tratě vertikálním\nbřevnem a tečkami vlevo a vpravo od středu ukazatele. Který výrok o takovém přístroji je\npravdivý?",
       "options": [
-        "odchylka břevna od středu znázorňuje odchylku od tratě jako absolutní vzdálenost v NM.",
-        "Velikost odchylky odpovídající plné výchylce břevna závisí na režimu práce GPS",
-        "výchylka břevna od středu odpovídá úhlové odchylce od tratě ve stupních. Velikost odchylky",
-        "odpovídající plné výchylce břevna závisí na režimu práce GPS"
+        "odchylka břevna od středu znázorňuje odchylku od tratě jako absolutní vzdálenost v NM.\nVelikost odchylky odpovídající plné výchylce břevna závisí na režimu práce GPS",
+        "výchylka břevna od středu odpovídá úhlové odchylce od tratě ve stupních. Velikost odchylky\nodpovídající plné výchylce břevna závisí na režimu práce GPS",
+        "výchylka břevna od středu odpovídá odchylce od tratě v absolutní vzdálenosti v NM. Plná\nvýchylka břevna odpovídá odchylce + - 10 NM",
+        "výchylka břevna od středu odpovídá úhlové odchylce od tratě ve stupních. Plné výchylce břevna\nodpovídá odchylka + - 10°"
       ],
       "correctIndex": 0
     },
@@ -8418,8 +8502,8 @@
       "options": [
         "je-li třeba vysílat důležité provozní nebo technické informace současně více stanicím",
         "nelze-li navázat rádiové spojení s příslušnou leteckou stanicí a není jistota, že stanice vysílání přijala",
-        "umožňuje-li provozní situace na letišti vysílání informací, které nemusí být pozemními stanicemi",
-        "potvrzovány"
+        "umožňuje-li provozní situace na letišti vysílání informací, které nemusí být pozemními stanicemi\npotvrzovány",
+        "vletěl-li pilot neúmyslně do oblačnosti nebo mlhy a chce vyžádat od pozemní stanice navigační pomoc"
       ],
       "correctIndex": 1
     },
@@ -9079,7 +9163,7 @@
         "DZF po odpoutání stoupat přímo na 2500 stop, potom točit doprava 220, 090 stupňů, 5 uzlů, vzlet povolen",
         "DZF po odpoutání přímo 2500 stop, potom točit doprava na kurz 220, 09 stupňů, 5 uzlů",
         "DZF po odpoutání stoupat přímo 2500 stop, potom točit doprava kurz 220, dráha 12, vzlet povolen",
-        "DZF po odpoutání stoupat přímo 2500 stop, rozumím, provedu, kurz 220, 090 stupňů, 5 uzlů, vzlet"
+        "DZF po odpoutání stoupat přímo 2500 stop, rozumím, provedu, kurz 220, 090 stupňů, 5 uzlů, vzlet\npovolen"
       ],
       "correctIndex": 2
     },
@@ -9292,12 +9376,12 @@
       "categoryId": 5,
       "question": "Jaký je správný postup při ztrátě spojení ve vzdušném prostoru třídy D?",
       "options": [
-        "je třeba pokračovat v letu podle posledního povolení a podle pravidel VFR nebo tento prostor co nejkratší",
-        "cestou opustit",
+        "je třeba pokračovat v letu podle posledního povolení a podle pravidel VFR nebo tento prostor co nejkratší\ncestou opustit",
         "je třeba pokračovat v letu nad 5000 ft a podle pravidel VFR nebo tento prostor co nejkratší cestou opustit",
-        "je třeba pokračovat v letu nad 5000 ft a podle pravidel VFR nebo tento prostor opustit po standardních"
+        "je třeba pokračovat v letu nad 5000 ft a podle pravidel VFR nebo tento prostor opustit po standardních\ntratích",
+        "je třeba pokračovat v letu podle posledního povolení a podle pravidel VFR nebo tento prostor opustit po\nstandardních tratích"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": "5-75",
@@ -9329,11 +9413,23 @@
       "question": "Pilnostní zprávy jsou definovány jako:",
       "options": [
         "zprávy týkající se náhradních dílů potřebných pro pokračování v letu, které musí být objednány předem",
-        "zprávy týkající se letadla a jeho cestujících, které čelí vážné a bezprostřední hrozbě a vyžaduje okamžitou",
-        "pomoc",
-        "zprávy týkající se bezpečnosti letadla, plavidla, vozidla nebo osoby v dohledu"
+        "zprávy týkající se letadla a jeho cestujících, které čelí vážné a bezprostřední hrozbě a vyžaduje okamžitou\npomoc",
+        "zprávy týkající se bezpečnosti letadla, plavidla, vozidla nebo osoby v dohledu",
+        "zprávy týkající se personálu na odbavovací ploše znamenajícího bezprostřední nebezpečí pro přistávající\nletadla"
       ],
-      "correctIndex": 3
+      "correctIndex": 2
+    },
+    {
+      "id": "5-78",
+      "categoryId": 5,
+      "question": "Tísňové zprávy obsahují:",
+      "options": [
+        "informace týkající se naléhavé potřeby náhradních dílů potřebných pro pokračování v letu, které musí být\nobjednány předem",
+        "informace týkající se letadla a jeho cestujících, které čelí vážné a bezprostřední hrozbě a vyžaduje\nokamžitou pomoc",
+        "informace týkající se bezpečnosti letadla, plavidla, vozidla nebo osoby v dohledu",
+        "informace týkající se personálu na odbavovací ploše znamenajícího bezprostřední nebezpečí pro\npřistávající letadla"
+      ],
+      "correctIndex": 2
     },
     {
       "id": "5-79",
@@ -9913,8 +10009,8 @@
       "options": [
         "indukovaný odpor se zvětšuje s rostoucí rychlostí",
         "indukovaný odpor se zmenšuje s rostoucí rychlostí",
-        "indukovaný odpor má minimální hodnotu při určité rychlosti a při nárůstu nebo poklesu",
-        "rychlosti od této hodnoty se zvětšuje"
+        "indukovaný odpor má minimální hodnotu při určité rychlosti a při nárůstu nebo poklesu\nrychlosti od této hodnoty se zvětšuje",
+        "indukovaný odpor má maximální hodnotu při určité rychlosti a při nárůstu nebo poklesu\nrychlosti od této hodnoty se zmenšuje"
       ],
       "correctIndex": 1
     },
@@ -10178,7 +10274,7 @@
         "zůstane zachována výchylka způsobená vnějším zásahem",
         "po výchylce způsobené vnějším zásahem se letadlo snaží vrátit do původní polohy",
         "po výchylce způsobené vnějším zásahem se letadlo snaží výchylku ještě zvětšit",
-        "po výchylce způsobené vnějším zásahem je nutný zásah do řízení, aby se letadlo snažilo vrátit"
+        "po výchylce způsobené vnějším zásahem je nutný zásah do řízení, aby se letadlo snažilo vrátit\ndo původní polohy"
       ],
       "correctIndex": 1
     },
@@ -10591,18 +10687,6 @@
         "laminární proudění vytvářené víry na konci křídel"
       ],
       "correctIndex": 0
-    },
-    {
-      "id": "4-100",
-      "categoryId": 4,
-      "question": "Jaký je rozdíl mezi vývrtkou a spirálou?",
-      "options": [
-        "vývrtka: odtržení proudu na vnitřním křídle, rychlost konstantní – spirála: není odtržení proudu,",
-        "rychlost rychle narůstá",
-        "vývrtka: odtržení proudu na vnějším křídle, rychlost konstantní – spirála: odtržení není, rychlost",
-        "rychle narůstá"
-      ],
-      "correctIndex": 1
     }
   ]
 }

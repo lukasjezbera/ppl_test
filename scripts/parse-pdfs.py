@@ -221,6 +221,10 @@ def parse_pdf(filepath):
         lines = [l for l in lines if l["text"].strip()]
 
         current_q = None
+        # Track which checkbox y-positions have already started an option,
+        # so continuation lines sharing the same nearest checkbox don't
+        # get treated as new options.
+        claimed_checkboxes = set()
 
         for line in lines:
             text = line["text"].strip()
@@ -250,6 +254,7 @@ def parse_pdf(filepath):
                         "page": page_num,
                         "state": "question",
                     }
+                    claimed_checkboxes = set()
                     continue
 
                 if is_new_q:
@@ -263,6 +268,7 @@ def parse_pdf(filepath):
                         "page": page_num,
                         "state": "question",
                     }
+                    claimed_checkboxes = set()
                 elif current_q and current_q["state"] == "question":
                     # Bold text but not at left margin - continuation of question
                     current_q["question_lines"].append(text)
@@ -289,27 +295,45 @@ def parse_pdf(filepath):
                         "page": page_num,
                         "state": "question",
                     }
+                    claimed_checkboxes = set()
                 elif current_q["state"] == "options" and current_q["options"]:
                     # Might be bold text that's part of an answer (unusual)
                     current_q["options"][-1] += "\n" + text
 
             elif not line["bold"]:
-                # Check if there's a checkbox near this line's y position
-                has_checkbox = any(abs(cy - line["y0"]) < 15 for cy in checkbox_ys)
+                # Find the nearest checkbox to this line
+                nearest_cb = None
+                nearest_dist = float("inf")
+                for cy in checkbox_ys:
+                    dist = abs(cy - line["y0"])
+                    if dist < nearest_dist:
+                        nearest_dist = dist
+                        nearest_cb = cy
+
+                # A line starts a new option only if:
+                # 1. There's a checkbox within range (< 15pt)
+                # 2. That checkbox hasn't already been claimed by a previous line
+                is_new_option = (
+                    nearest_cb is not None
+                    and nearest_dist < 15
+                    and nearest_cb not in claimed_checkboxes
+                )
 
                 if current_q["state"] == "question":
                     # First non-bold line after question = first option
                     current_q["state"] = "options"
                     current_q["options"].append(text)
                     current_q["option_y_positions"].append(line["y0"])
+                    if nearest_cb is not None and nearest_dist < 15:
+                        claimed_checkboxes.add(nearest_cb)
                 elif current_q["state"] == "options":
-                    # Use checkbox presence as primary signal for new option
-                    if has_checkbox:
-                        # There's a checkbox here = new option
+                    if is_new_option:
+                        # New option — claim the checkbox
                         current_q["options"].append(text)
                         current_q["option_y_positions"].append(line["y0"])
+                        claimed_checkboxes.add(nearest_cb)
                     elif current_q["options"]:
-                        # No checkbox = continuation of previous option
+                        # Continuation of previous option
                         current_q["options"][-1] += "\n" + text
 
         if current_q:
