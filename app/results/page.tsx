@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { getQuestionById } from "@/lib/questions";
 import { recordSession } from "@/lib/scoring";
 import QuestionImage from "@/components/QuestionImage";
+import ExplanationChat from "@/components/ExplanationChat";
 
 interface WrongAnswer {
   questionId: string;
@@ -23,10 +24,7 @@ interface QuizResults {
 export default function ResultsPage() {
   const router = useRouter();
   const [results, setResults] = useState<QuizResults | null>(null);
-  const [explanations, setExplanations] = useState<Record<string, string>>({});
-  const [loadingExplanation, setLoadingExplanation] = useState<string | null>(
-    null
-  );
+  const [openChats, setOpenChats] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     try {
@@ -52,37 +50,13 @@ export default function ResultsPage() {
     }
   }, []);
 
-  async function handleExplain(wrong: WrongAnswer) {
-    if (loadingExplanation) return;
-    const q = getQuestionById(wrong.questionId);
-    if (!q) return;
-
-    setLoadingExplanation(wrong.questionId);
-    try {
-      const res = await fetch("/api/explain", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          question: q.question,
-          options: q.options,
-          correctIndex: wrong.correctIndex,
-          selectedIndex: wrong.selectedIndex,
-          image: q.image,
-        }),
-      });
-      const data = await res.json();
-      setExplanations((prev) => ({
-        ...prev,
-        [wrong.questionId]: data.explanation || data.error,
-      }));
-    } catch {
-      setExplanations((prev) => ({
-        ...prev,
-        [wrong.questionId]: "Nepodařilo se získat vysvětlení.",
-      }));
-    } finally {
-      setLoadingExplanation(null);
-    }
+  function toggleChat(questionId: string) {
+    setOpenChats((prev) => {
+      const next = new Set(prev);
+      if (next.has(questionId)) next.delete(questionId);
+      else next.add(questionId);
+      return next;
+    });
   }
 
   if (!results) {
@@ -165,19 +139,20 @@ export default function ResultsPage() {
                     </p>
                   </div>
 
-                  {explanations[wrong.questionId] ? (
-                    <p className="text-white/70 text-sm bg-white/5 rounded-lg p-3">
-                      {explanations[wrong.questionId]}
-                    </p>
+                  {openChats.has(wrong.questionId) ? (
+                    <ExplanationChat
+                      question={q.question}
+                      options={q.options}
+                      correctIndex={wrong.correctIndex}
+                      selectedIndex={wrong.selectedIndex}
+                      image={q.image}
+                    />
                   ) : (
                     <button
-                      onClick={() => handleExplain(wrong)}
-                      disabled={loadingExplanation === wrong.questionId}
+                      onClick={() => toggleChat(wrong.questionId)}
                       className="text-sm text-accent hover:text-accent-hover transition-colors"
                     >
-                      {loadingExplanation === wrong.questionId
-                        ? "Načítání..."
-                        : "💡 Vysvětlit"}
+                      💡 Vysvětlit
                     </button>
                   )}
                 </div>

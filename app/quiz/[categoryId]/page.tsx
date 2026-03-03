@@ -6,6 +6,7 @@ import { Question, getShuffledSet, getCategories, getQuestionById } from "@/lib/
 import { getErrorQuestions } from "@/lib/prioritization";
 import { recordAnswer } from "@/lib/scoring";
 import QuestionImage from "@/components/QuestionImage";
+import ExplanationChat from "@/components/ExplanationChat";
 
 interface QuizResult {
   questionId: string;
@@ -27,8 +28,7 @@ export default function QuizPage({
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [results, setResults] = useState<QuizResult[]>([]);
-  const [explanation, setExplanation] = useState<string | null>(null);
-  const [loadingExplanation, setLoadingExplanation] = useState(false);
+  const [showExplanation, setShowExplanation] = useState(false);
   const [categoryName, setCategoryName] = useState("");
 
   useEffect(() => {
@@ -126,7 +126,7 @@ export default function QuizPage({
     } else {
       setCurrentIndex((prev) => prev + 1);
       setSelectedAnswer(null);
-      setExplanation(null);
+      setShowExplanation(false);
     }
   }, [
     isAnswered,
@@ -138,33 +138,13 @@ export default function QuizPage({
     router,
   ]);
 
-  async function handleExplain() {
-    if (!currentQuestion || loadingExplanation) return;
-    setLoadingExplanation(true);
-    try {
-      const res = await fetch("/api/explain", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          question: currentQuestion.question,
-          options: currentQuestion.options,
-          correctIndex: currentQuestion.correctIndex,
-          selectedIndex: selectedAnswer,
-          image: currentQuestion.image,
-        }),
-      });
-      const data = await res.json();
-      setExplanation(data.explanation || data.error);
-    } catch {
-      setExplanation("Nepodařilo se získat vysvětlení.");
-    } finally {
-      setLoadingExplanation(false);
-    }
-  }
-
   // Keyboard shortcuts
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
+      // Don't capture shortcuts when typing in an input/textarea
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "TEXTAREA") return;
+
       if (e.key >= "1" && e.key <= "4" && !isAnswered) {
         handleAnswer(parseInt(e.key) - 1);
       } else if (e.key === "Enter" && isAnswered) {
@@ -299,18 +279,21 @@ export default function QuizPage({
             {isCorrect ? "Správně!" : "Špatně!"}
           </div>
 
-          {/* Explanation */}
-          {explanation ? (
-            <div className="bg-white/10 border border-white/10 rounded-xl p-4">
-              <p className="text-white/80 leading-relaxed">{explanation}</p>
-            </div>
+          {/* Explanation chat */}
+          {showExplanation ? (
+            <ExplanationChat
+              question={currentQuestion.question}
+              options={currentQuestion.options}
+              correctIndex={currentQuestion.correctIndex}
+              selectedIndex={selectedAnswer!}
+              image={currentQuestion.image}
+            />
           ) : (
             <button
-              onClick={handleExplain}
-              disabled={loadingExplanation}
+              onClick={() => setShowExplanation(true)}
               className="w-full bg-white/10 hover:bg-white/15 border border-white/10 rounded-xl p-3 text-white/70 hover:text-white transition-all"
             >
-              {loadingExplanation ? "Načítání..." : "💡 Vysvětlit"}
+              💡 Vysvětlit
             </button>
           )}
 
