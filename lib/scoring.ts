@@ -167,4 +167,60 @@ export function hasErrors(): boolean {
 export function resetAllStats(): void {
   if (typeof window === "undefined") return;
   localStorage.removeItem(STORAGE_KEY);
+
+  import("./sync")
+    .then((m) => {
+      m.markDirty();
+      m.push();
+    })
+    .catch(() => {});
+}
+
+export function resetAllErrors(): void {
+  const data = getScoreData();
+  for (const stats of Object.values(data.questions)) {
+    stats.wrong = 0;
+  }
+  saveScoreData(data);
+
+  import("./sync")
+    .then((m) => {
+      m.markDirty();
+      m.push();
+    })
+    .catch(() => {});
+}
+
+export function resetCategoryStats(categoryId: number): void {
+  const data = getScoreData();
+  for (const qId of Object.keys(data.questions)) {
+    if (qId.startsWith(`${categoryId}-`)) {
+      delete data.questions[qId];
+    }
+  }
+  saveScoreData(data);
+
+  import("./sync")
+    .then((m) => {
+      m.markDirty();
+      m.push();
+    })
+    .catch(() => {});
+}
+
+export function resetCategoryErrors(categoryId: number): void {
+  const data = getScoreData();
+  for (const [qId, stats] of Object.entries(data.questions)) {
+    if (qId.startsWith(`${categoryId}-`)) {
+      stats.wrong = 0;
+    }
+  }
+  saveScoreData(data);
+
+  import("./sync")
+    .then((m) => {
+      m.markDirty();
+      m.push();
+    })
+    .catch(() => {});
 }

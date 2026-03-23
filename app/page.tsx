@@ -3,7 +3,15 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { getCategories, getAllQuestions } from "@/lib/questions";
-import { getCategoryStats, getOverallStats, hasErrors } from "@/lib/scoring";
+import {
+  getCategoryStats,
+  getOverallStats,
+  hasErrors,
+  resetCategoryStats,
+  resetCategoryErrors,
+  resetAllStats,
+  resetAllErrors,
+} from "@/lib/scoring";
 import { getErrorCount } from "@/lib/prioritization";
 
 export default function Dashboard() {
@@ -15,6 +23,32 @@ export default function Dashboard() {
   const [selectedCategory, setSelectedCategory] = useState<
     number | "mix" | "errors" | null
   >(null);
+  const [refreshKey, setRefreshKey] = useState(0);
+  void refreshKey; // used to trigger re-render after reset
+
+  function handleResetCategoryStats(categoryId: number) {
+    if (!confirm("Opravdu chceš smazat skóre pro tento okruh?")) return;
+    resetCategoryStats(categoryId);
+    setRefreshKey((k) => k + 1);
+  }
+
+  function handleResetCategoryErrors(categoryId: number) {
+    if (!confirm("Opravdu chceš smazat chybné odpovědi pro tento okruh?")) return;
+    resetCategoryErrors(categoryId);
+    setRefreshKey((k) => k + 1);
+  }
+
+  function handleResetAllStats() {
+    if (!confirm("Opravdu chceš smazat skóre pro všechny okruhy?")) return;
+    resetAllStats();
+    setRefreshKey((k) => k + 1);
+  }
+
+  function handleResetAllErrors() {
+    if (!confirm("Opravdu chceš smazat chybné odpovědi pro všechny okruhy?")) return;
+    resetAllErrors();
+    setRefreshKey((k) => k + 1);
+  }
 
   function handleCategoryClick(id: number | "mix" | "errors") {
     setSelectedCategory(id);
@@ -134,6 +168,24 @@ export default function Dashboard() {
                   Opakovat chyby ({errorCount})
                 </button>
               )}
+              {stats.totalAnswered > 0 && (
+                <div className="flex gap-3 mt-2">
+                  <button
+                    onClick={() => handleResetCategoryStats(cat.id)}
+                    className="text-xs text-white/30 hover:text-white/60 transition-colors"
+                  >
+                    🗑️ Resetovat skóre
+                  </button>
+                  {stats.totalWrong > 0 && (
+                    <button
+                      onClick={() => handleResetCategoryErrors(cat.id)}
+                      className="text-xs text-white/30 hover:text-white/60 transition-colors"
+                    >
+                      🔄 Resetovat chyby
+                    </button>
+                  )}
+                </div>
+              )}
             </div>
           );
         })}
@@ -159,6 +211,24 @@ export default function Dashboard() {
             >
               Opakovat chyby ({getErrorCount()})
             </button>
+          )}
+          {overall.totalAnswered > 0 && (
+            <div className="flex gap-3 mt-2">
+              <button
+                onClick={handleResetAllStats}
+                className="text-xs text-white/30 hover:text-white/60 transition-colors"
+              >
+                🗑️ Resetovat skóre
+              </button>
+              {showErrors && (
+                <button
+                  onClick={handleResetAllErrors}
+                  className="text-xs text-white/30 hover:text-white/60 transition-colors"
+                >
+                  🔄 Resetovat chyby
+                </button>
+              )}
+            </div>
           )}
         </div>
 
