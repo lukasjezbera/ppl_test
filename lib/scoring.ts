@@ -4,6 +4,7 @@ export interface QuestionStats {
   correct: number;
   wrong: number;
   last: string;
+  lastCorrect?: boolean;
 }
 
 export interface SessionRecord {
@@ -49,6 +50,7 @@ export function recordAnswer(questionId: string, isCorrect: boolean): void {
     data.questions[questionId].wrong++;
   }
   data.questions[questionId].last = new Date().toISOString();
+  data.questions[questionId].lastCorrect = isCorrect;
   saveScoreData(data);
 
   // Lazy-import to avoid circular dependency
@@ -138,13 +140,20 @@ export function getOverallStats(): {
   };
 }
 
+function isError(stats: QuestionStats): boolean {
+  // lastCorrect === false means last answer was wrong
+  // fallback for old data without lastCorrect: treat as error if wrong > 0
+  if (stats.lastCorrect === undefined) return stats.wrong > 0;
+  return stats.lastCorrect === false;
+}
+
 export function getErrorQuestionIds(categoryId?: number): string[] {
   const data = getScoreData();
   const errors: { id: string; score: number }[] = [];
 
   for (const [qId, stats] of Object.entries(data.questions)) {
     if (categoryId && !qId.startsWith(`${categoryId}-`)) continue;
-    if (stats.wrong > 0) {
+    if (isError(stats)) {
       // Priority score: higher = worse performance
       let score = 0;
       if (stats.correct === 0) score = 1000 + stats.wrong;
@@ -161,7 +170,7 @@ export function getErrorQuestionIds(categoryId?: number): string[] {
 
 export function hasErrors(): boolean {
   const data = getScoreData();
-  return Object.values(data.questions).some((s) => s.wrong > 0);
+  return Object.values(data.questions).some((s) => isError(s));
 }
 
 export function resetAllStats(): void {
@@ -183,6 +192,7 @@ export function resetAllErrors(): void {
   const data = getScoreData();
   for (const stats of Object.values(data.questions)) {
     stats.wrong = 0;
+    stats.lastCorrect = true;
   }
   saveScoreData(data);
 
@@ -216,6 +226,7 @@ export function resetCategoryErrors(categoryId: number): void {
   for (const [qId, stats] of Object.entries(data.questions)) {
     if (qId.startsWith(`${categoryId}-`)) {
       stats.wrong = 0;
+      stats.lastCorrect = true;
     }
   }
   saveScoreData(data);
