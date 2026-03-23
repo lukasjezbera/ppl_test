@@ -165,8 +165,11 @@ export function hasErrors(): boolean {
 }
 
 export function resetAllStats(): void {
-  if (typeof window === "undefined") return;
-  localStorage.removeItem(STORAGE_KEY);
+  const data = getScoreData();
+  for (const stats of Object.values(data.questions)) {
+    stats.correct = 0;
+  }
+  saveScoreData(data);
 
   import("./sync")
     .then((m) => {
@@ -193,9 +196,9 @@ export function resetAllErrors(): void {
 
 export function resetCategoryStats(categoryId: number): void {
   const data = getScoreData();
-  for (const qId of Object.keys(data.questions)) {
+  for (const [qId, stats] of Object.entries(data.questions)) {
     if (qId.startsWith(`${categoryId}-`)) {
-      delete data.questions[qId];
+      stats.correct = 0;
     }
   }
   saveScoreData(data);
