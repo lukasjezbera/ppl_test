@@ -5252,7 +5252,8 @@
         "TAS = 160 kt FF = 12.3 GPH",
         "TAS = 145 kt FF = 11.9 GPH"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "CAP697_Table-2-2-3.jpg"
     },
     {
       "id": "7-94",
@@ -5264,7 +5265,8 @@
         "IAS = 158kt FF = 11.0 galonů za hodinu",
         "IAS = 150 kt FF = 12.0 galonů za hodinu"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "CAP697_Table-2-2-3.jpg"
     },
     {
       "id": "7-95",
@@ -5276,7 +5278,8 @@
         "47.3 USG",
         "43.8 USG"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "CAP697_Table-2-2-3.jpg"
     },
     {
       "id": "7-96",
@@ -5288,7 +5291,8 @@
         "51.8 USG",
         "46.4 USG"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "CAP697_Table-2-2-3.jpg"
     },
     {
       "id": "7-97",

@@ -475,6 +475,8 @@ def main():
             if image_match:
                 ref = image_match.group(1).replace(" ", "")
                 question_dict["image"] = ref + ".jpg"
+            elif "CAP697" in q_text_flat and "2.2.3" in q_text_flat:
+                question_dict["image"] = "CAP697_Table-2-2-3.jpg"
 
             valid_questions.append(question_dict)
 
