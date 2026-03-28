@@ -1825,7 +1825,8 @@
         "bod C",
         "bod D"
       ],
-      "correctIndex": 1
+      "correctIndex": 1,
+      "image": "HPL-002.jpg"
     },
     {
       "id": "2-56",
@@ -4438,7 +4439,8 @@
         "142 in",
         "147.5 in"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-052e.jpg"
     },
     {
       "id": "7-27",
@@ -4498,7 +4500,8 @@
         "0.401 m",
         "0.403 m"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-053e.jpg"
     },
     {
       "id": "7-32",
@@ -4912,7 +4915,8 @@
         "96 kt. 19.1 l/h",
         "110 kt. 25.1 l/h"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-012.jpg"
     },
     {
       "id": "7-67",
@@ -4950,7 +4954,8 @@
         "110 kt",
         "120 kt"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-023.jpg"
     },
     {
       "id": "7-70",
@@ -5137,7 +5142,8 @@
         "okruhy podle pravidel letu za vidu",
         "přeshraniční let"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-051a.jpg"
     },
     {
       "id": "7-85",
@@ -5318,7 +5324,8 @@
         "C",
         "D"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-061.jpg"
     },
     {
       "id": "7-100",
@@ -5330,7 +5337,8 @@
         "C",
         "D"
       ],
-      "correctIndex": 0
+      "correctIndex": 0,
+      "image": "PFP-062.jpg"
     },
     {
       "id": "7-101",
@@ -5342,7 +5350,8 @@
         "C",
         "D"
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "PFP-063.jpg"
     },
     {
       "id": "8-1",
@@ -6946,7 +6955,8 @@
         "21600 NM.",
         "12800 km."
       ],
-      "correctIndex": 2
+      "correctIndex": 2,
+      "image": "NAV-002.jpg"
     },
     {
       "id": "9-7",

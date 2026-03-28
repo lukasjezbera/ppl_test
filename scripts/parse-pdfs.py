@@ -13,7 +13,7 @@ import json
 import re
 import fitz  # PyMuPDF
 
-IMAGE_REF_PATTERN = re.compile(r'\(([A-Z]{2,4}-\d{3})\)')
+IMAGE_REF_PATTERN = re.compile(r'\(?([A-Z]{2,4}-\s*\d{3}[a-z]?)\)?')
 
 # --- Config ---
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -469,9 +469,12 @@ def main():
             }
 
             # Detect image reference in question text
-            image_match = IMAGE_REF_PATTERN.search(q_text)
+            # Normalize whitespace (newlines from page breaks) before matching
+            q_text_flat = re.sub(r'\s+', ' ', q_text)
+            image_match = IMAGE_REF_PATTERN.search(q_text_flat)
             if image_match:
-                question_dict["image"] = image_match.group(1) + ".jpg"
+                ref = image_match.group(1).replace(" ", "")
+                question_dict["image"] = ref + ".jpg"
 
             valid_questions.append(question_dict)
 
