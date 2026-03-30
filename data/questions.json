@@ -3,12 +3,12 @@
     {
       "id": 1,
       "name": "Letecký zákon a postupy ATC – letoun",
-      "questionCount": 95
+      "questionCount": 97
     },
     {
       "id": 2,
       "name": "Lidská výkonnost – letoun",
-      "questionCount": 56
+      "questionCount": 57
     },
     {
       "id": 3,
@@ -18,32 +18,32 @@
     {
       "id": 4,
       "name": "Letové zásady – letoun",
-      "questionCount": 97
+      "questionCount": 99
     },
     {
       "id": 5,
       "name": "Komunikace",
-      "questionCount": 86
+      "questionCount": 87
     },
     {
       "id": 6,
       "name": "Provozní postupy – letoun",
-      "questionCount": 59
+      "questionCount": 60
     },
     {
       "id": 7,
       "name": "Výkonnost a plánování letu – letoun",
-      "questionCount": 99
+      "questionCount": 100
     },
     {
       "id": 8,
       "name": "Obecné znalosti o letadle – letoun",
-      "questionCount": 127
+      "questionCount": 128
     },
     {
       "id": 9,
       "name": "Navigace – letoun",
-      "questionCount": 136
+      "questionCount": 137
     }
   ],
   "questions": [
@@ -176,6 +176,18 @@
         "17 let",
         "18 let",
         "21 let"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "1-12",
+      "categoryId": 1,
+      "question": "Jaké jsou mimo jiné požadavky na získání kvalifikace pro lety VFR v noci?",
+      "options": [
+        "nejméně 10 hodin letu v noci, 3 z nich s instruktorem a nejméně 1 navigační let a 5 sólo vzletů a přistání s\núplným zastavením",
+        "nejméně 5 hodin letu v noci, 3 z nich s instruktorem a nejméně 1 navigační let a 5 sólo vzletů a přistání s\núplným zastavením",
+        "nejméně 5 hodin letu v noci, 4 z nich s instruktorem a 1 hodina navigačního letu a 5 sólo vzletů a přistání s\núplným zastavením",
+        "nejméně 5 hodin letu v noci, 3 z nich s instruktorem a nejméně 1 hodina navigačního letu a 10 sólo vzletů\na přistání s úplným zastavením"
       ],
       "correctIndex": 1
     },
@@ -741,7 +753,7 @@
         "obsah, seznam letišť s příslušnými mapami, přibližovací mapy, mapy pro pojíždění, omezené a nebezpečné\nprostory",
         "omezení přístupu na letištích, kontroly cestujících, požadavky na piloty, vzory průkazů a doby jejich\nplatnosti"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
     },
     {
       "id": "1-60",
@@ -1042,6 +1054,18 @@
         "26 a 26R"
       ],
       "correctIndex": 0
+    },
+    {
+      "id": "1-85",
+      "categoryId": 1,
+      "question": "Co je PAPI (světelná sestupová soustava pro vizuální přiblížení)?",
+      "options": [
+        "Přístrojové zařízení poskytující informace, které pilotovi pomáhají dosáhnout a udržet správné přiblížení k\nletišti",
+        "vizuální zařízení poskytující informace, které pilotovi pomáhají dosáhnout a udržet správnou odletovou\ntrať při odletu z letiště",
+        "vizuální zařízení poskytující informace, které pomáhají řídícímu letového provozu na věži dosáhnout a\nudržet správné přiblížení na letiště",
+        "vizuální zařízení poskytující informace, které pomáhají pilotovi dosáhnout a udržet správnou sestupovou\nrovinu při přiblížení k letišti"
+      ],
+      "correctIndex": 3
     },
     {
       "id": "1-86",
@@ -1562,6 +1586,18 @@
         "letu na zádech"
       ],
       "correctIndex": 0
+    },
+    {
+      "id": "2-33",
+      "categoryId": 2,
+      "question": "Jaký optický klam může být způsoben přiblížením na dráhu se sklonem do kopce?",
+      "options": [
+        "pilot má pocit, že přiblížení je příliš nízké, a proto se k dráze přibližuje nad správným úhlem\nsestupu",
+        "pilot mí pocit, že přiblížení je příliš rychlé, a proto se k dráze přibližuje nižší než normální\npřibližovací rychlostí",
+        "pilot má pocit, že přiblížení je příliš vysoké, a proto se k dráze přibližuje níže než pod správným\núhlem sestupu",
+        "pilot má pocit, že přiblížení je příliš pomalé, a proto se k dráze přibližuje vyšší než normální\npřibližovací rychlostí"
+      ],
+      "correctIndex": 2
     },
     {
       "id": "2-34",
@@ -2745,7 +2781,7 @@
         "v létě slábnoucí vítr, rozpady oblačnosti a narůst teploty, v zimě tvorba vysokých vrstev mlhy",
         "cirus, ztenčující se altostratus a altokumulus, snižující se základna oblačnosti s deštěm,\nnimbostratus"
       ],
-      "correctIndex": 2
+      "correctIndex": 3
     },
     {
       "id": "3-74",
@@ -2757,7 +2793,7 @@
         "v létě slábnoucí vítr, rozpady oblačnosti a nárůst teploty, v zimě tvorba vysokých vrstev mlhy",
         "cirus, ztenčující se altostratus a altokumulus, snižující se základna oblačnosti s deštěm,\nnimbostratus"
       ],
-      "correctIndex": 2
+      "correctIndex": 0
     },
     {
       "id": "3-75",
@@ -3770,6 +3806,18 @@
       "correctIndex": 0
     },
     {
+      "id": "6-30",
+      "categoryId": 6,
+      "question": "Letadlo ihned po vzletu vlétne nečekaně do mikroburstu. Jak se lze vyhnout nechtěnému\nklesání?",
+      "options": [
+        "nastavit maximální výkon, zachovat stávající konfiguraci, udržet optimální rychlost pro\nmaximální stoupavost",
+        "nastavit maximální výkon, zasunout klapky a podvozek, zvětšit podélný sklon až do dosažení\noptimální stoupací rychlosti",
+        "nastavit maximální výkon, zachovat stávající konfiguraci, zvýšit rychlost, aby letadlo opustilo co\nnejdříve oblast mikroburstu",
+        "nastavit maximální výkon, zasunout podvozek a klapky, zvýšit rychlost, levou nebo pravou\nzatáčkou uniknout z oblasti mikroburstu"
+      ],
+      "correctIndex": 0
+    },
+    {
       "id": "6-31",
       "categoryId": 6,
       "question": "Turbulence v úplavu při vzletu vznikne, jakmile letoun:",
@@ -4223,7 +4271,7 @@
         "celkovou hmotnost letadla připraveného pro určitý druh provozu včetně požadovaného paliva a\nposádky, ale bez provozního zatížení",
         "celkovou hmotnost letadla připraveného pro určitý druh provozu včetně posádky, navigačních\npřístrojů a krytu motorů"
       ],
-      "correctIndex": 2
+      "correctIndex": 0
     },
     {
       "id": "7-9",
@@ -4556,6 +4604,18 @@
       "image": "PFP-007.jpg"
     },
     {
+      "id": "7-37",
+      "categoryId": 7,
+      "question": "Jaký vliv má nastavení vztlakových klapek na výkonnost letadla při vzletu?",
+      "options": [
+        "větší výchylka klapek zkracuje rozjezd po zemi, snižuje rychlost odpoutání, ale zhoršuje\nvýkonnost při stoupání",
+        "větší výchylka klapek zkracuje rozjezd po zemi, snižuje rychlost odpoutání a zvyšuje výkonnost\npři stoupání",
+        "větší výchylka klapek zkracuje rozjezd po zemi, zvyšuje rychlost odpoutání a výkonnost při\nstoupání",
+        "větší výchylka klapek prodlužuje rozjezd po zemi, zvyšuje rychlost odpoutání a výkonnost při\nstoupání"
+      ],
+      "correctIndex": 0
+    },
+    {
       "id": "7-38",
       "categoryId": 7,
       "question": "Jaký vliv na výkonnost při vzletu má vítr?",
@@ -4601,7 +4661,7 @@
         "let do oblastí srážek je zakázán",
         "let do známých podmínek námrazy je zakázán a vstoupí-li do takových podmínek letadlo\nneúmyslně, lze v nich pokračovat, dokud existují podmínky pro let za vidu"
       ],
-      "correctIndex": 2
+      "correctIndex": 0
     },
     {
       "id": "7-42",
@@ -5006,7 +5066,7 @@
         "největší nadmořská výška terénu v oblasti pokrývající 30 minut zeměpisné šířky a délky",
         "největší nadmořská výška terénu pokrývající oblast 1 stupně zeměpisné šířky a délky plus\nbezpečnostní rezerva zaokrouhlená na nejbližších nižších 100 ft"
       ],
-      "correctIndex": 2
+      "correctIndex": 0
     },
     {
       "id": "7-74",
@@ -5304,7 +5364,7 @@
         "po přistání zbyde 5.0 US galonů plus palivo pro let na náhradní letiště a konečná záloha paliva",
         "po přistání zbyde celkem 40.0 US galonů paliva"
       ],
-      "correctIndex": 2
+      "correctIndex": 0
     },
     {
       "id": "7-98",
@@ -5316,7 +5376,7 @@
         "po přistání zbyde 30.0 US galonů plus palivo pro let na náhradní letiště a konečná záloha paliva",
         "po přistání zbyde celkem 10.0 US galonů paliva"
       ],
-      "correctIndex": 2
+      "correctIndex": 0
     },
     {
       "id": "7-99",
@@ -5744,7 +5804,7 @@
         "je nastavena na zemi pro opravu režimů letu, které by nešly jinak vyvážit kvůli poloze těžiště",
         "používá se pro optimalizaci vlastností letadla při manipulaci s letadlem na zemi"
       ],
-      "correctIndex": 2
+      "correctIndex": 0
     },
     {
       "id": "8-33",
@@ -6227,7 +6287,7 @@
         "pokud pilot nemá za letu k dispozici ukazatel stavu paliva, musí kontrolovat stav paliva před\nzahájením letu a přepočítávat zbytek paliva na palubě za letu v pravidelných intervalech",
         "selže-li ukazatel stavu paliva, pilot musí přistát na nejbližším vhodném letišti"
       ],
-      "correctIndex": 3
+      "correctIndex": 0
     },
     {
       "id": "8-73",
@@ -6239,7 +6299,7 @@
         "rychloměr, variometr, výškoměr, směrový setrvačník, zatáčkoměr, tlakoměr oleje, tlakoměr\npaliva",
         "rychloměr, variometr, výškoměr, magnetický kompas, tlakoměr oleje, tlakoměr paliva"
       ],
-      "correctIndex": 3
+      "correctIndex": 0
     },
     {
       "id": "8-74",
@@ -6299,7 +6359,7 @@
         "opravit indikaci výškoměru o systémové chyby",
         "nastavit referenční hladinu pro dekodér výšky odpovídače sekundárního radaru"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
     },
     {
       "id": "8-79",
@@ -6514,6 +6574,18 @@
         "rozsah rychlostí v klidném vzduchu",
         "rozsah rychlostí v turbulenci",
         "rozsah rychlostí, které nesmějí být překročeny"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "8-97",
+      "categoryId": 8,
+      "question": "Co znamená červená čára na rychloměru?",
+      "options": [
+        "rychlost, která nesmí být překročena za žádných okolností",
+        "rychlost, která nesmí být překročena v turbulentním vzduchu",
+        "rychlost, která nesmí být překročena s vysunutými vztlakovými klapkami",
+        "rychlost, která nesmí být překročena v zatáčkách s náklonem větším než 45°"
       ],
       "correctIndex": 0
     },
@@ -7394,6 +7466,18 @@
         "rychloměru"
       ],
       "correctIndex": 2
+    },
+    {
+      "id": "9-43",
+      "categoryId": 9,
+      "question": "Jaké jsou vlastnosti mapy s Mercatorovým zobrazením?",
+      "options": [
+        "měřítko se zvětšuje se zeměpisnou šířkou, velké kružnice jsou zobrazeny jako křivky, loxodromy\njsou zobrazeny jako přímky",
+        "měřítko se zvětšuje se zeměpisnou šířkou, velké kružnice jsou zobrazeny jako přímky,\nloxodromy jsou zobrazeny jako křivky",
+        "měřítko je konstantní, velké kružnice jsou zobrazeny jako křivky, loxodromy jsou zobrazeny jako\npřímky",
+        "měřítko je konstantní, velké kružnice jsou zobrazeny jako přímky, loxodromy jsou zobrazeny\njako křivky"
+      ],
+      "correctIndex": 0
     },
     {
       "id": "9-44",
@@ -9419,7 +9503,7 @@
         "je třeba pokračovat v letu nad 5000 ft a podle pravidel VFR nebo tento prostor opustit po standardních\ntratích",
         "je třeba pokračovat v letu podle posledního povolení a podle pravidel VFR nebo tento prostor opustit po\nstandardních tratích"
       ],
-      "correctIndex": 1
+      "correctIndex": 0
     },
     {
       "id": "5-75",
@@ -9467,7 +9551,7 @@
         "informace týkající se bezpečnosti letadla, plavidla, vozidla nebo osoby v dohledu",
         "informace týkající se personálu na odbavovací ploše znamenajícího bezprostřední nebezpečí pro\npřistávající letadla"
       ],
-      "correctIndex": 2
+      "correctIndex": 1
     },
     {
       "id": "5-79",
@@ -9480,6 +9564,18 @@
         "frekvence radaru"
       ],
       "correctIndex": 1
+    },
+    {
+      "id": "5-80",
+      "categoryId": 5,
+      "question": "Jaký druh informace má být obsažen v pilnostní zprávě?",
+      "options": [
+        "zamýšlená trať, důležité informace pro podporu, úmysl pilota, letiště odletu, cílové letiště, kurz a\nnadmořská výška",
+        "povaha problému nebo pozorování, důležité informace pro podporu, letiště odletu, informace o poloze,\nkurz a nadmořská výška",
+        "zamýšlená trať, informace důležité pro podporu, úmysl pilota, informace o poloze, letiště odletu, kurz a\nnadmořská výška",
+        "povaha problému nebo pozorování, důležité informace pro podporu, úmysl pilota, informace o poloze,\nkurz a nadmořská výška"
+      ],
+      "correctIndex": 3
     },
     {
       "id": "5-81",
@@ -10735,6 +10831,30 @@
         "vztlak vytvářený víry na konci křídel",
         "profilový odpor vytvářený víry na konci křídel",
         "laminární proudění vytvářené víry na konci křídel"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "4-99",
+      "categoryId": 4,
+      "question": "Jaký účinek má přízemní efekt?",
+      "options": [
+        "nárůst vztlaku a pokles indukovaného odporu v blízkosti země",
+        "pokles vztlaku a pokles indukovaného odporu v blízkosti země",
+        "nárůst vztlaku a nárůst indukovaného odporu v blízkosti země",
+        "pokles vztlaku a nárůst indukovaného odporu v blízkosti země"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "4-100",
+      "categoryId": 4,
+      "question": "Jaký je rozdíl mezi vývrtkou a spirálou?",
+      "options": [
+        "vývrtka: odtržení proudu na vnitřním křídle, rychlost konstantní – spirála: není odtržení proudu,\nrychlost rychle narůstá",
+        "vývrtka: odtržení proudu na vnějším křídle, rychlost konstantní – spirála: odtržení není, rychlost\nrychle narůstá",
+        "vývrtka: odtržení proudu na vnitřním křídle, rychlost rychle narůstá – spirála: odtržení není,\nrychlost konstantní",
+        "vývrtka: odtržení proudu na vnějším křídle, rychlost rychle narůstá – spirála: odtržení není,\nrychlost konstantní"
       ],
       "correctIndex": 0
     }

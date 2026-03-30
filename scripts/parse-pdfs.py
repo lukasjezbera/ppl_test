@@ -251,6 +251,7 @@ def parse_pdf(filepath):
                         "question_lines": [],
                         "options": [],
                         "option_y_positions": [],
+                        "checkbox_y_positions": [],
                         "page": page_num,
                         "state": "question",
                     }
@@ -265,6 +266,7 @@ def parse_pdf(filepath):
                         "question_lines": [q_text] if q_text else [],
                         "options": [],
                         "option_y_positions": [],
+                        "checkbox_y_positions": [],
                         "page": page_num,
                         "state": "question",
                     }
@@ -292,6 +294,7 @@ def parse_pdf(filepath):
                         "question_lines": [q_text] if q_text else [],
                         "options": [],
                         "option_y_positions": [],
+                        "checkbox_y_positions": [],
                         "page": page_num,
                         "state": "question",
                     }
@@ -305,6 +308,7 @@ def parse_pdf(filepath):
                         "question_lines": [text],
                         "options": [],
                         "option_y_positions": [],
+                        "checkbox_y_positions": [],
                         "page": page_num,
                         "state": "question",
                     }
@@ -338,12 +342,14 @@ def parse_pdf(filepath):
                     current_q["options"].append(text)
                     current_q["option_y_positions"].append(line["y0"])
                     if nearest_cb is not None and nearest_dist < 15:
+                        current_q["checkbox_y_positions"].append(nearest_cb)
                         claimed_checkboxes.add(nearest_cb)
                 elif current_q["state"] == "options":
                     if is_new_option:
                         # New option — claim the checkbox
                         current_q["options"].append(text)
                         current_q["option_y_positions"].append(line["y0"])
+                        current_q["checkbox_y_positions"].append(nearest_cb)
                         claimed_checkboxes.add(nearest_cb)
                     elif current_q["options"]:
                         # Continuation of previous option
@@ -353,11 +359,14 @@ def parse_pdf(filepath):
             all_questions.append(current_q)
 
         # Detect correct answers for this page's questions
+        # Prefer checkbox glyph y-positions over text y-positions for accuracy
         for q in all_questions:
             if q["page"] == page_num and q.get("correct_index") is None:
-                if q["option_y_positions"]:
+                cb_ys = q.get("checkbox_y_positions", [])
+                y_positions = cb_ys if len(cb_ys) == len(q["options"]) else q["option_y_positions"]
+                if y_positions:
                     q["correct_index"] = find_correct_answer(
-                        pixmap, answer_x0, q["option_y_positions"]
+                        pixmap, answer_x0, y_positions
                     )
 
     doc.close()
