@@ -73,20 +73,24 @@ def count_dark_pixels(pixmap, text_x0, y_top):
 
 
 def find_correct_by_checkboxes(pixmap, text_x0, checkbox_ys):
-    """Find correct answer using checkbox glyph y-positions (not text y-positions)."""
+    """Find correct answer using checkbox glyph y-positions (not text y-positions).
+    Returns (index, confidence, counts) where confidence is max/second_max ratio."""
     if not checkbox_ys:
-        return None
+        return None, 0.0, []
     counts = []
     for y_pos in checkbox_ys:
         dark, total = count_dark_pixels(pixmap, text_x0, y_pos)
         counts.append(dark)
     if not counts:
-        return None
+        return None, 0.0, counts
     max_dark = max(counts)
     min_dark = min(counts)
     if max_dark > min_dark * 1.10 and max_dark > 0:
-        return counts.index(max_dark)
-    return None
+        sorted_counts = sorted(counts, reverse=True)
+        second = sorted_counts[1] if len(sorted_counts) > 1 else 0
+        confidence = (max_dark - second) / second * 100 if second > 0 else 999.0
+        return counts.index(max_dark), confidence, counts
+    return None, 0.0, counts
 
 
 def extract_questions_from_pdf(filepath):
@@ -172,10 +176,12 @@ def extract_questions_from_pdf(filepath):
 
             if q_match and line["bold"] and line["x0"] < q_x_max:
                 if current_q and current_q["checkbox_ys"]:
-                    correct = find_correct_by_checkboxes(
+                    correct, conf, counts = find_correct_by_checkboxes(
                         pixmap, answer_x0, current_q["checkbox_ys"]
                     )
                     current_q["detected_correct"] = correct
+                    current_q["confidence"] = conf
+                    current_q["pixel_counts"] = counts
                     questions.append(current_q)
 
                 q_num = int(q_match.group(1))
@@ -186,6 +192,8 @@ def extract_questions_from_pdf(filepath):
                     "checkbox_ys": [],
                     "option_count": 0,
                     "detected_correct": None,
+                    "confidence": 0.0,
+                    "pixel_counts": [],
                 }
                 claimed_checkboxes = set()
 
@@ -212,10 +220,12 @@ def extract_questions_from_pdf(filepath):
 
         # Don't forget last question on page
         if current_q and current_q["checkbox_ys"]:
-            correct = find_correct_by_checkboxes(
+            correct, conf, counts = find_correct_by_checkboxes(
                 pixmap, answer_x0, current_q["checkbox_ys"]
             )
             current_q["detected_correct"] = correct
+            current_q["confidence"] = conf
+            current_q["pixel_counts"] = counts
             questions.append(current_q)
 
     doc.close()
@@ -236,8 +246,12 @@ def main():
 
     pdf_files = sorted([f for f in os.listdir(pdf_dir) if f.endswith(".pdf")])
     total_checked = 0
+    validated_ids = set()
     mismatches = []
     undetected = []
+    low_confidence = []
+
+    CONFIDENCE_THRESHOLD = 20.0  # % difference — below this is "tight"
 
     for pdf_file in pdf_files:
         filepath = os.path.join(pdf_dir, pdf_file)
@@ -254,14 +268,18 @@ def main():
                 continue
 
             total_checked += 1
+            validated_ids.add(qid)
             json_correct = json_lookup[qid]
             pdf_correct = pq["detected_correct"]
+            confidence = pq.get("confidence", 0.0)
+            pixel_counts = pq.get("pixel_counts", [])
 
             if pdf_correct is None:
                 undetected.append({
                     "id": qid,
                     "text": pq["text"][:60],
                     "json_correct": json_correct,
+                    "pixel_counts": pixel_counts,
                 })
             elif pdf_correct != json_correct:
                 mismatches.append({
@@ -269,6 +287,16 @@ def main():
                     "text": pq["text"][:60],
                     "json_correct": json_correct,
                     "pdf_correct": pdf_correct,
+                    "confidence": confidence,
+                    "pixel_counts": pixel_counts,
+                })
+            elif confidence < CONFIDENCE_THRESHOLD:
+                low_confidence.append({
+                    "id": qid,
+                    "text": pq["text"][:60],
+                    "correct": pdf_correct,
+                    "confidence": confidence,
+                    "pixel_counts": pixel_counts,
                 })
 
     print(f"\n{'='*70}")
@@ -295,6 +323,33 @@ def main():
 
     if not mismatches and not undetected:
         print("\nAll answers match! ✓")
+
+    low_confidence.sort(key=lambda x: x["confidence"])
+    if low_confidence:
+        print(f"\n{'='*70}")
+        print(f"LOW CONFIDENCE ({len(low_confidence)} questions with <{CONFIDENCE_THRESHOLD}% pixel margin):")
+        print(f"{'='*70}")
+        print(f"  {'ID':>6}  {'Conf':>6}  {'Ans':>3}  {'Pixels (A, B, C, D)':>30}  Question")
+        print(f"  {'─'*6}  {'─'*6}  {'─'*3}  {'─'*30}  {'─'*40}")
+        for lc in low_confidence:
+            letter = chr(65 + lc["correct"])
+            counts_str = ", ".join(str(c) for c in lc["pixel_counts"])
+            print(f"  {lc['id']:>6}  {lc['confidence']:5.1f}%  {letter:>3}  {counts_str:>30}  {lc['text']}")
+    else:
+        print(f"\nNo low-confidence detections (all above {CONFIDENCE_THRESHOLD}% margin) ✓")
+
+    not_validated = sorted(
+        [qid for qid in json_lookup if qid not in validated_ids],
+        key=lambda x: (int(x.split("-")[0]), int(x.split("-")[1])),
+    )
+    if not_validated:
+        print(f"\n{'='*70}")
+        print(f"NOT VALIDATED ({len(not_validated)} questions not found by validator in PDF):")
+        print(f"{'='*70}")
+        for qid in not_validated:
+            q = next((q for q in json_data["questions"] if q["id"] == qid), None)
+            text = q["question"][:60].replace("\n", " ") if q else "?"
+            print(f"  {qid:>6}  JSON={chr(65+json_lookup[qid])}({json_lookup[qid]})  {text}")
 
     return len(mismatches)
 
