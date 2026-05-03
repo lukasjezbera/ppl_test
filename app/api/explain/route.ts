@@ -16,15 +16,23 @@ interface HistoryMessage {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { question, options, correctIndex, selectedIndex, image, history } =
-      body as {
-        question: string;
-        options: string[];
-        correctIndex: number;
-        selectedIndex: number;
-        image?: string;
-        history?: HistoryMessage[];
-      };
+    const {
+      question,
+      options,
+      correctIndex,
+      selectedIndex,
+      image,
+      history,
+      priorExplanation,
+    } = body as {
+      question: string;
+      options: string[];
+      correctIndex: number;
+      selectedIndex: number;
+      image?: string;
+      history?: HistoryMessage[];
+      priorExplanation?: string;
+    };
 
     if (
       !question ||
@@ -47,9 +55,14 @@ export async function POST(request: NextRequest) {
       )
       .join("\n");
 
-    const contextText = isCorrect
+    const baseContext = isCorrect
       ? `Otázka: ${question}\n\nMožnosti:\n${optionsText}\n\nStudent odpověděl správně (${String.fromCharCode(65 + correctIndex)}). Vysvětli proč je to správně.`
       : `Otázka: ${question}\n\nMožnosti:\n${optionsText}\n\nStudent zvolil ${String.fromCharCode(65 + selectedIndex)}, ale správná odpověď je ${String.fromCharCode(65 + correctIndex)}. Vysvětli proč je správná odpověď správná a proč studentova volba není správná.`;
+
+    const contextText =
+      priorExplanation && priorExplanation.trim()
+        ? `${baseContext}\n\nPředem připravené vysvětlení (zdroj PDF): ${priorExplanation.trim()}\n\nNa toto vysvětlení navaž — student na něj nyní reaguje.`
+        : baseContext;
 
     // Load image if available
     let imageBlock: Anthropic.ImageBlockParam | null = null;

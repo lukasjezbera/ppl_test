@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 interface ChatMessage {
   role: "user" | "assistant";
   content: string;
+  source?: "pdf";
 }
 
 interface ExplanationChatProps {
@@ -14,6 +15,7 @@ interface ExplanationChatProps {
   correctIndex: number;
   selectedIndex: number;
   image?: string;
+  prebuiltExplanation?: string;
 }
 
 export default function ExplanationChat({
@@ -22,11 +24,24 @@ export default function ExplanationChat({
   correctIndex,
   selectedIndex,
   image,
+  prebuiltExplanation,
 }: ExplanationChatProps) {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const hasPrebuilt = !!(prebuiltExplanation && prebuiltExplanation.trim());
+
+  const [messages, setMessages] = useState<ChatMessage[]>(
+    hasPrebuilt
+      ? [
+          {
+            role: "assistant",
+            content: prebuiltExplanation!.trim(),
+            source: "pdf",
+          },
+        ]
+      : []
+  );
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
-  const [initialLoaded, setInitialLoaded] = useState(false);
+  const [initialLoaded, setInitialLoaded] = useState(hasPrebuilt);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
@@ -40,6 +55,8 @@ export default function ExplanationChat({
   async function fetchExplanation(history: ChatMessage[]) {
     setLoading(true);
     try {
+      // Strip our internal `source` flag before sending to API
+      const cleanHistory = history.map(({ role, content }) => ({ role, content }));
       const res = await fetch("/api/explain", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -49,7 +66,8 @@ export default function ExplanationChat({
           correctIndex,
           selectedIndex,
           image,
-          history: history.length > 0 ? history : undefined,
+          history: cleanHistory.length > 0 ? cleanHistory : undefined,
+          priorExplanation: hasPrebuilt ? prebuiltExplanation : undefined,
         }),
       });
       const data = await res.json();
@@ -65,7 +83,7 @@ export default function ExplanationChat({
     }
   }
 
-  // Initial explanation
+  // Initial explanation — skip API call if PDF explanation is prebuilt
   useEffect(() => {
     if (!initialLoaded) {
       setInitialLoaded(true);
@@ -98,8 +116,13 @@ export default function ExplanationChat({
         {messages.map((msg, i) => (
           <div
             key={i}
-            className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
+            className={`flex flex-col ${msg.role === "user" ? "items-end" : "items-start"}`}
           >
+            {msg.source === "pdf" && (
+              <span className="mb-1 inline-block px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider rounded bg-orange-500/20 text-orange-300 border border-orange-500/30">
+                Z PDF
+              </span>
+            )}
             <div
               className={`max-w-[85%] rounded-xl px-4 py-2.5 text-sm leading-relaxed ${
                 msg.role === "user"

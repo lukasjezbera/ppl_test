@@ -3,47 +3,47 @@
     {
       "id": 1,
       "name": "Letecký zákon a postupy ATC – letoun",
-      "questionCount": 97
+      "questionCount": 122
     },
     {
       "id": 2,
       "name": "Lidská výkonnost – letoun",
-      "questionCount": 57
+      "questionCount": 75
     },
     {
       "id": 3,
       "name": "Meteorologie – letoun",
-      "questionCount": 129
+      "questionCount": 156
     },
     {
       "id": 4,
       "name": "Letové zásady – letoun",
-      "questionCount": 99
+      "questionCount": 124
     },
     {
       "id": 5,
       "name": "Komunikace",
-      "questionCount": 87
+      "questionCount": 108
     },
     {
       "id": 6,
       "name": "Provozní postupy – letoun",
-      "questionCount": 60
+      "questionCount": 81
     },
     {
       "id": 7,
       "name": "Výkonnost a plánování letu – letoun",
-      "questionCount": 100
+      "questionCount": 125
     },
     {
       "id": 8,
       "name": "Obecné znalosti o letadle – letoun",
-      "questionCount": 128
+      "questionCount": 154
     },
     {
       "id": 9,
       "name": "Navigace – letoun",
-      "questionCount": 137
+      "questionCount": 163
     }
   ],
   "questions": [
@@ -10857,6 +10857,3002 @@
         "vývrtka: odtržení proudu na vnějším křídle, rychlost rychle narůstá – spirála: odtržení není,\nrychlost konstantní"
       ],
       "correctIndex": 0
+    },
+    {
+      "id": "1-S1",
+      "categoryId": 1,
+      "question": "Pilot letí VFR v řízeném vzdušném prostoru třídy D. Jaké jsou minimální podmínky pro let?",
+      "options": [
+        "Dohlednost 3 km, vzdálenost od oblačnosti 1000 ft vertikálně, 1500 m horizontálně",
+        "Dohlednost 5 km, vzdálenost od oblačnosti 1000 ft vertikálně, 1500 m horizontálně",
+        "Dohlednost 8 km, vzdálenost od oblačnosti 1000 ft vertikálně, 1500 m horizontálně",
+        "Dohlednost 5 km, let zcela za VMC bez oblačnosti na dohled"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Ve třídě D platí VFR minima: dohlednost 5 km a vzdálenost od oblačnosti 1000 ft vertikálně a 1500 m horizontálně. Klíčový rozdíl oproti třídě G pod 1000 ft (kde stačí 1500 m a clear of cloud) je právě vyšší požadavek na dohlednost a konkrétní rozestup od oblačnosti."
+    },
+    {
+      "id": "1-S2",
+      "categoryId": 1,
+      "question": "Setkají-li se dvě letadla přibližně čelně (nebo téměř čelně), každý pilot musí zatočit:",
+      "options": [
+        "doprava",
+        "doleva",
+        "nahoru",
+        "záleží na tom, které letadlo letí výše"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Pravidla létání (ICAO Annex 2 / Part SERA) stanovují, že při čelném setkání každý pilot zatáčí doprava. Analogie s provozem na silnici – vyhýbáme se vpravo."
+    },
+    {
+      "id": "1-S3",
+      "categoryId": 1,
+      "question": "Jaký kód squawk musí pilot nastavit na transpondéru při ztrátě radiospojení?",
+      "options": [
+        "7700",
+        "7600",
+        "7500",
+        "2000"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "7600 = ztráta radiospojení (RADIO FAILURE). 7700 = nouzová situace (MAYDAY). 7500 = protiprávní čin (únos). 2000 = vstup do řízeného prostoru bez přidělení kódu."
+    },
+    {
+      "id": "1-S4",
+      "categoryId": 1,
+      "question": "Na které výšce nad překážkou musí pilot VFR letu udržovat minimální výšku při přeletu hustě osídlené oblasti?",
+      "options": [
+        "150 m (500 ft) nad nejvyšší překážkou v okruhu 150 m",
+        "300 m (1000 ft) nad nejvyšší překážkou v okruhu 600 m",
+        "500 m (1500 ft) nad nejvyšší překážkou v okruhu 600 m",
+        "150 m (500 ft) nad terénem"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Nad hustě osídlenými oblastmi platí minimální výška 1000 ft (300 m) nad nejvyšší překážkou nebo terénem v okruhu 600 m od letadla. Jde o bezpečnostní pásmo umožňující nouzové přistání."
+    },
+    {
+      "id": "1-S5",
+      "categoryId": 1,
+      "question": "Jaká jsou oprávnění pilota s průkazem PPL (A) z hlediska přepravy cestujících za úplatu?",
+      "options": [
+        "Pilot s PPL smí přepravovat cestující za úplatu na neobchodních letech",
+        "Pilot s PPL nesmí provádět lety za úplatu ani příspěvkové lety",
+        "Pilot s PPL smí sdílet skutečné náklady letu s až třemi pasažéry",
+        "Pilot s PPL smí přijímat příspěvek na palivo od pasažérů bez omezení"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "PPL opravňuje sdílet přímé letové náklady (palivo, letištní poplatky, pronájem) s nejvýše třemi spolucestujícími – přičemž pilot platí alespoň stejný podíl jako každý z nich. Nelze přijímat platby za přepravu jako takovou."
+    },
+    {
+      "id": "1-S6",
+      "categoryId": 1,
+      "question": "Kdy musí pilot podat letový plán (FPL)?",
+      "options": [
+        "Vždy, bez výjimky",
+        "Pouze při letech mimo ČR",
+        "Při letu přes státní hranici, při letu v řízeném prostoru vyžadujícím FPL nebo při aktivaci SAR",
+        "Pouze při přístrojovém letu (IFR)"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "FPL je povinný při přeshraničních letech, pro lety v prostorech, kde je to předepsáno (některé TMA, CTA), nebo pokud pilot chce mít zajištěn SAR. Pro čistě vnitrostátní VFR let v nekontrolovaném prostoru není FPL povinný, ale je doporučen."
+    },
+    {
+      "id": "1-S7",
+      "categoryId": 1,
+      "question": "Jaký je ICAO Annex věnovaný Pravidlům létání?",
+      "options": [
+        "Annex 1",
+        "Annex 2",
+        "Annex 6",
+        "Annex 11"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Annex 2 = Rules of the Air (pravidla létání). Annex 1 = Personnel Licensing. Annex 6 = Operation of Aircraft. Annex 11 = Air Traffic Services."
+    },
+    {
+      "id": "1-S8",
+      "categoryId": 1,
+      "question": "Pilot PPL (A) chce létat v noci. Jaké má podmínky ohledně zkušenosti?",
+      "options": [
+        "Potřebuje IR(A)",
+        "Night VFR je možné bez dalšího oprávnění po dosažení PPL",
+        "Potřebuje night rating (noční kvalifikaci) jako rozšíření PPL",
+        "Pro noční lety stačí LAPL"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Noční VFR lety v Evropě (EASA Part-FCL) vyžadují noční kvalifikaci (night rating) jako příplatek k PPL. Bez ní smí pilot létat pouze za VMC podmínek přes den."
+    },
+    {
+      "id": "1-S9",
+      "categoryId": 1,
+      "question": "Přiblíží-li se k letadlu za letu jiné letadlo zprava ve stejné hladině, kdo dá přednost?",
+      "options": [
+        "Letadlo vlevo dá přednost letadlu vpravo",
+        "Letadlo vpravo dá přednost letadlu vlevo",
+        "Nižší letadlo dá přednost vyššímu",
+        "Pomalejší letadlo dá přednost rychlejšímu"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Pravidlo „pravá strana má přednost\": letadlo, které vidí druhé po své levici, dá přednost. Pilot, jehož konkurent je vpravo, má tedy přednostní právo průletu."
+    },
+    {
+      "id": "1-S10",
+      "categoryId": 1,
+      "question": "Minimální výška pro akrobatické letecké manévry nad hustě osídlenou oblastí je:",
+      "options": [
+        "300 m AGL",
+        "500 m AGL",
+        "1000 m AGL",
+        "akrobatické lety nad hustě osídlenou oblastí jsou zcela zakázány"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Akrobatické lety jsou povoleny minimálně 500 m (přibližně 1500 ft) nad terénem a nad hustě osídlenými oblastmi se k nim přidávají i prostorová omezení. Piloti si musí ověřit platné národní předpisy a AIP."
+    },
+    {
+      "id": "1-S11",
+      "categoryId": 1,
+      "question": "Platnost lékařského osvědčení 2. třídy pro pilota ve věku 50 let je:",
+      "options": [
+        "24 měsíců",
+        "12 měsíců",
+        "60 měsíců",
+        "6 měsíců"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Medical 2. třídy platí 24 měsíců pro piloty do 40 let a 12 měsíců po dovršení 40 let. Pozor – otázka uvádí 50 let → platnost je 12 měsíců. U 40–60 let → 12 měsíců. Ale pozor, zde má otázka 50 let takže správná odpověď je 12 měsíců. Oprava: správná odpověď je B (12 měsíců). Poznámka k záměrné chytáku: Výše uvedená správná odpověď je B) 12 měsíců. Věk 40+ = 12 měsíců."
+    },
+    {
+      "id": "1-S12",
+      "categoryId": 1,
+      "question": "Při letu VFR v CTR jsi navázal obousměrné spojení, ale nedostal jsi explicitní povolení ke vstupu. Co platí?",
+      "options": [
+        "Můžeš vstoupit, protože řídící už o tobě ví",
+        "Můžeš vstoupit, pokud zůstaneš pod okruhem",
+        "Do CTR nesmíš bez příslušného povolení vstoupit",
+        "Můžeš vstoupit, pokud je dohlednost alespoň 5 km"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Navázání spojení samo o sobě nenahrazuje povolení ke vstupu do řízeného prostoru. Pilot musí mít příslušné povolení nebo instrukci, která vstup jednoznačně umožňuje."
+    },
+    {
+      "id": "1-S13",
+      "categoryId": 1,
+      "question": "Který dokument má pilot při letu z hlediska provozní legality povinnost respektovat jako bezprostředně závazný pro daný let?",
+      "options": [
+        "Pouze učebnici z ATO",
+        "Publikované letecké informace a provozní omezení vztahující se k letu",
+        "Soukromý checklist kolegy",
+        "Jen ústní doporučení instruktora"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pravidla provozu vycházejí z platných publikovaných informací, jako jsou AIP, NOTAM a další provozní omezení. Pomůcky z výcviku mohou být užitečné, ale nejsou samy o sobě právním podkladem."
+    },
+    {
+      "id": "1-S14",
+      "categoryId": 1,
+      "question": "Letíš VFR a zjišťuješ, že počasí už neodpovídá minimám pro pokračování v dané třídě vzdušného prostoru. Co je správný postup?",
+      "options": [
+        "Pokračovat, pokud máš letiště na dohled",
+        "Pokračovat jen když je provoz slabý",
+        "Okamžitě jednat tak, aby let byl veden v souladu s minimálními podmínkami nebo bezpečně ukončen",
+        "Ignorovat minima, pokud let trvá už jen několik minut"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Pilot musí vždy zachovat soulad s minimálními meteorologickými podmínkami pro VFR. Pokud to není možné, je nutné zvolit odklon, návrat, přistání nebo jinou bezpečnou variantu."
+    },
+    {
+      "id": "1-S15",
+      "categoryId": 1,
+      "question": "Kdy může velitel letadla odchýlit provedení letu od standardních pravidel nebo postupů?",
+      "options": [
+        "Kdykoli, když má víc zkušenosti než ATC",
+        "Jen když chce ušetřit palivo",
+        "Pouze když je to nezbytné pro bezpečnost letu",
+        "Nikdy, pravidla nepřipouštejí výjimku"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Velitel letadla nese odpovědnost za bezpečnost letu. Pokud je odchylka od postupů nezbytná k odvrácení bezprostředního rizika, může ji provést, ale ne kvůli pohodlí nebo ekonomice."
+    },
+    {
+      "id": "1-S16",
+      "categoryId": 1,
+      "question": "Který z následujících letu by už nebyl považován za běžný soukromý neobchodní PPL let?",
+      "options": [
+        "Let s kamarádem s rozdělením přímých nákladů v povoleném rozsahu",
+        "Let za odměnu, kdy pilot nabízí přepravu veřejnosti",
+        "Vyhlídkový let s instruktorem v rámci výcviku",
+        "Solo navigační let žáka"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "PPL neopravňuje pilota poskytovat komerční leteckou dopravu veřejnosti za odměnu. Sdílení přímých nákladů má striktní pravidla a není totéž co prodej dopravy."
+    },
+    {
+      "id": "1-S17",
+      "categoryId": 1,
+      "question": "Na jakém principu je postavena odpovědnost pilota za seznámení s NOTAM a dalšími omezeními?",
+      "options": [
+        "Stačí, že se o ne starala ATO před rokem",
+        "Pilot je odpovědný za předletovou přípravu vztahující se k danému letu",
+        "Stačí sledovat sociální sítě letiště",
+        "NOTAM jsou povinné jen pro IFR"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Předletová příprava je základní povinnost pilota. Omezení se mohou měnit ze dne na den, proto nestačí spoléhat na starší informace nebo neoficiální zdroje."
+    },
+    {
+      "id": "1-S18",
+      "categoryId": 1,
+      "question": "Kdy je pilot povinen uposlechnout pokyn ATC?",
+      "options": [
+        "Jen když s ním osobně souhlasí",
+        "Vždy, pokud nebyl správně přijat jiným pilotem do spojení",
+        "Vždy, pokud se vztahuje k jeho letu a neohrožuje bezpečnost",
+        "Pouze v CTR, ale ne v TMA"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Pokyn ATC je pro pilota závazný, pokud se ho týká a jeho splnění nevede k bezprostřednímu ohrožení bezpečnosti. V případě nebezpečí má pilot povinnost jednat v zájmu bezpečnosti."
+    },
+    {
+      "id": "1-S19",
+      "categoryId": 1,
+      "question": "Která varianta nejlépe vystihuje smysl minima bezpečné výšky letu nad zastavěnou oblastí?",
+      "options": [
+        "Jde jen o ochranu letadla před turbulencí",
+        "Jde o zachování dostatečné rezervy pro nouzové řešení a omezení rizika pro osoby i majetek",
+        "Jde pouze o omezení hluku",
+        "Platí jen v noci"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Minima bezpečné výšky chrání nejen letadlo, ale i osoby a majetek na zemi. Zároveň dávají pilotovi vyšší šanci řešit poruchu nebo ztrátu výkonu bez okamžitých katastrofálních následků."
+    },
+    {
+      "id": "1-S20",
+      "categoryId": 1,
+      "question": "Máš podezření, že je letadlo mimo platnou dokumentaci nebo nebyla provedena požadovaná údržba. Co je nejsprávnější?",
+      "options": [
+        "Letět, pokud byl poslední let bez problému",
+        "Letět jen za dne a bez pasažérů",
+        "Nepokračovat v letu, dokud není ověřena letová způsobilost a dokumentace",
+        "Ptat se až po přistání"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Pilot nesmí vědomě provozovat letadlo bez ověření jeho způsobilosti a požadovaných dokumentů. Skutečnost, že předchozí let proběhl bez zjevné poruchy, není dostatečná."
+    },
+    {
+      "id": "1-S21",
+      "categoryId": 1,
+      "question": "Který z těchto dokumentů je typickým zdrojem trvalých publikovaných informací o postupech a prostorech?",
+      "options": [
+        "AIP",
+        "Nouzový deník letadla",
+        "Zápisník instruktora",
+        "Soukromá mapa pilota"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "AIP obsahuje trvalé publikované letecké informace, které jsou pro provoz zásadní. Ostatní uvedené zdroje mohou mít provozní užitek, ale nenahrazují oficiální publikaci."
+    },
+    {
+      "id": "1-S22",
+      "categoryId": 1,
+      "question": "Pilot pochybil a omylem vletěl do aktivního omezení. Jaký postup je nejvhodnější?",
+      "options": [
+        "Mlčky pokračovat, aby se situace neeskalovala",
+        "Okamžitě se pokusit navázat spojení, postupovat podle pokynu a situaci řešit transparentně",
+        "Vypnout odpovídač a opustit prostor co nejrychleji",
+        "Klesnout a doufat, že si ho nikdo nevšimne"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při porušení prostoru je nejlepší rychle a otevřeně navázat spolupráci s ATS. Snaha skrývat polohu nebo vypínat vybavení riziko jen zhoršuje."
+    },
+    {
+      "id": "1-S23",
+      "categoryId": 1,
+      "question": "Kdy je možné sdílet přímé náklady letu mezi pilotem a cestujícími v rámci soukromého letu?",
+      "options": [
+        "Když pilot na letu vydělá alespoň malou marži",
+        "Jen v pravidelném komerčním provozu",
+        "V mezích povolených pravidly a bez vytváření obchodní služby veřejnosti",
+        "Nikdy"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Sdílení přímých nákladů má v evropském prostředí výjimku, ale nesmí se z něho stát obchodní letecká doprava. Pilot nesmí let prodávat jako komerční službu."
+    },
+    {
+      "id": "1-S24",
+      "categoryId": 1,
+      "question": "Který výrok o zodpovědnosti velitele letadla je nejpřesnější?",
+      "options": [
+        "Velitel odpovídá jen za pilotaž, ne za rozhodnutí před letem",
+        "Velitel odpovídá za bezpečné provedení letu od přípravy po ukončení",
+        "Odpovědnost přechází na instruktora z posledního výcviku",
+        "Za rozhodnutí odpovídá výhradně provozovatel letadla"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Odpovědnost velitele zahrnuje přípravu, provedení i bezpečné ukončení letu. Nelze ji odsunout na instruktora, školu ani provozovatele, pokud velitel let skutečně vykonává."
+    },
+    {
+      "id": "1-S25",
+      "categoryId": 1,
+      "question": "K čemu slouží publikovaná omezení a postupy pro hlukově citlivé oblasti?",
+      "options": [
+        "Jsou jen doporučení bez provozního významu",
+        "Pomáhají omezit negativní dopady provozu a mohou být provozně závazné",
+        "Platí pouze pro vrtulníky",
+        "Týká se jen IFR"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Protihlukové postupy mohou být součástí provozních pravidel konkrétního letiště nebo prostoru. Pilot by je měl znát a respektovat, pokud se na jeho let vztahují."
+    },
+    {
+      "id": "2-S26",
+      "categoryId": 2,
+      "question": "Pilot pociťuje mravenčení v prstech, závratě a brnění kolem úst. Nejpravděpodobnější příčinou je:",
+      "options": [
+        "hypoxie",
+        "hyperventilace",
+        "otrava oxidem uhelnatým",
+        "prostorová dezorientace"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Brnění v rukou a kolem úst, závratě a pocit ztráty vědomí jsou typické pro hyperventilaci (přespříliš rychlé dýchání → snížení CO₂ v krvi). Hypoxie se naopak projevuje euforií, cyanózou a zhoršeným myšlením. Léčba hyperventilace: zpomalit dýchání nebo dýchat do sáčku."
+    },
+    {
+      "id": "2-S27",
+      "categoryId": 2,
+      "question": "Ve které výšce si průměrný nesezónovaný pilot v nepřetlakované kabině začíná všímat prvních příznaků hypoxie?",
+      "options": [
+        "3000 ft (900 m)",
+        "8000 ft (2400 m)",
+        "10 000 ft (3000 m)",
+        "14 000 ft (4200 m)"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Příznaky hypoxie se typicky začínají projevovat od přibližně 10 000 ft. Pod touto výškou je mozek zásoben kyslíkem dostatečně. Nad ní se snižuje saturace, a pokud pilot nesezónovaný, může ztrácet soudnost dříve, než si problém uvědomí."
+    },
+    {
+      "id": "2-S28",
+      "categoryId": 2,
+      "question": "Pilot se po přistání cítí dezorientovaný a bolí ho hlava. Připojili ho k palivu z jiného tanku. Co je nejpravděpodobnější příčinou?",
+      "options": [
+        "hypoxie z nízkého tlaku",
+        "otrava oxidem uhelnatým",
+        "nemoc z výšky",
+        "hypoglykémie"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Bolest hlavy, únava a dezorientace jsou klasickými příznaky otravy CO. Zdroj může být netěsný výfukový systém – CO se mísí s ohřátým vzduchem přes topení kabiny. CO je bez zápachu a barvy, pilot si otrávenosti nemusí všimnout, dokud není příliš pozdě."
+    },
+    {
+      "id": "2-S29",
+      "categoryId": 2,
+      "question": "Pilot létá nad mořem bez vizuálního horizontu za noci. Jaký je nejčastější nebezpečný jev?",
+      "options": [
+        "tunel vidění",
+        "noční slepota",
+        "prostorová dezorientace – „the leans\"",
+        "černá díra iluze"
+      ],
+      "correctIndex": 3,
+      "supplement": true,
+      "explanation": "„Black hole approach\" (iluze černé díry) nastává při přibližování nad tmavým terénem nebo mořem bez referenčních bodů – pilot má pocit, že je příliš vysoko, a neúmyslně klesá. „The leans\" vzniká jinak – po nepostřehnutém náklonu, přičemž ucho indikuje rovný let a pilot se fyzicky „naklání\" proti správnému směru."
+    },
+    {
+      "id": "2-S30",
+      "categoryId": 2,
+      "question": "Co je tzv. „negativní přenos výcviku\" (negative transfer)?",
+      "options": [
+        "zapomenutí naučeného postupu po dlouhé přestávce",
+        "automatická aplikace dříve naučeného postupu v situaci, kde vede k chybě",
+        "neschopnost přejít z výcviku na simulator k reálnému letu",
+        "stav, kdy pilot přenáší stres z osobního života do kokpitu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Negativní přenos nastává, když se starý (třeba z jiného typu letadla) automatismus aktivuje v nevhodnou chvíli na novém typu – například pilot sahá do jiného místa po podvozkovém páku. Je obzvlášť nebezpečný, protože k chybě dochází bez vědomého rozhodnutí."
+    },
+    {
+      "id": "2-S31",
+      "categoryId": 2,
+      "question": "Jak ovlivňuje únava schopnost pilota řídit riziko?",
+      "options": [
+        "Unavený pilot bývá opatrnější, protože si je vědom svého stavu",
+        "Únava snižuje motivaci, ale zvyšuje pozornost",
+        "Únava zhoršuje úsudek a zvyšuje tendenci podstupovat rizika",
+        "Na výkon pilota má únava vliv pouze při přístrojovém letu"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Výzkumy CRM/HF konzistentně ukazují, že únava degraduje přesně ty kognitivní funkce potřebné pro řízení rizika – plánování, rozhodování, autocorrection. Unavený pilot navíc podceňuje míru vlastní únavy."
+    },
+    {
+      "id": "2-S32",
+      "categoryId": 2,
+      "question": "Jaký je maximální doporučený časový interval mezi konzumací alkoholu a zahájením letu?",
+      "options": [
+        "4 hodiny",
+        "8 hodin",
+        "12 hodin",
+        "24 hodin"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pravidlo „8 hours bottle to throttle\" je minimem stanoveným v mnoha předpisech (včetně EASA). V praxi záleží na množství: zbytky alkoholu v krvi a „hangover\" efekt mohou ovlivňovat výkon i po 12 nebo více hodinách. Předpisy EU/EASA požadují hladinu pod 0,2 ‰."
+    },
+    {
+      "id": "2-S33",
+      "categoryId": 2,
+      "question": "Pilot je po několika dnech špatného spánku. Který efekt je nejpravděpodobnější?",
+      "options": [
+        "Vyšší odolnost vůči stresu",
+        "Zlepšené rozhodování pod tlakem",
+        "Pomalejší zpracování informací a horší pozornost",
+        "Lepší schopnost multitaskingu"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Únava zhoršuje pozornost, pracovní paměť i rychlost rozhodování. Pilot často subjektivně podceňuje, jak moc už je výkonnost snížená."
+    },
+    {
+      "id": "2-S34",
+      "categoryId": 2,
+      "question": "Proč může být hypoxie zvlášť nebezpečná u lehkého pilota?",
+      "options": [
+        "Protože vždy způsobí bolest",
+        "Protože příznaky mohou nastupovat plíživě a pilot je nepozná včas",
+        "Protože postihuje jen instruktory",
+        "Protože se vyskytuje jen v kabinách s přetlakem"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Nebezpečí hypoxie je v tom, že pilot může ztrácet soudnost a přitom mít pocit, že je vše v pořádku. Proto je třeba sledovat prostředí a vlastní stav dříve, než se rozvine zjevná porucha."
+    },
+    {
+      "id": "2-S35",
+      "categoryId": 2,
+      "question": "Který přístup nejlépe omezuje riziko ztráty situačního povědomí v kokpitu?",
+      "options": [
+        "Soustředit se dlouho jen na jeden přístroj",
+        "Průběžně skenovat, prioritizovat a kontrolovat trend situace",
+        "Ignorovat vedlejší úkoly do úplného uklidnění",
+        "Spoléhat se na to, že ATC řekne vše podstatné"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Situační povědomí se udržuje aktivním sledováním letadla, okolí, času a plánu. Úzké upnutí pozornosti na jednu věc vede snadno ke ztrátě obrazu o celku."
+    },
+    {
+      "id": "2-S36",
+      "categoryId": 2,
+      "question": "Který výrok o stresu je nejpřesnější?",
+      "options": [
+        "Každý stres je nutné škodlivý",
+        "Míra stresu může krátkodobě výkon zlepšit, ale při nadměrné zátěži prudce klesá",
+        "Stres ovlivňuje jen začátečníky",
+        "Stres nemá na rozhodování vliv"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Mírná aktivace může výkon krátce podpořit, ale při přetížení dochází k tunelovému vidění, chybám a zhoršení rozhodování. Pilot musí poznat hranici, kdy už zátěž překročila bezpečnou úroveň."
+    },
+    {
+      "id": "2-S37",
+      "categoryId": 2,
+      "question": "Proč je alkohol problém i dlouho po jeho požití?",
+      "options": [
+        "Jen kvůli právnímu postihu",
+        "Protože může přetrvávat snížená výkonnost, horší soudnost a zbytkové účinky",
+        "Protože zhoršuje jen sluch",
+        "Protože nemá žádný vliv, pokud pilot dobře spi"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Riziko nejsou jen okamžité účinky, ale i následná únava, dehydratace a zhoršení kognitivních funkcí. Pilot může být formálně bez příznaků opilosti, ale stále není fit to fly."
+    },
+    {
+      "id": "2-S38",
+      "categoryId": 2,
+      "question": "Která situace nejvíce zvyšuje pravděpodobnost chyby z potvrzovacího zkreslení?",
+      "options": [
+        "Pilot aktivně hleda důkazy proti svému odhadu",
+        "Pilot si vytvoří závěr a pak vnímá hlavně informace, které mu vyhovují",
+        "Pilot kontroluje alternativy s instruktorem",
+        "Pilot použije checklist"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Potvrzovací zkreslení vede k tomu, že si člověk vybírá jen informace potvrzující původní názor. V letectví je nebezpečné třeba při hodnocení počasí nebo technické závady."
+    },
+    {
+      "id": "2-S39",
+      "categoryId": 2,
+      "question": "Jak nejlépe snížit riziko chyby z přehlcení úkoly?",
+      "options": [
+        "Přidat si další úkoly, aby se pilot rozjel",
+        "Prioritizovat aviate navigate communicate a odkládat nepodstatné činnosti",
+        "Současně řešit vše naráz",
+        "Ignorovat komunikaci"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Vysoke pracovní zatížení se zvládá tím, že se úkoly seřadí podle dopadu na bezpečnost. Základní poradi je udržet letadlo pod kontrolou, orientovat se a teprve pak řešit ostatní."
+    },
+    {
+      "id": "2-S40",
+      "categoryId": 2,
+      "question": "Co je typickým rizikem euforie po rychlém zlepšení počasí nebo po úspěšném vyřešení problému?",
+      "options": [
+        "Pilot začne být přesný a opatrný",
+        "Pilot může polevit v disciplíně a přehlédnout další hrozbu",
+        "Zlepší se noční vidění",
+        "Nic, po zlepšení je let automaticky bezpečný"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Po odeznění napětí hrozí, že pilot povolí pozornost právě ve chvíli, kdy je třeba znovu systematicky zhodnotit situaci. Úleva není zárukou, že všechna rizika zmizela."
+    },
+    {
+      "id": "2-S41",
+      "categoryId": 2,
+      "question": "Proč jsou fixace a tunelové vidění v kokpitu nebezpečné?",
+      "options": [
+        "Protože zlepšují práci s jedním systémem",
+        "Protože omezují vnímání ostatních důležitých informací",
+        "Protože se tykaji jen IFR",
+        "Protože se objevují jen v noci"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Fixace na jednu činnost vede k opomenutí dalších podstatnych signálů, jako je výška, rychlost, provoz nebo prostor. To je časté při řešení drobné technické závady v nevhodný okamžik."
+    },
+    {
+      "id": "2-S42",
+      "categoryId": 2,
+      "question": "Který přístup k vlastní způsobilosti před letem je nejbezpečnější?",
+      "options": [
+        "Když jsem už na letišti, je skoda neletět",
+        "Sebehodnocení podle fit-to-fly principu a ochota let odložit",
+        "Letět a rozhodnout až po vzletu",
+        "Spoléhat na to, že pasažér řekne, zda vypadám unaveně"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Sebehodnocení před letem je součást profesionální disciplíny i u rekreačního pilota. Důležitá je ochota let zrušit, pokud je fyzicky nebo psychicky stav pochybný."
+    },
+    {
+      "id": "2-S43",
+      "categoryId": 2,
+      "question": "Jaký vliv má dehydratace na pilota?",
+      "options": [
+        "Obvykle žádný",
+        "Může zhoršit soustředění, vytrvalost i toleranci zátěže",
+        "Pouze zlepšuje odolnost proti hypoxii",
+        "Týká se jen letadel bez ventilace"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Dehydratace snižuje tělesnou i psychickou výkonnost a často nenápadně zhoršuje soustředění. V teplém kokpitu nebo při delším letu se její efekt rychle zvyšuje."
+    },
+    {
+      "id": "3-S44",
+      "categoryId": 3,
+      "question": "Jak se nazývá jev, kdy teplota vzduchu s výškou roste (místo klesá)?",
+      "options": [
+        "Adiabatický gradient",
+        "Inverzní vrstva",
+        "Tropopauza",
+        "Isothermální vrstva"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při normálním vývoji teplota klesá s výškou. Inverzní vrstva je oblast, kde je teplota vyšší než pod ní – gradient je obrácen. Zabraňuje konvekci a může „uzamknout\" znečištění nebo mlhu u země."
+    },
+    {
+      "id": "3-S45",
+      "categoryId": 3,
+      "question": "Mikroburst je nebezpečný pro letadla zejména proto, že:",
+      "options": [
+        "způsobuje silné kroupy, které poškodí povrchy letadla",
+        "vytváří intenzivní střih větru – nejprve silný čelní vítr, pak rychle přechází na zadní",
+        "generuje elektrické výboje schopné zničit avioniku",
+        "způsobuje okamžitý přechod do IMC podmínek"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Microburst je intenzivní klesavý proud pod bouřkou, který se při nárazu o zem rozlévá do stran. Letadlo při přiblížení nejprve narazí na čelní vítr (zdánlivě lepší výkon), pak do klesavého proudu a nakonec do zadního větru – náhlá ztráta výkonu a rychlosti blízko země je smrtelně nebezpečná."
+    },
+    {
+      "id": "3-S46",
+      "categoryId": 3,
+      "question": "Jak se nazývá vítr vznikající v noční době v hornatých oblastech, kdy studený vzduch stéká údolím dolů?",
+      "options": [
+        "Anabatický vítr",
+        "Katabatický vítr",
+        "Fénový vítr",
+        "Bóra"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Katabatický vítr vzniká, když se vzduch u povrchu horského svahu ochlazuje a klesá do údolí vlivem gravitace. Anabatický je opačný – teplý vzduch stoupá po svahu přes den. Bóra je specifický chladný katabatický vítr v oblasti Jaderského moře."
+    },
+    {
+      "id": "3-S47",
+      "categoryId": 3,
+      "question": "Jak označuje pilot signifikantní meteorologické jevy v prostoru jeho trati?",
+      "options": [
+        "ATIS",
+        "SIGMET",
+        "TAF",
+        "METAR SPECI"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "SIGMET (Significant Meteorological Information) varuje před jevy nebezpečnými pro provoz letadel v celém letovém prostoru (bouřky, turbulence, námraza, vulkanický popel). ATIS je informace pro konkrétní letiště. TAF je předpověď pro letiště. METAR SPECI je zvláštní zpráva o aktuálním stavu."
+    },
+    {
+      "id": "3-S48",
+      "categoryId": 3,
+      "question": "Co označuje suffix „TS\" v METAR zprávě?",
+      "options": [
+        "turbulence",
+        "bouřka (thunderstorm)",
+        "sněhová přeháňka",
+        "střih větru (tailshear)"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "V kódu METAR: TS = thunderstorm (bouřka). Může být kombinováno s dalšími jevy, např. TSRA = bouřka s deštěm. FZ = mrznoucí jev. SN = sníh. SH = přeháňky."
+    },
+    {
+      "id": "3-S49",
+      "categoryId": 3,
+      "question": "Pilot přilétá do oblasti, kde je teplota +2 °C a vlhký vzduch. Na která místa letadla je třeba dávat největší pozor z hlediska námrazy?",
+      "options": [
+        "Palivo a olejový systém",
+        "Náběžné hrany křídel, vrtule a nasávání vzduchu do motoru",
+        "Výfukový systém",
+        "Podvozek a brzdy"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Námraza se tvoří přednostně na aerodynamicky aktivních površích kde je velká rychlost proudění – náběžné hrany, vrtule – a na nasávání motoru (karburátorové přimrzání). Zkažení profilu náběžné hrany výrazně snižuje vztlak a zvyšuje pádovou rychlost."
+    },
+    {
+      "id": "3-S50",
+      "categoryId": 3,
+      "question": "Která oblačnost je nejčastěji spojena s bouřkami?",
+      "options": [
+        "Cumulonimbus (Cb)",
+        "Altostratus",
+        "Cirrostratus",
+        "Nimbostratus"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Cumulonimbus je oblak konvektivního původu s obrovskou vertikální rozlohou (až do tropopauzy a výše – „kovadlinový vrchol\"). Obsahuje silné stoupavé a klesavé proudy, námrazu, kroupy, blesky a silné srážky."
+    },
+    {
+      "id": "3-S51",
+      "categoryId": 3,
+      "question": "Co je to jasná turbulence (CAT – Clear Air Turbulence)?",
+      "options": [
+        "Turbulence uvnitř oblačnosti bez viditelných elektrických výbojů",
+        "Turbulence v bezmračném vzdušném prostoru, typicky v blízkosti jet streamu",
+        "Turbulence způsobená slunečním zářením po jasném dni",
+        "Turbulence v blízkosti terénu za jasného počasí"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "CAT se vyskytuje ve vysokých hladinách (FL 250+) v blízkosti jet streamu, kde jsou silné střihy větru, ale bez oblačnosti – pilot ho vizuálně nevidí a letadlo do turbulence vletí bez varování. Proto je CAT pokládán za jedno z nejvíce zákeřných meteorologických nebezpečí."
+    },
+    {
+      "id": "3-S52",
+      "categoryId": 3,
+      "question": "Pilot letí pod úrovní oblačnosti ve VFR. Jak pozná, že se blíží teplá fronta?",
+      "options": [
+        "Oblačnost najednou zmizí, tlak klesá a vítr stočí na jihozápad",
+        "Postupně se snižuje základna oblačnosti, klesá tlak, vítr vane od jihovýchodu",
+        "Náhlý nárůst větru a přechod do kumulovité oblačnosti",
+        "Příliv suchého vzduchu z kontinentu, teplota roste, oblaky mizí"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Typická posloupnost před příchodem teplé fronty: Ci → Cs → As → Ns (oblačnost se snižuje), klesající tlak, vítr přetočí z jihovýchodu, dohlednost klesá, začínají mrholení nebo trvalé srážky. Fronta postupuje pomalu."
+    },
+    {
+      "id": "3-S53",
+      "categoryId": 3,
+      "question": "Co je hustota vzduchu (density altitude) a jak ovlivňuje výkony letadla?",
+      "options": [
+        "Nadmořská výška přepočítaná na vlhkost; vlhký vzduch zlepšuje výkony",
+        "Výška ekvivalentní hustotě vzduchu za standardních podmínek; vyšší density altitude zhoršuje výkony motoru a aerodynamiku",
+        "Tlak v kabině; nemá přímý vliv na výkony",
+        "Vzdálenost mezi letadlem a zemí měřená v hustém vzduchu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Hustota vzduchu klesá s výškou, teplotou a vlhkostí. Density altitude je výška, při které by standardní vzduch měl stejnou hustotu jako skutečný vzduch. Vysoká density altitude = nižší výkon motoru, delší rozjezd, horší stoupavost. Kritické na horských letištích v letních dnech."
+    },
+    {
+      "id": "3-S54",
+      "categoryId": 3,
+      "question": "Jaký je METAR dekódovaný kód „SCT018\"?",
+      "options": [
+        "Rozptýlená oblačnost (3–4 oktanty) ve výšce 1800 ft",
+        "Sněhové přeháňky v okruhu 18 nm",
+        "Roztroušená oblačnost (1–2 oktanty) ve výšce 18 000 ft",
+        "Viditelnost 1,8 km s rozptýlenou mlhou"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "SCT = scattered (3–4 oktanty pokrytí). 018 = výška základny 1800 ft nad letištěm (číslo × 100). FEW = 1–2 oktanty. BKN = 5–7 oktanty. OVC = 8 oktantů."
+    },
+    {
+      "id": "3-S55",
+      "categoryId": 3,
+      "question": "Které podmínky jsou ideální pro tvorbu karburátorového přimrzání (carburettor icing)?",
+      "options": [
+        "Teplota pod −20 °C a nízká vlhkost",
+        "Teplota −15 °C až +25 °C a vysoká relativní vlhkost",
+        "Teplota nad 30 °C a silný přímý sluneční svit",
+        "Karburátorové přimrzání je možné pouze za letu v oblačnosti"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Karburátorové přimrzání je zákeřné právě proto, že k němu dochází i za podmínek, které pilot nepovažuje za „mrazivé\" – mírné teploty a vysoká vlhkost. V karburátoru poklesne teplota o 15–25 °C vlivem odparu paliva a Venturiho efektu. Led ucpe přívod vzduchové směsi."
+    },
+    {
+      "id": "3-S56",
+      "categoryId": 3,
+      "question": "Co je signálem blížící se horské vlnové turbulence (mountain wave)?",
+      "options": [
+        "Náhlé zlepšení dohlednosti na návětrné straně",
+        "Čočkovitá oblačnost (lenticularis) na závětrné straně pohoří",
+        "Radiační mlha ráno v údolí pod pohořím",
+        "Altostratus pokrývající celý horizont"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Čočkovitá oblaka (Ac lenticularis nebo Cc lenticularis) jsou typickým vizuálním indikátorem vzdušných vln na závětrné straně pohoří. Jsou stacionární, přestože vzduch skrz ně rychle proudí. Turbu může být i daleko za pohořím a ve volném ovzduší bez oblačnosti."
+    },
+    {
+      "id": "3-S57",
+      "categoryId": 3,
+      "question": "Co je rotor (rotor cloud / rotor zone) a proč je nebezpečný?",
+      "options": [
+        "Horní část bouřkového oblaku se zvláštní elektrickou aktivitou",
+        "Oblast intenzivního turbulentního víření vzduchu těsně pod horskou vlnou, s nepravidelnou a silnou turbulencí",
+        "Víření vzduchu za vrtulí letadla způsobující nebezpečí pro pěší",
+        "Kruhový vzdušný proud vznikající nad teplým přímořským povrchem"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Rotorová zóna leží těsně pod vrcholem horské vlny, u země. Vzduch se v ní turbulentně otáčí. Bývá spojena s rotorovou oblačností – roztříštěnými cumusy. Pro letadlo jde o jednu z nejnebezpečnějších oblastí – silná nepravidelná turbulence může způsobit ztrátu řiditelnosti."
+    },
+    {
+      "id": "3-S58",
+      "categoryId": 3,
+      "question": "Před studenou frontou v letním období je nejpravděpodobnější která kombinace jevů?",
+      "options": [
+        "Stabilní vzduch, mrholení a slabý vítr",
+        "Konvekce, přeháňky, turbulence a možnost CB",
+        "Trvalá inverze bez větru",
+        "Zlepšení dohlednosti beze změny"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Studena fronta často přináší vyzdvihnuti teplého vzduchu, vznik kupovite oblačnosti a turbulentní podmínky. V letním období může být vyvoj velmi výrazný."
+    },
+    {
+      "id": "3-S59",
+      "categoryId": 3,
+      "question": "Kde je největší pravděpodobnost námrazy v oblacích?",
+      "options": [
+        "V suchém vzduchu při vysokých kladnych teplotách",
+        "V oblacích s kapalnými podchlazenými kapkami při teplotách kolem nuly a pod nulou",
+        "Jen při teplotách pod minus 30",
+        "Pouze v cirrovite oblačnosti"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Námraza vzniká nejčastěji, když letadlo letí oblastmi s podchlazenou vodou. Kritické jsou často teploty v okolí 0 až -10 °C, ale závisí to na typu kapek a oblačnosti."
+    },
+    {
+      "id": "3-S60",
+      "categoryId": 3,
+      "question": "Co je nejtypičtějším znakem teplotní inverze u země?",
+      "options": [
+        "Vždy silná turbulence",
+        "Často stabilní vrstvení, horší rozptyl a možnost mlhy nebo oparu",
+        "Vysoká konvekce",
+        "Okamžitě vznikající bouřky"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Inverze znamená stabilní usporadani vzduchu, které omezuje promíchávání. To podporuje hromadeni vlhkosti a nečistot a zhoršuje dohlednost."
+    },
+    {
+      "id": "3-S61",
+      "categoryId": 3,
+      "question": "Která informace o větru je pro plánování VFR letu nejdůležitější?",
+      "options": [
+        "Jen směr větru na zemi ráno",
+        "Trend větru po trati a s výškou",
+        "Jen maximální narazy z minuleho dne",
+        "Pouze vítr na cíli, ostatní není důležité"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pro VFR navigaci a rozhodnutí je klíčové vědět, jak se vítr mění po trase a s výškou. Ovlivnuje drift, groundspeed, čas i palivo."
+    },
+    {
+      "id": "3-S62",
+      "categoryId": 3,
+      "question": "Jak se typicky mění tlak v přibližující se tlakové níži?",
+      "options": [
+        "Stoupa stabilne",
+        "Klesá",
+        "Nemění se",
+        "Vždy prudce skace nahoru a dolů"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Přibližující se nize je obvykle spojená s poklesem tlaku. Samotna změna musí být ale vnimana v kontextu dalších meteorologickych jevů."
+    },
+    {
+      "id": "3-S63",
+      "categoryId": 3,
+      "question": "Kdy je nejvyšší pravděpodobnost radiační mlhy?",
+      "options": [
+        "Za vítra a silné oblačnosti",
+        "Za jasné noci, slabého větru a dostatku vlhkosti",
+        "Za pruchodu studene fronty",
+        "Uprostred odpoledne při silné konvekci"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Radiační mlha se tvoří při nočním vychlazování povrchu, kdy je malá oblačnost a slabý vítr. Vlhkost se pak snadno dostane na rosný bod."
+    },
+    {
+      "id": "3-S64",
+      "categoryId": 3,
+      "question": "Co způsobí zvýšení teploty při stejném tlaku na hustotu vzduchu?",
+      "options": [
+        "Hustota vzroste",
+        "Hustota klesne",
+        "Nemá to vliv",
+        "Vzduch se stane nestlacitelny"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Teplejsi vzduch má menší hustotu. To zhoršuje výkon motorů, vrtule i křidla a zveda hustotní výšku."
+    },
+    {
+      "id": "3-S65",
+      "categoryId": 3,
+      "question": "Co je největším rizikem letu pod rozvíjejícím se CB i bez přímého vstupu do něj?",
+      "options": [
+        "Jen slabší dohlednost",
+        "Silné výstupné a sestupné proudy, turbulence a srážky",
+        "Pouze statická elektřina na rádiu",
+        "Žádný významný vliv"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Nebezpecna jsou i okolí CB, zejména silné vertikální pohyby, turbulence, dest, kroupy a narazovitost větru. Bezpečná vzdálenost od bourkove oblačnosti je zásadní."
+    },
+    {
+      "id": "3-S66",
+      "categoryId": 3,
+      "question": "Jak se projeví vyšší rosný bod při jinak stejných podmínkách?",
+      "options": [
+        "Vzduch je susi",
+        "Vzduch obsahuje více vlhkosti",
+        "Okamžitě klesá tlak",
+        "Roste hustota vzduchu bez dalších změn"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Vyšší rosný bod znamená více vodní páry ve vzduchu. To může podpořit vznik oblačnosti, mlhy a snížení dohlednosti."
+    },
+    {
+      "id": "3-S67",
+      "categoryId": 3,
+      "question": "Co je wind shear nebezpečný zejména v malé výšce?",
+      "options": [
+        "Protože mění barvu oblohy",
+        "Protože může náhle změnit IAS a trajektorii v kritické fázi letu",
+        "Protože způsobuje jen nepřesnost kompasu",
+        "Protože se vyskytuje jen nad morem"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Wind shear je náhlá změna směru nebo rychlosti větru. Při vzletu a přistání může pilotovi rychle odebrat výkonovou rezervu nebo destabilizovat dráhu letu."
+    },
+    {
+      "id": "3-S68",
+      "categoryId": 3,
+      "question": "Při proudění přes horskou překážku na závětrné straně očekáváš spíš:",
+      "options": [
+        "Hladky stabilní vzduch bez změn",
+        "Vlny, rotor a turbulentní podmínky",
+        "Jen slabší vítr",
+        "Vždy mlhu bez turbulence"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Na závětrné straně terénu může vznikat horská vlna a velmi nebezpečný rotor. I při jinak dobrém počasí to umí zhoršit ovladatelnost lehkého letadla."
+    },
+    {
+      "id": "3-S69",
+      "categoryId": 3,
+      "question": "Kdy je nejpravděpodobnější významná termická aktivita?",
+      "options": [
+        "Za jasného dne po dopoledním ohřívání povrchu",
+        "Těsně před svitanim",
+        "Jen v zimě při inverzi",
+        "Pouze při dešti"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Termika vzniká ohříváním povrchu sluncem a nejvýraznější bývá od pozdního dopoledne do odpoledne. Její síla záleží na insolaci, povrchu a stabilitě vzduchu."
+    },
+    {
+      "id": "3-S70",
+      "categoryId": 3,
+      "question": "Jaký signál je při letové přípravě varovný pro zhoršování VFR podmínek?",
+      "options": [
+        "Klesající tlak, zvyšující se vlhkost a ubývání základen oblačnosti",
+        "Stabilní tlak a lepší dohlednost",
+        "Méně oblačnosti a slabší vítr",
+        "Suché a chladné proudění s dobrou viditelností"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Kombinace klesajícího tlaku, rostoucí vlhkosti a klesajících základen často ukazuje na zhoršování podmínek. Pro VFR je důležité sledovat změny jako trend, ne izolovaně."
+    },
+    {
+      "id": "5-S71",
+      "categoryId": 5,
+      "question": "Jaká je správná letecká frazeologie pro sdělení času 14:35 UTC?",
+      "options": [
+        "„čtrnáct třicet pět\"",
+        "„jeden čtyři tři pět\"",
+        "„čtrnáct hodin třicet pět minut\"",
+        "„jeden čtyři, tři pět\""
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "ICAO Doc 9432 – časy se vždy vysílají jako čtyři číslice (skupiny po jedné), tedy „one four three five\". V češtině podle VFR příručky: „jeden čtyři tři pět\". Zásada: čas = vždy čtyři číslice samostatně."
+    },
+    {
+      "id": "5-S72",
+      "categoryId": 5,
+      "question": "Pilot obdrží pokyn „HOLD SHORT OF RUNWAY 24\". Co musí udělat?",
+      "options": [
+        "Zastavit před pojezdovými drahami",
+        "Pokračovat na RWY 24 a čekat na ní",
+        "Zastavit před signálním místem dráhy 24, nevjíždět na dráhu",
+        "Přejít přes dráhu 24 bez dalšího povolení"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "„Hold short of runway\" = zastavit před dráhovým hold point (přerušovaná čára + značka dráhy), nevjíždět na pohybovou plochu dráhy. Jde o jednu z nejzásadnějších bezpečnostních instrukcí kvůli prevenci runway incursion."
+    },
+    {
+      "id": "5-S73",
+      "categoryId": 5,
+      "question": "Jakou frekvenci pilot nastaví při nouzi, nemá-li jinou instrukci?",
+      "options": [
+        "121,5 MHz",
+        "123,45 MHz",
+        "118,0 MHz",
+        "243,0 MHz"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "121,5 MHz je mezinárodní nouzová frekvence pro civilní letectví VHF. 243,0 MHz je nouzová frekvence pro vojenské a záchranné jednotky (UHF). 123,45 MHz je vzduch-vzduch komunikační frekvence."
+    },
+    {
+      "id": "5-S74",
+      "categoryId": 5,
+      "question": "Co znamená termín „WILCO\" v letecké frazeologii?",
+      "options": [
+        "Opakuji vaše sdělení zpět",
+        "Přijato a bude splněno",
+        "Nesouhlasím s pokynem",
+        "Čekejte, vyřídím zprávu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "WILCO = „Will comply\" – přijal jsem pokyn a splním ho. ROGER = přijato (ne nutně splní). AFFIRMATIVE = ano. NEGATIVE = ne. STANDBY = čekejte."
+    },
+    {
+      "id": "5-S75",
+      "categoryId": 5,
+      "question": "Pilot v nouzi použije slovo „MAYDAY\". Kolikrát ho musí zopakovat a co po něm následuje?",
+      "options": [
+        "Jednou, pak stručný popis situace",
+        "Třikrát, pak volání volané stanice, identifikace letadla, poloha, příčina, záměr, počet osob",
+        "Dvakrát, pak QNH a meteorologické podmínky",
+        "Třikrát, pak pouze volací znak"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Nouzové volání: MAYDAY MAYDAY MAYDAY – [volaná stanice] – [identifikace letadla] – [povaha nouze] – [poloha] – [záměr] – [počet osob na palubě]. Strukturovanost umožňuje záchranným složkám okamžitě jednat."
+    },
+    {
+      "id": "5-S76",
+      "categoryId": 5,
+      "question": "Jaký je účel informace ATIS?",
+      "options": [
+        "Upozornění na nebezpečné jevy na trati",
+        "Automatická hlasová informace o aktuálním stavu letiště (počasí, přistávací dráha, NOTAM), snižující zátěž frekvence",
+        "Povolení ke vzletu vydávané automaticky",
+        "Meteorologická předpověď pro příštích 24 hodin"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "ATIS (Automatic Terminal Information Service) nepřetržitě vysílá aktuální informace o letišti – počasí, aktivní dráha, zvláštní NOTAM. Pilot ATIS poslechne před prvním kontaktem se stanovištěm a sdělí, které vydání (písmeno abecedy) má."
+    },
+    {
+      "id": "5-S77",
+      "categoryId": 5,
+      "question": "Co znamená „SQUAWK IDENT\"?",
+      "options": [
+        "Nastavit kód 7700",
+        "Stisknout tlačítko SPI na transpondéru, čímž se na radaru zvýrazní poloha letadla",
+        "Vypnout transpondér",
+        "Přepnout transpondér do pohotovostního režimu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "IDENT aktivuje funkci Special Position Identification – na radarovém zobrazení dispečera se poloha letadla na krátkou dobu zvýrazní (bliká nebo mění tvar). Slouží k rychlé identifikaci letadla dispečerem."
+    },
+    {
+      "id": "5-S78",
+      "categoryId": 5,
+      "question": "Jak se v letecké frazeologii správně vysloví číslo „9000\"?",
+      "options": [
+        "„devět tisíc\"",
+        "„niner tisíc\"",
+        "„niner zero zero zero\"",
+        "„devět nula nula nula\""
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "ICAO Doc 9432: číslice se vyslovují jednotlivě, přičemž 9 = „niner\". Výšky, kurzy, frekvence – vždy číslice po jedné. Čeština v letecké komunikaci obvykle kombinuje: „niner zero zero zero\" nebo „devět tisíc\" dle kontextu – v mezinárodní komunikaci vždy ICAO forma."
+    },
+    {
+      "id": "5-S79",
+      "categoryId": 5,
+      "question": "Co pilot sdělí řídicímu při prvním kontaktu s přibližovacím stanovištěm (Approach)?",
+      "options": [
+        "Pouze volací znak",
+        "Volací znak, polohu, výšku a požadavek",
+        "Volací znak, odletové letiště, cílové letiště a výšku",
+        "Volací znak, kód squawk a stav paliva"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "První volání Approach typicky obsahuje: volací znak, pozici (polohu), hladinu/výšku letu a záměr (přiblížení na letiště XYZ). Řídicí tak dostane okamžitě všechny potřebné informace k separaci."
+    },
+    {
+      "id": "5-S80",
+      "categoryId": 5,
+      "question": "Po volání ATC nerozumíš přidělené instrukci. Co je správně?",
+      "options": [
+        "Domyslet si ji podle provozu",
+        "Potvrdit ji, at se nezdrzuje provoz",
+        "Požádat o opakování nebo upřesnění",
+        "Ignorovat ji a pokračovat"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Nejasné instrukci nelze bezpečné plnit. Standardní a profesionální reakcí je požádat o repeat nebo say again, případně o pomalejší předani."
+    },
+    {
+      "id": "5-S81",
+      "categoryId": 5,
+      "question": "Kdy se používá MAYDAY?",
+      "options": [
+        "Při každé rádiové poruše",
+        "Při bezprostředním a vážném ohrožení",
+        "Při zhoršené viditelnosti bez dalších problémů",
+        "Při každém zpoždění letu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Mayday je signál tísně pro situace bezprostředního a vážného ohrožení. Ne každá provozní komplikace splňuje tuto hranici."
+    },
+    {
+      "id": "5-S82",
+      "categoryId": 5,
+      "question": "Kdy je vhodnejsi PAN PAN než MAYDAY?",
+      "options": [
+        "Při bezprostředním nebezpečí havarie",
+        "Při naléhavé situaci, která vyžaduje prioritu, ale nejde o bezprostřední tísňovou situaci",
+        "Při běžně zadosti o radar vectoring",
+        "Nikdy"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pan Pan se používá pro urgentní situace, kdy let není bezprostředně ohrožen, ale posádka potřebuje prioritu a pomoc."
+    },
+    {
+      "id": "5-S83",
+      "categoryId": 5,
+      "question": "Co je hlavním smyslem readbacku?",
+      "options": [
+        "Zkrátit komunikaci",
+        "Ověřit, že pilot správně porozuměl kritickým pokynům",
+        "Vyplnit čas na frekvenci",
+        "Nahradit navigační přípravu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Readback slouží k oboustrannému potvrzení, že instrukce byla přijata správně. Kriticke prvky, jako dráha, hladina nebo squawk, musí být bez nejasností."
+    },
+    {
+      "id": "5-S84",
+      "categoryId": 5,
+      "question": "Při ztrátě spojení v okolí řízeného prostoru je nejdůležitější okamžité:",
+      "options": [
+        "Náhodně měnit frekvence bez plánu",
+        "Zachovat řízení letadla, zkontrolovat nastavení rádia a postupovat podle provozní situace",
+        "Vypnout elektriku",
+        "Okamžitě klesnout co nejníž"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Nejprve je třeba udržet kontrolu nad letem a systematicky zkontrolovat rádio, audio panel, hlásitost, frekvenci a napájení. Pak teprve volit další postup podle polohy a prostoru."
+    },
+    {
+      "id": "5-S85",
+      "categoryId": 5,
+      "question": "Kdy by měl pilot mluvit na frekvenci co nejstručněji?",
+      "options": [
+        "Jen když má málo anglictiny",
+        "Vždy, zejména při vyšší vytíženosti frekvence",
+        "Jen na neřízených letištich",
+        "To není důležité"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Radiovy provoz má být vecny a stručný, aby frekvence zůstala pruchodna pro ostatní. Zdlouhava hlášení zvyšuji riziko preslechnuti důležité informace."
+    },
+    {
+      "id": "5-S86",
+      "categoryId": 5,
+      "question": "Která odpověď nejlépe vystihuje postup při pochybnosti, zda ATC volalo tvůj volací znak?",
+      "options": [
+        "Predpokladat, že ano, a jednat",
+        "Ignorovat to",
+        "Dotazat se a potvrdít, komu byla zpráva určena",
+        "Opustit frekvenci"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Při nejistotě ohledně adresáta instrukce je bezpečnější ověření než domnenka. Chybný readback cizi instrukce může vytvořit vaznou provozní chybu."
+    },
+    {
+      "id": "5-S87",
+      "categoryId": 5,
+      "question": "Kdy je vhodné použít slovo standby?",
+      "options": [
+        "Když nechceš odpovídat",
+        "Když potřebuješ krátkou chvíli na zpracování nebo přípravu odpovědi",
+        "Jako nouzový signál",
+        "Místo potvrzení příjmu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Standby dává druhé straně vědět, že jsi přijal výzvu, ale potřebuješ chvíli. Nesmí nahrazovat readback kritické instrukce ani odkládat reakcí v nouži."
+    },
+    {
+      "id": "5-S88",
+      "categoryId": 5,
+      "question": "Při vstupu do ATZ neřízeného letiště je hlavním cílem rádiového ohlášení:",
+      "options": [
+        "Ziskat formalni povolení ke vstupu",
+        "Informovat ostatní provoz o poloze, úmyslu a integrovat se do provozu",
+        "Nahradit pozorování okolí",
+        "Oznacit, že pilot je zkuseny"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Na neřízeném letišti rádiové hlášení pomáhá sdílet situační obraz. Nenahrazuje ale vizuální rozhlížení a odpovědnost za vyhýbání se ostatním."
+    },
+    {
+      "id": "5-S89",
+      "categoryId": 5,
+      "question": "Který prvek je v tísňovém hlášení obvykle důležitý?",
+      "options": [
+        "Typ slunečních brýlí pilota",
+        "Poloha, povaha problému, úmysl a potřebná pomoc",
+        "Počet letových hodin pilota",
+        "Barva interieru letadla"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "U nouzové komunikace je cílem rychle dat okolí vše podstatné pro pomoc a koordinaci. Proto se předává stručně poloha, problém, záměr a další relevantni data."
+    },
+    {
+      "id": "5-S90",
+      "categoryId": 5,
+      "question": "Proč je nebezpečné potvrdít instrukci, které pilot nerozuměl, jen aby neblokoval frekvenci?",
+      "options": [
+        "Protože je to neslusne",
+        "Protože pak může provést nesprávnou akci s provozním dopadem",
+        "Protože frekvence se tím stejně zkrátí",
+        "Protože to vadí jen instruktorum"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Spatne pochopena instrukce může vést k porušení prostoru, konfliktu s provozem nebo chybnému pojíždění. Krátké upřesnění je vždy menší zlo než chybně provedení."
+    },
+    {
+      "id": "5-S91",
+      "categoryId": 5,
+      "question": "Kdy je vhodné hlásit unable?",
+      "options": [
+        "Nikdy",
+        "Když nemůžeš instrukci bezpečně nebo realisticky splnit",
+        "Jen při poruše motorů",
+        "Jen v IFR"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pokud pilot instrukci nemůže bezpečně splnit, musí to říct jasně a včas. Tiché neplnění pokynu je pro ATC i okolní provoz horší než otevřeně sdělené \"unable\"."
+    },
+    {
+      "id": "4-S92",
+      "categoryId": 4,
+      "question": "Jak se změní pádová rychlost letadla při náklonu 60°?",
+      "options": [
+        "Zůstane stejná",
+        "Zvýší se přibližně o 19 %",
+        "Zvýší se přibližně o 41 %",
+        "Sníží se, protože centrifugální síla pomáhá"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Při náklonu 60° je load factor 2 g. Pádová rychlost roste s odmocninou z load factoru: √2 ≈ 1,41. Pádová rychlost je tedy o 41 % vyšší než v rovném letu. Při 45° (LF ≈ 1,41) je nárůst cca 19 %."
+    },
+    {
+      "id": "4-S93",
+      "categoryId": 4,
+      "question": "Co je manévrovací rychlost (Va)?",
+      "options": [
+        "Maximální rychlost se zasunutými vztlakovými klapkami",
+        "Rychlost, při které plné vychýlení řídících ploch nezpůsobí překročení konstrukčního limitu",
+        "Minimální řiditelná rychlost při plném výkonu motoru",
+        "Maximální rychlost pro let v turbulenci – vždy rovna Vne"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Va (maneuvering speed) je maximální rychlost, při které lze bezpečně použít plné vychýlení řídících ploch, aniž by to přetížilo konstrukční strukturu. Pod Va letadlo spíše přepádí než se přetíží. Nad Va může plné vychýlení způsobit strukturální selhání."
+    },
+    {
+      "id": "4-S94",
+      "categoryId": 4,
+      "question": "Co je přízemní efekt (ground effect) a jak ovlivňuje letadlo při přistání?",
+      "options": [
+        "Odpor terénu zpomalující letadlo před dotykem",
+        "Aerodynamický efekt blízkosti terénu snižující indukovaný odpor – letadlo „pluje\" nad dráhou a nechce přistát",
+        "Turbulence způsobená zahřátou dráhou, která letadlo vychyluje ze směru",
+        "Tření vzduchu při nízkém přeletu způsobující vibraci"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Ground effect nastává do výšky přibližně rovné rozpětí křídel. Vzduch neobtéká okolo konce křídel tak volně – indukovaný odpor klesá, vztlak je efektivnější. Letadlo má tendenci „plout\" nad dráhou a nechce klesat. Pilot musí aktivně korigovat."
+    },
+    {
+      "id": "4-S95",
+      "categoryId": 4,
+      "question": "Jaký efekt má odtrhnutí mezní vrstvy (stall) na letadle s konvenčním uspořádáním (classické křídlo + ocasní plochy)?",
+      "options": [
+        "Letadlo okamžitě vstupuje do šroubovice",
+        "Nos letadla klesá, protože ztráta vztlaku na křídle posune těžiště za aerodynamický střed",
+        "Letadlo zůstává v horizontálním letu díky vyvažovacím plochám",
+        "Výška přidává k problému – vyšší výška způsobí prudší pád"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při pádu přestane být křídlo schopno generovat dostatečný vztlak. Bez vztlaku nos přirozeně klesá – aerodynamické centrum a těžiště způsobují přední moment. To je záměrná vlastnost stability – letadlo se samo snaží z pádu vyjít snížením nosu a obnovením rychlosti."
+    },
+    {
+      "id": "4-S96",
+      "categoryId": 4,
+      "question": "Co je P-faktor (asymetrický odpor vrtule) a kdy je nejpatrnější?",
+      "options": [
+        "Tah vzniklý gyroscopickým efektem vrtule při zatáčení",
+        "Nesymetrický tah způsobený tím, že sestupující list vrtule generuje více tahu než stoupající, nejpatrnější při malé rychlosti a vysokém výkonu",
+        "Vibrace vrtule při nevyvážení způsobující stáčení letadla vlevo",
+        "Přetlak oleje v redukční převodovce vrtule"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při vysokém úhlu náběhu (malá rychlost, plný výkon) zasahuje sestupující list (pravý u běžných motorů) do vzduchu pod větším úhlem → více tahu vpravo → letadlo táhne vlevo. Pilot musí korigovat pravou nožní brzdou / kompasem."
+    },
+    {
+      "id": "4-S97",
+      "categoryId": 4,
+      "question": "Co je „spirální divergence\" (spiral dive) a jak se z ní vychází?",
+      "options": [
+        "Příliš strmé přiblížení na přistání; vychází se přidáním výkonu",
+        "Stoupavá šroubovice způsobená přetočením do náklonu – klesá rychlost. Vychází se zvednutím nosu",
+        "Klesající šroubovice, v níž rychlost rychle roste a přetížení se zvyšuje; vychází se vyrovnáním křídel, pak teprve tahem za řízení",
+        "Turbulentní pohyb na hladině pádu vzniklý gustatativním efektem"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Spirální divergence = letadlo v náklonu klesá a zrychluje. Pilot tažením za řízení jen zvyšuje load factor. Správný postup: nejprve snížit výkon, potom vyrovnat křídla (srovnat náklon), teprve pak opatrně vytáhnout nos. Tažení při náklonu = steeply coordinated turn = zkrácení poloměru a přetížení."
+    },
+    {
+      "id": "4-S98",
+      "categoryId": 4,
+      "question": "Co je nejlepší rychlost klouzání (best glide speed, Vbg) a proč je důležitá?",
+      "options": [
+        "Rychlost nejlepšího stoupání; důležitá pro překonání překážky",
+        "Rychlost nejmenšího klesání v ft/min; používá se pro maximální výdrž ve vzduchu bez motoru",
+        "Rychlost nejlepšího poměru klesání (nejdelší vzdálenost na klouzání); používá se pro dosažení co největší vzdálenosti při výpadku motoru",
+        "Rychlost maximálního vztlaku; minimalizuje opotřebení motoru"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Vbg dává nejlepší poměr vztlak/odpor (L/D max) → největší vzdálenost na klouzání. Při výpadku motoru je to rychlost pro dosažení nejbližšího vhodného místa přistání. Rychlost nejmenšího klesání (Vmd) je nižší a dává největší čas ve vzduchu, ale menší vzdálenost."
+    },
+    {
+      "id": "4-S99",
+      "categoryId": 4,
+      "question": "Jaká je příčina „dutch roll\" (holandský ruch)?",
+      "options": [
+        "Nadměrné použití pedálů při nízkém výkonu",
+        "Kmitavé kombinované oscilace klonění a zatáčení, způsobené typicky vysokým vzepětím křídel a malým plošným zatížením",
+        "Přetěžení výškového kormidla při prudkém manévrování",
+        "Rezonance trupu při specifické frekvenci turbulence"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Dutch roll je dynamická nestabilita – letadlo osciluje mezi nakláněním (rolling) a zatáčením (yawing). Je typický pro letouny se šípovitými křídly nebo s velkým vzepětím (dihedral). Potlačuje se yaw damperem nebo korekcí pedálů."
+    },
+    {
+      "id": "4-S100",
+      "categoryId": 4,
+      "question": "Jak se změní výkon motoru (přibližně) při vzletu na letišti ve výšce 6000 ft MSL ve srovnání se vzletem na hladině moře (za jinak stejných podmínek)?",
+      "options": [
+        "Výkon klesne přibližně o 20 %",
+        "Výkon zůstane stejný – motor si výkon automaticky udržuje",
+        "Výkon vzroste o 10 % díky chladnějšímu vzduchu",
+        "Výkon klesne přibližně o 50 %"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Normálně nasávaný motor ztrácí přibližně 3 % výkonu na každých 1000 ft výšky. Na 6000 ft je to ~18–20 % ztráty. Zároveň se prodlouží délka rozjezdu a sníží stoupavost. Turbodmychadlová/přeplňovaná letadla si výkon udržují do výšky nábojové hranice."
+    },
+    {
+      "id": "4-S101",
+      "categoryId": 4,
+      "question": "Co je crosswind component (složka bočního větru) při přistání a jak ji pilot odhadne?",
+      "options": [
+        "Složka větru kolmá na dráhu, způsobující únos; odečte se z tabulky nebo grafem v AFM pomocí celkové rychlosti větru a úhlu vůči dráze",
+        "Složka větru rovnoběžná s dráhou; odečte se měřením tlakové výšky",
+        "Rychlost větru měřená anemometrem věže přepočtená na kt",
+        "Největší povolená rychlost přistání"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Crosswind component = V_wind × sin(úhel vůči dráze). Každé letadlo má maximální demonstrovanou složku bočního větru v AFM. Překročení způsobuje problémy s udržením středové linie. Headwind component = V_wind × cos(úhel)."
+    },
+    {
+      "id": "4-S102",
+      "categoryId": 4,
+      "question": "Co se stane s délkou vzletu při vyšší teplotě vzduchu (za jinak stejných podmínek)?",
+      "options": [
+        "Zkrátí se, protože teplo snižuje odpor",
+        "Prodlouží se, protože vzduch je méně hustý a motor a křídlo pracují méně efektivně",
+        "Zůstane stejná – teplota nemá vliv na délku rozjezdu",
+        "Zkrátí se díky větší rychlosti větru typické v létě"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Vyšší teplota → nižší hustota vzduchu → motor dává méně výkonu, vrtule méně tahu, křídlo potřebuje vyšší TAS k dosažení stejného IAS pro vzlet → delší rozjezd. Kombinace horka, výšky a vlhkosti může dramaticky prodloužit vzletovou vzdálenost."
+    },
+    {
+      "id": "4-S103",
+      "categoryId": 4,
+      "question": "Co je efekt „vyklánění za\" (overbanking tendency) při koordinovaném zatáčení?",
+      "options": [
+        "Tendence letadla vyklonit se do zatáčení víc, než chce pilot, při nízkých náklonech",
+        "Tendence letadla prohlubovat zatáčení samovolně při větším náklonu, protože vnější křídlo letí rychleji a generuje více vztlaku",
+        "Ztráta ovladatelnosti v zatáčení pod pádovou rychlostí",
+        "Náklon způsobený rozdílem v teplotě vzduchu na levém a pravém křídle"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při větším náklonu letí vnější křídlo po delší dráze (větší poloměr) → větší rychlost → více vztlaku → tendence dál prohlubovat náklon. Pilot musí aktivně korigovat aileronem do vnějšího křídla, aby udržel konstantní náklon."
+    },
+    {
+      "id": "4-S104",
+      "categoryId": 4,
+      "question": "Proč se při zvýšení úhlu náběhu nad kritickou mez proudnice odtrhnou?",
+      "options": [
+        "Protože se zrychlí vrtule",
+        "Protože profil už nedokáže udržet obtékání proudění",
+        "Protože tlak na horní straně zmizí úplně",
+        "Protože vzroste hmotnost letadla"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Stall je aerodynamický jev spojený s překročením kritického úhlu náběhu, ne s konkrétní rychlostí samotnou. Při odtržení prudce klesá součinitel vztlaku a roste odpor."
+    },
+    {
+      "id": "4-S105",
+      "categoryId": 4,
+      "question": "Která situace obvykle zvýší pádovou rychlost?",
+      "options": [
+        "Zatáčka s vyšším zatížením",
+        "Let v klidu bez náklonu",
+        "Menší hmotnost",
+        "Přední těžiště kompenzované trimem bez další změny"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Se zvýšením zatížení roste potřebný vztlak a křídlo musí pracovat s vyšším úhlem náběhu. To posouvá pád na vyšší rychlost, typicky v zatáčkách a manévrech."
+    },
+    {
+      "id": "4-S106",
+      "categoryId": 4,
+      "question": "Co je hlavním důsledkem zvýšení vysunutí klapek v běžném přiblížení?",
+      "options": [
+        "Vždy vyšší pádová rychlost",
+        "Změna vztlaku a odporu, která umožní pomalejší a strmější přiblížení",
+        "Zmizí úplně vliv těžiště",
+        "Zlepší se pouze směrová stabilita"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Klapky mění profil a proudění, čímž zvyšují vztlak i odpor. To pomáhá letět při menší rychlosti a strměji k dráze, ale za cenu horšího klouzání."
+    },
+    {
+      "id": "4-S107",
+      "categoryId": 4,
+      "question": "Proč je příliš zadní těžiště nebezpečné?",
+      "options": [
+        "Vždy znemožní odlepení",
+        "Snižuje podélnou stabilitu a může ztížit vybírání pádu",
+        "Způsobí automaticky boční nestabilitu",
+        "Zkrátí vzlet jen o několik metrů bez dalších následků"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Se zadním těžištěm je letadlo citlivější v podélné ose a může být hůře vybíratelné z pádu. Zdánlivě lehčí ovládání je vykoupeno menší stabilitní rezervou."
+    },
+    {
+      "id": "4-S108",
+      "categoryId": 4,
+      "question": "Co se děje s indukovaným odporem při vyšším úhlu náběhu a nižší rychlosti?",
+      "options": [
+        "Klesá",
+        "Nemění se",
+        "Roste",
+        "Záleží jen na barvě letadla"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Indukovaný odpor je spojen s tvorbou vztlaku a při nižších rychlostech, kdy je třeba vyšší úhel náběhu, roste. Proto je let blízko minima rychlosti energeticky náročný."
+    },
+    {
+      "id": "4-S109",
+      "categoryId": 4,
+      "question": "Jaký je hlavní aerodynamický důsledek námrazy na křídle?",
+      "options": [
+        "Vždy zvýší vztlak",
+        "Zhoršuje tvar profilu, zvyšuje odpor a snižuje maximální vztlak",
+        "Nemění nic až do velké vrstvy",
+        "Snižuje hmotnost"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "I malá námraza může citelně narušit obtékání profilu. Důsledkem je horší výkon, vyšší pádová rychlost a častější asymetrické chování."
+    },
+    {
+      "id": "4-S110",
+      "categoryId": 4,
+      "question": "Proč může být skluz v zatáčce nebezpečný při letu blízko pádu?",
+      "options": [
+        "Protože zvýší motorový výkon",
+        "Protože zhoršuje koordinaci letu a může přispět k rozvinutí vývrtky",
+        "Protože vyrovná křídla",
+        "Protože nemá žádný vliv"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Nekoordinovaný let mění rozložení sil na křídlech a při pádu může vést k asymetrii. Zejména při skluzu v zatáčce se zvyšuje riziko přechodu do vývrtky."
+    },
+    {
+      "id": "4-S111",
+      "categoryId": 4,
+      "question": "Co nejlépe popisuje smysl trimu?",
+      "options": [
+        "Nahradit řízení výškovkou",
+        "Snížit potřebnou sílu na řízení pro zvolenou rovnovážnou konfiguraci",
+        "Zvýšit výhradně rychlost letu",
+        "Automaticky vyrovnat zatáčku"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Trim nenahrazuje řízení, ale odlehčuje pilotovi držení řídicí síly v určité konfiguraci a rychlosti. Usnadňuje tak přesné vedení letu a snižuje únavu."
+    },
+    {
+      "id": "4-S112",
+      "categoryId": 4,
+      "question": "Při prudkém vybrání ze sestupu je hlavním rizikem z hlediska letových zásad:",
+      "options": [
+        "Ztráta barvy paliva",
+        "Překročení konstrukčních zatížení a zvýšení pádové rychlosti v přetížení",
+        "Zastavení vrtule",
+        "Okamžitá porucha radiostanice"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Agresivní vybrání zvyšuje přetížení a tím i pádovou rychlost. Zároveň se pilot může přiblížit konstrukčním limitům letadla."
+    },
+    {
+      "id": "4-S113",
+      "categoryId": 4,
+      "question": "Co způsobí vysoká hustotní výška na zrychlení a stoupání?",
+      "options": [
+        "Zlepší obě hodnoty",
+        "Zhoršuje výkon a obvykle prodlužuje rozjezd i snižuje stoupání",
+        "Nemá vliv na vrtulové letadlo",
+        "Pomáhá jen v zatáčce"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Řidší vzduch zhoršuje účinnost motoru, vrtule i křídla. Proto je na horkých a vysokých letištích třeba počítat s horší výkonovou rezervou."
+    },
+    {
+      "id": "4-S114",
+      "categoryId": 4,
+      "question": "Které tvrzení o zatáčce je správně?",
+      "options": [
+        "Při stejné IAS a vyšším náklonu se nic důležitého nemění",
+        "Vyšší náklon zvyšuje zatížení a obvykle i pádovou rychlost",
+        "Vyšší náklon snižuje potřebu vztlaku",
+        "Pádová rychlost klesá"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "V zatáčce musí křídlo vytvořit víc celkového vztlaku, aby uneslo hmotnost při náklonu. To zvyšuje zatížení a posouvá pád na vyšší rychlost."
+    },
+    {
+      "id": "4-S115",
+      "categoryId": 4,
+      "question": "Proč je let na druhé straně křivky odporu náročný?",
+      "options": [
+        "Protože s nižší rychlostí je třeba více výkonu k udržení letu",
+        "Protože motor vždy běží na volnoběh",
+        "Protože křídlo už nevytváří vztlak",
+        "Protože jde o IFR jev"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Při velmi nízkých rychlostech roste indukovaný odpor natolik, že ke držení výšky je třeba více výkonu. Pilot může mylně čekat, že zpomalení automaticky usnadní klesání."
+    },
+    {
+      "id": "4-S116",
+      "categoryId": 4,
+      "question": "Jaký je běžný efekt vysunutí první fáze klapek při návratu do vzletové konfigurace?",
+      "options": [
+        "Obvykle pomůže zvýšit vztlak při relativně menším nárůstu odporu",
+        "Vždy zhoršuje odlepení",
+        "Smaze vliv větru",
+        "Nemá smysl"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "První stupne klapek jsou často navržené tak, aby významně zvedly vztlak a teprve pak odpor. Proto mohou zkrátit rozjezd při vzletu nebo zlepšit odlepení podle typu letadla a postupů."
+    },
+    {
+      "id": "6-S117",
+      "categoryId": 6,
+      "question": "Jaký je minimální přídavek paliva (fuel reserve) pro VFR let ve dne?",
+      "options": [
+        "15 minut letu při normální cestovní rychlosti",
+        "30 minut letu při normální cestovní rychlosti",
+        "45 minut letu při normální cestovní rychlosti",
+        "60 minut letu při normální cestovní rychlosti"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "EASA Part-NCO (non-commercial operations) stanovuje pro VFR let za dne minimální zásobu paliva: nejdříve do cílového letiště + záložní + 45 minut při normální cestovní rychlosti (dle OPS). Toto je regulatorní minimum; mnozí instruktoři doporučují více."
+    },
+    {
+      "id": "6-S118",
+      "categoryId": 6,
+      "question": "Jak kategorizuje ICAO turbulenci z hlediska wake turbulence (vírové turbulence)?",
+      "options": [
+        "Lehká / střední / těžká – podle MTOW letadla (light/medium/heavy)",
+        "Super / heavy / medium / light – čtyři kategorie dle MTOW a letového charakteru",
+        "Kategorii určuje pouze ATC dle radarové stopy",
+        "Vírová turbulence se nekategorizuje – oddělení je stejné pro všechna letadla"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "ICAO Doc 4444 (PANS-ATM) definuje čtyři kategorie: Super (A380), Heavy (MTOW ≥ 136 t), Medium (7–136 t), Light (pod 7 t). Separace vůči těžšímu letadlu v přední pozici je větší – vírové proudy za těžkými letadly jsou intenzivní a nebezpečné pro menší typy."
+    },
+    {
+      "id": "6-S119",
+      "categoryId": 6,
+      "question": "Pilot zpozoruje za letu signifikantní únik paliva z pravého tanku. Jaký je správný prioritní postup?",
+      "options": [
+        "Okamžitě vyhlásit MAYDAY a přistát kamkoli",
+        "Přečerpat palivo z pravého tanku do levého, přepnout na levý tank, snížit výkon a informovat ATC",
+        "Přepnout na pravý tank, maximalizovat výkon a zkrátit let",
+        "Postup závisí výhradně na AFM/POH daného typu letadla – aviátor musí znát postup nazpaměť"
+      ],
+      "correctIndex": 3,
+      "supplement": true,
+      "explanation": "Typ paliva, konstrukce palivového systému a dostupné postupy se liší podle typu letadla. Pilot musí znát a aplikovat checklist AFM/POH pro danou abnormalitu. Obecně: bezpečnost, informovat ATC, zkrátit let a přistát na nejbližším vhodném letišti."
+    },
+    {
+      "id": "6-S120",
+      "categoryId": 6,
+      "question": "Co je NOTAM typ „B\" (NOTAM B) a jak se liší od NOTAM „A\"?",
+      "options": [
+        "NOTAM B je mezinárodní, NOTAM A je pouze vnitrostátní",
+        "NOTAM A je vydán pro letecký hodnocené informace o trvalých nebo střednědobých změnách, NOTAM B pro krátkodobé/dočasné",
+        "V systému ICAO se NOTAM dělí pouze na NOTAM a NOTAM CANCEL – kategorie A a B neexistují",
+        "NOTAM B se vydává pouze pro letišťní provoz, NOTAM A pro vzdušné prostory"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "ICAO (Annex 15 a Doc 8126) rozlišuje NOTAM (nová informace nebo změna) a NOTAMN/R/C (nový/nahrazuje/ruší). Kategorie „A\" a „B\" jsou vnitřní administrativní označení některých států, nikoli standardní ICAO terminologie. Pilot by měl znát systém AIP/NOTAM svého státu."
+    },
+    {
+      "id": "6-S121",
+      "categoryId": 6,
+      "question": "Pilot přiletí nad letiště, kde jiné letadlo právě havaruje na dráze. Jak vstoupí do okruhu a upozorní ostatní?",
+      "options": [
+        "Přistane na travnaté ploše vedle dráhy bez kontaktování ATC",
+        "Informuje ATC, pokud je dostupné; použije standardní nouzový squawk 7700 a čeká na instrukce; není-li ATC, vyhlásí MAYDAY na 121,5 MHz",
+        "Přistane okamžitě co nejdřív – letiště přece potřebuje pomoc",
+        "Přeletí letiště a přistane na alternativním letišti, protože letiště je uzavřeno"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při nouzové situaci na zemi pilot v letu nezasahuje fyzicky – informuje ATC, nastaví squawk 7700 a komunikuje. Bezpečnost vlastního letadla má prioritu; impulzivní přistání na nefunkční dráze situaci jen zhorší."
+    },
+    {
+      "id": "6-S122",
+      "categoryId": 6,
+      "question": "Co je „Runway incursion\" (narušení dráhy)?",
+      "options": [
+        "Přistání na špatné dráze",
+        "Jakýkoli výskyt letadla, vozidla nebo osoby v chráněném prostoru aktivní dráhy bez příslušného povolení",
+        "Překročení maximální přistávací hmotnosti",
+        "Vstup do řízeného prostoru bez radiospolečení"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Runway incursion je jednou z nejvážnějších bezpečnostních hrozeb na letištích. ICAO ji definuje jako jakýkoli incident vytvářející kolizní riziko na dráze. Příčiny: pilotní error (špatně odbočí), ATC error nebo pohyb vozidel bez povolení."
+    },
+    {
+      "id": "6-S123",
+      "categoryId": 6,
+      "question": "Jaký je správný postup při výpadku motoru krátce po vzletu (v malé výšce)?",
+      "options": [
+        "Okamžitě provést úplný restart a pokračovat ve stoupání",
+        "Zachovat rychlost klouzání (Vbg), udržet přímý let nebo malý obrat vpřed, vybrat nouzové místo přistání před letadlem a přistát",
+        "Provést 180° obrat zpět na letiště vždy, bez ohledu na výšku",
+        "Vyhlásit MAYDAY a čekat na instrukce ATC před provedením jakéhokoli manévru"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "„Dead man's curve\" – pod cca 1000 ft AGL je 180° obrat zpravidla smrtelně nebezpečný (ztráta rychlosti v zatáčení, nedostatek výšky). Správně: nastavit Vbg, udržet řiditelnost, přistát přímo nebo s malou odchylkou, nejlépe vpřed."
+    },
+    {
+      "id": "6-S124",
+      "categoryId": 6,
+      "question": "Co je ELT (Emergency Locator Transmitter) a kdy se aktivuje?",
+      "options": [
+        "Rádio operátor záchranné služby; aktivuje se ručně při nouzové situaci",
+        "Nouzový majáček vysílající polohu letadla; aktivuje se automaticky při nárazu přesahujícím určité zrychlení nebo ručně pilotem",
+        "Záložní VHF vysílač; aktivuje se při výpadku hlavního rádia",
+        "Transponder nouzového módu; aktivuje se při stlačení speciálního tlačítka"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "ELT vysílá na záchranných frekvencích (406 MHz pro moderní typy → satelitní síť COSPAS-SARSAT, 121,5 MHz jako záloha). Aktivuje se automaticky při prudkém zpomalení (nárazu) nebo ručně. Umožňuje záchranným službám lokalizovat trosky."
+    },
+    {
+      "id": "6-S125",
+      "categoryId": 6,
+      "question": "Po startu v malé výšce zaznamenáš výrazný pokles výkonu. Co má absolutní prioritu?",
+      "options": [
+        "Ladění transpondéru",
+        "Udržet ovládání letadla a zvolit provedení nouzového přistání v dosažitelné oblasti",
+        "Hledání checklistu v kufru",
+        "Dlouhé hlášení na frekvenci"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při kritické ztrátě výkonu po startu je čas omezený a prioritou je řídit letadlo. Až potom přichází rychle nouzové úkony a komunikace, pokud na ni zbývá kapacita."
+    },
+    {
+      "id": "6-S126",
+      "categoryId": 6,
+      "question": "Proč se při pojíždění za velkým letadlem drží odstup?",
+      "options": [
+        "Kvůli rádiovému dosahu",
+        "Kvůli jet blastu a rozvířeným předmětům",
+        "Jen kvůli hluku",
+        "Kvůli magnetickým odchylkám"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Vyfukove proudy a víření nečistot mohou lehke letadlo vazne ohrozit i na zemi. Riziko je vysoké zejména za proudovými letadly a při otáčení na stojance."
+    },
+    {
+      "id": "6-S127",
+      "categoryId": 6,
+      "question": "Jaký je smysl provozní kontroly paliva před letem?",
+      "options": [
+        "Jen zjistit, jestli je v letadle vůně benzínu",
+        "Ověřit množství i kvalitu použitelného paliva",
+        "Nahradit palivomer v kabině",
+        "Je potřebná jen u dlouhych letu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Bezpečná příprava nezahrnuje jen množství, ale i ověření kontaminace vodou nebo nečistotami a srovnání s plánem letu. Samotný ukazatel v kabině by neměl být jediným zdrojem informace."
+    },
+    {
+      "id": "6-S128",
+      "categoryId": 6,
+      "question": "Kdy je nejvhodnější použít checklist?",
+      "options": [
+        "Jen po poruše",
+        "Systematicky při běžných i nouzových postupech podle fáze letu",
+        "Pouze při prvním letu dne",
+        "Checklist není pro PPL potřeba"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Checklist je základní obrana proti zapomenutí a nekonzistenci. Použiva se jak v normálním provozu, tak při abnormálních a nouzových situacích."
+    },
+    {
+      "id": "6-S129",
+      "categoryId": 6,
+      "question": "Při podezření na námrazu karburátoru je typická reakce?",
+      "options": [
+        "Snížit plyn a čekat",
+        "Použít karburátor heat podle typu a sledovat reakci motorů",
+        "Vypnout směs",
+        "Přidat trimu nose-down"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "U karburátorových motorů je vyhřívání karburátoru běžný prostředek proti námraze. Pilot musí znát projevy i správný postup svého typu letadla."
+    },
+    {
+      "id": "6-S130",
+      "categoryId": 6,
+      "question": "Co je hlavním rizikem přistání s výrazným zadním větrem?",
+      "options": [
+        "Vyšší hlásitost v kabině",
+        "Vyšší groundspeed, delší dojezd a menší rezerva na chyby",
+        "Vždy kratsi přistání",
+        "Jen horší radiovy prijem"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Zadní vítr zvyšuje rychlost vůči zemí při stejné IAS, a tím i energii při dosednutí. Důsledkem je delší přistávací dráha a horší možnost korekce."
+    },
+    {
+      "id": "6-S131",
+      "categoryId": 6,
+      "question": "Kdy je provozně správně přerušit vzlet?",
+      "options": [
+        "Jen když to řekne cestující",
+        "Když se objeví abnormalita nebo nesplněný parametr před rozhodnutím pokračovat",
+        "Nikdy, vzlet se musí dokončit",
+        "Až po odlepení"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pilot musí mít jasná kritería, kdy vzlet přeruší. Jakakoli abnormalita jako výkon, směr, tlak oleje nebo zrychlení je důvodem k rozhodnutí dříve, než bude pozdě."
+    },
+    {
+      "id": "6-S132",
+      "categoryId": 6,
+      "question": "Proč je při nočních nebo podvečerních letech nutná zvláštní opatrnost v hodnocení počasí?",
+      "options": [
+        "Protože mapy nefungují",
+        "Protože se může rychle měnit dohlednost, základny i orientační podmínky",
+        "Protože vítr vecer vždy zmizí",
+        "Protože ATC zavira"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "S večerem a nočním ochlazením se mohou rychle objevit opar, mlha nebo ztráta kontrastu terénu. I VFR pilot s denní kvalifikaci musí zhodnotit, zda stihne let bezpečně ukončit."
+    },
+    {
+      "id": "6-S133",
+      "categoryId": 6,
+      "question": "Po přistání na krátké a mokré dráze je vhodné:",
+      "options": [
+        "Dosednout co nejdál, aby ses vyhnul stříkání",
+        "Mířit na přesný bod, zachovat správnou rychlost a počítat s delší brzdnou dráhou",
+        "Přilétat rychleji pro jistotu",
+        "Nepoužívat klapky"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Mokrá dráha zhoršuje brzdný účinek a odpouští méně chyb. Základem je stabilní přiblížení, vhodná dotyková rychlost a disciplinované přistání na začátek využitelné plochy."
+    },
+    {
+      "id": "6-S134",
+      "categoryId": 6,
+      "question": "Proč je nebezpečné pokračovat v letu s neověřenou technickou závadou, která se zatím zdá malá?",
+      "options": [
+        "Protože to kazí statistiku",
+        "Protože malá závada se může v letu zhoršit nebo maskovat jiný problém",
+        "Protože se tím zvyšuje cena paliva",
+        "Protože to vadí jen servisu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Mnoho incidentů začíná nenápadnou abnormalitou, kterou pilot podcení. Bez porozumění příčině není rozumné spoléhat, že závada zůstane malá."
+    },
+    {
+      "id": "6-S135",
+      "categoryId": 6,
+      "question": "Jaký je smysl briefingu před vzletem i u jednoducheho PPL letu?",
+      "options": [
+        "Je to formalita bez hodnoty",
+        "Předem si srovnat normální i nouzový plán pro první kritické minuty letu",
+        "Slouží jen cestujícím",
+        "Nahradí checklist"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Krátký briefing snižuje reakční čas v kritické fázi. Pilot si předem urci směr po startu, rychlost, hranici pro preruseni a postup při ztrátě výkonu."
+    },
+    {
+      "id": "6-S136",
+      "categoryId": 6,
+      "question": "Kdy je rozumné odmítnout tlak cestujících na pokračování letu?",
+      "options": [
+        "Jen když jsou hluční",
+        "Vždy, když by jejich přání vedlo k rozhodnutí proti bezpečnému uvážení pilota",
+        "Nikdy, platící cestující rozhodují",
+        "Jen v zimě"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pilot musí aktivně odolat external pressure, pokud by zhoršoval bezpečnostni rozhodnutí. Sociální nebo časový tlak je častý lidsky faktor nehod."
+    },
+    {
+      "id": "6-S137",
+      "categoryId": 6,
+      "question": "Proč se po přistání a uvolnění dráhy dokončuješ až mimo aktivní plochu?",
+      "options": [
+        "Aby pilot měl víc stinu",
+        "Aby dráha zůstala volná a pilot se nevěnoval hlavou dolů činnostem v kritickém prostoru",
+        "Protože radiostanice venku lépe hraje",
+        "Není to podstatné"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Disciplína při opouštění dráhy snižuje riziko konfliktu s dalším provozem. Úkony po přistání patří mimo dráhu, kde je na ně klid a čas."
+    },
+    {
+      "id": "7-S138",
+      "categoryId": 7,
+      "question": "Letadlo váží 850 kg. Pilot přidá 50 kg za střed gravitace (na zadní palubu). Jak se změní poloha těžiště (CG)?",
+      "options": [
+        "Těžiště se posune dopředu",
+        "Těžiště se posune dozadu",
+        "Těžiště se nezmění, hmotnost je malá",
+        "Těžiště se posune doleva"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Přidání hmotnosti za stávající CG přidá moment otáčející letadlo dozadu – výsledné CG se posune ve směru k zatížení (dozadu). Zadní CG je nebezpečné: snižuje stabilitu a může způsobit nekontrolovaný pád."
+    },
+    {
+      "id": "7-S139",
+      "categoryId": 7,
+      "question": "Co je tlakový výškoměr nastaven na 1013,25 hPa a jakou výšku indikuje?",
+      "options": [
+        "QNH – výšku nad středním mořem",
+        "QFE – výšku nad letištní referenční rovinou",
+        "QNE – výšku v letové hladině (flight level) nad standardní izobarickou hladinou",
+        "MOCA – minimální výšku nad překážkami v koridoru"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Nastavení 1013,25 hPa (STD) dává QNE – čtení na výškoměru se nazývá „flight level\" (FL). Nad přechodovou hladinou přecházejí všechna letadla na STD, čímž je zajištěna standardizovaná separace nezávislá na lokálním tlaku."
+    },
+    {
+      "id": "7-S140",
+      "categoryId": 7,
+      "question": "Pilota zajímá, jaká bude délka vzletu za těchto podmínek: výška letiště 2000 ft MSL, teplota 30 °C, MTOW. Přibližná density altitude je:",
+      "options": [
+        "2000 ft",
+        "4500 ft",
+        "1500 ft",
+        "3500 ft"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Přibližný vzorec: DA ≈ PA + 120 × (OAT − ISA temp na dané PA). ISA na 2000 ft = 15 − (2 × 2) = 11 °C. Odchylka od ISA = 30 − 11 = 19 °C. DA ≈ 2000 + 120 × 19 ≈ 2000 + 2280 ≈ 4280 ft → přibližně 4500 ft."
+    },
+    {
+      "id": "7-S141",
+      "categoryId": 7,
+      "question": "Pilot plánuje let s plnou posádkou a pasažéry. Hmotnost letadla po natankování je blízkosti MTOW. Co musí pilot zkontrolovat jako první?",
+      "options": [
+        "Zda je výkonnost motoru v normálu",
+        "Polohu těžiště (CG) a porovnání s CG envelope v AFM",
+        "Stav pneumatik",
+        "Zda mají všichni pasažéři bezpečnostní pásy"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Weight &amp; balance je fundamentální předletová kontrola. I když je letadlo pod MTOW, CG mimo povolený rozsah (CG envelope) může způsobit nekontrolovaný pád nebo ztrátu ovladatelnosti. Pilot musí provést weight &amp; balance výpočet pro konkrétní nakládku."
+    },
+    {
+      "id": "7-S142",
+      "categoryId": 7,
+      "question": "Jaký je rozdíl mezi TAS (True Airspeed) a IAS (Indicated Airspeed)?",
+      "options": [
+        "IAS je rychlost vůči zemi, TAS je rychlost vůči vzduchu",
+        "TAS je skutečná rychlost vůči vzduchu korigovaná na hustotu a teplotu; IAS je to, co zobrazuje rychloměr (nekorigovaná hustota)",
+        "TAS je vždy nižší než IAS",
+        "Rozdíl existuje pouze v nadzvukových rychlostech"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Rychloměr měří dynamický tlak, který závisí na hustotě vzduchu. Ve vyšší výšce je vzduch méně hustý → rychloměr ukazuje méně, než je skutečná rychlost. TAS = IAS × √(hustota na MSL / hustota ve výšce). Ve FL100 může být TAS o ~20 % vyšší než IAS."
+    },
+    {
+      "id": "7-S143",
+      "categoryId": 7,
+      "question": "Pilot letí s palubním GPS. Trať GPS je přímá linie. Co je GS (ground speed)?",
+      "options": [
+        "Rychlost letadla vůči zemi = TAS ± vliv větru",
+        "Rychlost letadla vůči vzduchu",
+        "Průměrná rychlost za celý let od vzletu",
+        "Rychlost odečtená na VOR"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Ground Speed je skutečná rychlost pohybu letadla nad zemí. GS = TAS (vektorově) + vítr. Čelní vítr GS snižuje, zadní vítr zvyšuje. GPS přímo měří GS pomocí satelitních dat – nezáleží na vzduchu, měří polohu v čase."
+    },
+    {
+      "id": "7-S144",
+      "categoryId": 7,
+      "question": "Letadlo letí kurtem 270°, TAS 120 kt, vítr 360°/20 kt. Jaký bude přibližný výsledný kurz (track) vůči zemi?",
+      "options": [
+        "270° – vítr nefouká kolmo, takže trať bude stejná jako kurz",
+        "Letadlo bude unášeno k jihu, trať přibližně 275–280°",
+        "Letadlo bude unášet k severu, trať přibližně 260–265°",
+        "Při kolmém větru musí pilot korigovat kurz dozadu o 10°, výsledná trať = 260°"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Vítr 360° = severní vítr (fouká ze severu na jih). Letadlo letí na západ (270°). Vítr fouká do levého boku → letadlo je unášeno k jihu. Trať bude jižně od kurzu. Pilot by musel korigovat kurz mírně na sever (zadat WCA doleva), aby letěl skutečnou tratí 270°."
+    },
+    {
+      "id": "7-S145",
+      "categoryId": 7,
+      "question": "Jaký je výpočet fuel burn pro trať 180 nm při cruise výkonu 40 l/h a GS 120 kt?",
+      "options": [
+        "50 litrů",
+        "60 litrů",
+        "72 litrů",
+        "45 litrů"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Čas letu = 180 nm / 120 kt = 1,5 hodiny. Spotřeba = 1,5 × 40 l = 60 litrů. K tomu je nutno přičíst zásobu na alternátu a rezervu 45 minut."
+    },
+    {
+      "id": "7-S146",
+      "categoryId": 7,
+      "question": "Co je přechodová výška (Transition Altitude) a přechodová hladina (Transition Level)?",
+      "options": [
+        "Přechodová výška je maximální výška VFR letu; přechodová hladina je minimální výška IFR letu",
+        "Přechodová výška je výška, pod níž se používá lokální QNH; přechodová hladina je nejnižší letová hladina, nad níž se používá STD (1013 hPa)",
+        "Obojí označuje stejnou fyzickou výšku, lišící se pouze názvem",
+        "Přechodová výška platí pro VFR, přechodová hladina pro IFR"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Mezi TA a TL je „přechodová vrstva\". Letadla stoupající nastavují STD při překonání TA. Letadla klesající přecházejí zpět na QNH při dosažení TL. Cílem je zabránit situaci, kdy by dvě letadla letěla ve stejné fyzické výšce s různými výškoměrovými nastaveními."
+    },
+    {
+      "id": "7-S147",
+      "categoryId": 7,
+      "question": "Jak ovlivňuje zadní vítr (tailwind) délku přistání?",
+      "options": [
+        "Zkrátí délku přistání, protože vítr zpomaluje letadlo",
+        "Prodlouží délku přistání, protože pro dosažení nutné IAS je třeba vyšší GS při doteku",
+        "Nemá vliv – délka přistání závisí pouze na hmotnosti",
+        "Zkrátí délku přistání, protože vztlak klesá rychleji"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Dotek při tailwindu probíhá při vyšší GS (rychlost vůči zemi) i při stejné IAS. Po doteku je kinetická energie v GS² – brzdná vzdálenost roste kvadraticky. 10kt tailwind může prodloužit délku přistání o 20–30 %."
+    },
+    {
+      "id": "7-S148",
+      "categoryId": 7,
+      "question": "Jaký je postup při zjištění, že paliva zbývá méně, než bylo plánováno?",
+      "options": [
+        "Zvýšit výkon a zkrátit trať",
+        "Snížit výkon na ekonomický cestovní, informovat ATC, zvážit přistání na alternativním letišti nebo zkrácení trati",
+        "Přijmout situaci a pokračovat k cíli – záloha je vždy dostatečná",
+        "Vypnout záložní elektroniku k úspoře energie (palivo se tím ušetří)"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při zjištění anomální spotřeby paliva je priorita: zachovat bezpečnou zásobu. Snížení výkonu na ekonomický cruise sníží spotřebu. Informovat ATC, přehodnotit alternátu a v případě potřeby přistát dříve. Pokračování na hranu zásoby je hazardní."
+    },
+    {
+      "id": "7-S149",
+      "categoryId": 7,
+      "question": "Plánuješ let 150 NM s předpokládanou GS 100 kt. Skutečná GS je po první třetině tratě jen 80 kt. Co to nejvíce ovlivní?",
+      "options": [
+        "Jen výškoměr",
+        "ETA a spotřebu paliva, tedy rozhodnutí o pokračování",
+        "Pouze radiovou frazeologii",
+        "Nic podstatneho"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Nižší groundspeed znamená delší čas a obvykle vyšší celkovou spotřebu. Pilot musí včas přepočítat ETA, rezervu a případnou potřebu mezipřistání."
+    },
+    {
+      "id": "7-S150",
+      "categoryId": 7,
+      "question": "Proč je nebezpečné plánovat palivo příliš optimisticky podle ideálních podmínek?",
+      "options": [
+        "Protože pak bude letadlo lehčí",
+        "Protože reálné odchylky větru, zpoždění nebo odklon rychle sežerou rezervu",
+        "Protože rezervy jsou jen pro IFR",
+        "Protože motor pak běží usporneji"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Palivove plánování musí počítat s realnou nejistotou. Bez rezervy staci jeden protivítr, oblet bouřky nebo cekani a situace se stane kritickou."
+    },
+    {
+      "id": "7-S151",
+      "categoryId": 7,
+      "question": "Který faktor nejvíce zhoršuje vzletovou výkonnost?",
+      "options": [
+        "Protivitr",
+        "Vyšší hmotnost, vyšší teplota a vyšší tlaková nadmořská výška",
+        "Dlouha dráha",
+        "Nizka vlhkost"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Kombinace hmotnosti a hustotní výšky zhoršuje zrychlení i stoupání. Pilot musí hodnotit tyto faktory společně, ne izolovaně."
+    },
+    {
+      "id": "7-S152",
+      "categoryId": 7,
+      "question": "Proč nestačí sledovat jen celkovou hmotnost letadla?",
+      "options": [
+        "Protože důležité je i rozložení hmotnosti a poloha těžiště",
+        "Protože hmotnost nemá vliv",
+        "Protože palivo se do W&amp;B nepocita",
+        "Protože těžiště zajímá jen akrobaty"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Letadlo může být pod MTOM, a presto mít těžiště mimo obal. To ovlivňuje stabilitu, ovladatelnost i výkon."
+    },
+    {
+      "id": "7-S153",
+      "categoryId": 7,
+      "question": "Máš při plánu letět přes horské sedlo s malou převýšenou rezervou. Co je nejrozumnější?",
+      "options": [
+        "Spoléhat na plný plyn a pokračovat",
+        "Navýšit rezervu, zvážit jinou trasu nebo let odložit podle podmínek",
+        "Klesnout k terénu kvůli větru",
+        "Vždy letět stredem sedla"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "V horskem terénu se podmínky mění rychle a stoupání nemusí odpovídat tabulkam. Rozumna rezerva a alternativa jsou základ bezpečného plánování."
+    },
+    {
+      "id": "7-S154",
+      "categoryId": 7,
+      "question": "Jaký je smysl kontrolního výpočtu time check v průběhu navigačního letu?",
+      "options": [
+        "Je to jen školní formalita",
+        "Včas odhalit rozdíl mezi plánem a skutečností a upravit rozhodnutí",
+        "Nahradit sledování mapy",
+        "Zhoršit workload"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Time check potvrzuje, zda vítr, rychlost a orientace odpovídají plánu. Včasná korekce je mnohem bezpečnější než pozdní improvizace."
+    },
+    {
+      "id": "7-S155",
+      "categoryId": 7,
+      "question": "Při delším letu s více úseky je vhodné:",
+      "options": [
+        "Myslet jen na cílové letiště",
+        "Průběžně přehodnocovat počasí, palivo a alternativy po úsecích",
+        "Vyhnout se všemu přepočítávání",
+        "Spoléhat, že GPS vyřeší vše"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Segmentove uvažování pomáhá zachytit postupně zhoršování situace. Pilot tak může změnit plán dřív, než se dostane do pasti bez dobrých možností."
+    },
+    {
+      "id": "7-S156",
+      "categoryId": 7,
+      "question": "Který výrok o rezervě paliva je nejpřesnější?",
+      "options": [
+        "Je to palivo, které pilot může normálně využít pro zkrácení letu",
+        "Je to bezpečnostní polštář, s nímž se nemá bezdůvodně kalkulovat jako s plánovanou spotřebou",
+        "Týká se jen komerčního provozu",
+        "Není nutná za dobrého počasí"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Rezerva existuje pro necekane okolnosti, ne jako součást běžného provozního plánu. Kdo ji běžně spotřebovává už na papire, ten si bere prostor pro chybu."
+    },
+    {
+      "id": "7-S157",
+      "categoryId": 7,
+      "question": "Při naložení cestujících a bagáže do zadní části kabiny je třeba zvlášť hlídat:",
+      "options": [
+        "Jen tlak v pneu",
+        "Polohu těžiště vůči zadnímu limitu",
+        "Nastavení rádia",
+        "Barvu oleje"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Zadní náklad posouvá těžiště dozadu a může rychle dosáhnout limitu i při přijatelné celkové hmotnosti. Proto je třeba pracovat s rameny a momenty, ne jen s kilogramy."
+    },
+    {
+      "id": "7-S158",
+      "categoryId": 7,
+      "question": "Letíš na krátké travnaté letiště za teplého dne. Který plán je bezpečnější?",
+      "options": [
+        "Použít pouze asfaltové tabulky bez korekce",
+        "Zohlednit povrch, teplotu, hmotnost a mít výraznou rezervu",
+        "Nevysouvat klapky bez ohledu na AFM",
+        "Ignorovat protivítr"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Vykonove tabulky je nutné použít s provozním rozumem a korekcemi na reálné podmínky. Travnata dráha a horko mohou významně prodloužit rozjezd."
+    },
+    {
+      "id": "7-S159",
+      "categoryId": 7,
+      "question": "Proč je diverzní plán důležitý už před odletem?",
+      "options": [
+        "Aby měl pilot víc papírů",
+        "Aby v případě zhoršení nemusel improvizovat bez přípravy",
+        "Jen kvůli examinerovi",
+        "Není potřeba, pokud je GPS"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Předem promyšlené alternativy snižují workload v okamžiku, kdy se situace zhoršuje. Bez přípravy je riziko pozdního a chaotického rozhodnutí vyšší."
+    },
+    {
+      "id": "7-S160",
+      "categoryId": 7,
+      "question": "Co nejlépe vystihuje smysl bodů bez návratu z hlediska paliva?",
+      "options": [
+        "Místo, kde už GPS ztratí signál",
+        "Bod, po jehož přeletění není návrat na původní místo z hlediska paliva výhodný nebo možný",
+        "Jediná legální otočná zatáčka",
+        "Vždy stejný pro všechny větry"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Point of no return je užitečný koncept pro dlouhé úseky, protože ukazuje, kdy se návrat přestane vyplácet. Závisí na větru, spotřebě i rezervách."
+    },
+    {
+      "id": "7-S161",
+      "categoryId": 7,
+      "question": "Kdy je plánování nejzranitelnější vůči chybě?",
+      "options": [
+        "Když pilot použije konzervativní hodnoty",
+        "Když se na sebe navrší několik optimistických předpokladů najednou",
+        "Když se počítá rezerva",
+        "Když se volí krátký let"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Jednotlivé malé optimismy se snadno sečtou do velkého rizika. Typicky jde o příliš dobrý vítr, nizkou spotřebu, přesnou časovost a absenci zpoždění."
+    },
+    {
+      "id": "7-S162",
+      "categoryId": 7,
+      "question": "Proč je při přepočtu W&amp;B důležité vědět, zda se palivo spotřebovává před nebo za těžištěm?",
+      "options": [
+        "Protože se tím mění poloha těžiště během letu",
+        "Protože to ovlivní barvu plaméně",
+        "Nijak",
+        "Jen u proudovych letadel"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Spotřebou paliva se může těžiště posouvat. Pilot tedy nekontroluje jen startovní stav, ale i to, zda letadlo zůstane v obalu po celou dobu letu."
+    },
+    {
+      "id": "8-S163",
+      "categoryId": 8,
+      "question": "Co se stane s rychloměrem, pokud je vstup Pitotovy trubice zablokovaný ledem (ale statický port zůstane volný)?",
+      "options": [
+        "Rychloměr ukáže nulu",
+        "Rychloměr „zamrzne\" na hodnotě rychlosti v okamžiku ucpání; při klesání bude ukazovat méně, než je skutečnost",
+        "Rychloměr zamrzne na hodnotě; při stoupání bude ukazovat víc, protože stoupá dynamický tlak",
+        "Rychloměr přejde do režimu TAS automaticky"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pitot měří celkový (dynamický + statický) tlak. Je-li ucpaný, dynamický tlak se v systému nemění se změnou rychlosti. Statický port funguje – při klesání klesá statický tlak → rozdíl klesá → rychloměr ukazuje méně. Při stoupání by ukazoval naopak. Pitot heat zabraňuje námraze."
+    },
+    {
+      "id": "8-S164",
+      "categoryId": 8,
+      "question": "Co se stane s výškoměrem a variometrem, pokud je statický port zablokovaný?",
+      "options": [
+        "Výškoměr se zablokuje na aktuální hodnotě, variometr ukazuje nulu",
+        "Výškoměr ukazuje nadsazenou výšku, variometr ukazuje trvalé stoupání",
+        "Oba přístroje okamžitě ukáží nulu",
+        "Výškoměr i variometr přejdou na záložní statiku automaticky"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Zablokovaný statický port → statický tlak se nemění → výškoměr „zamrzne\" (ukazuje výšku v okamžiku ucpání), variometr ukazuje nulu (žádná změna tlaku → žádná změna výšky). U některých letadel existuje alternativní statický port uvnitř kabiny."
+    },
+    {
+      "id": "8-S165",
+      "categoryId": 8,
+      "question": "Jaká je funkce gyroskopu v umělém horizontu (attitude indicator)?",
+      "options": [
+        "Měří úhlové zrychlení a přepočítává ho na náklon",
+        "Využívá rigidity gyroskopického rotoru v prostoru pro udržení stálé orientace referenční roviny vůči gravitaci",
+        "Funguje jako magnetický kompas bez magnetů",
+        "Měří tlakový rozdíl mezi horní a dolní stránou křídla"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Gyroskop má dvě klíčové vlastnosti: rigiditu (odpor vůči změně osy otáčení) a precesi. Umělý horizont využívá rigidity – rotor setrvává v prostorové poloze i při pohybech letadla. Chyba: gyro se může vychýlit při delších zatáčkách (gyroskopická precese a transport wander)."
+    },
+    {
+      "id": "8-S166",
+      "categoryId": 8,
+      "question": "Co způsobuje „kompasová chyba ANDS\" (accelerace/decelerace na sever/jih)?",
+      "options": [
+        "Magnetická odchylka kompasu při zrychlení nebo zpomalení na kurzu sever nebo jih",
+        "Chyba kompasu způsobená zrychlením nebo zpomalením; v severní polokouli při zrychlení na kurzu východ-západ kompas ukáže kurs severněji",
+        "Chyba kompasu při zatáčce přes sever nebo jih; kompas se „zaostává\" nebo „předbíhá\"",
+        "Systematická chyba vzniklá instalací blízko elektrického obvodu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "ANDS = Accelerate North, Decelerate South. Při zrychlení na kurzu V nebo Z (střední zeměpisné šířky) kompas indikuje dočasnou odchylku k severu. Při zpomalení k jihu. Důvodem je závěsná soustava kompasové misky, která se vychyluje z horizontu při podélném zrychlení a nekompenzuje magnetický sklon."
+    },
+    {
+      "id": "8-S167",
+      "categoryId": 8,
+      "question": "Jaká jsou dvě základní paliva pro pístové letecké motory?",
+      "options": [
+        "Jet A-1 a Avgas 100LL",
+        "Avgas 100LL a Mogas (automobilový benzín) – u schválených motorů",
+        "AVTUR a Avgas 80",
+        "Diesel a Jet B"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Avgas 100LL (Low Lead) je standardní letecký benzín pro pístové motory, barvený modře. Mogas (automobilový benzín) je povolen pouze pro motory s příslušnou STC/schválením. Záměna paliva (natankování Jet A-1 do pístového motoru) je kriticky nebezpečná – motor okamžitě selže."
+    },
+    {
+      "id": "8-S168",
+      "categoryId": 8,
+      "question": "Co je elektrickým alternátorem na palubě letadla a čím se liší od dynama (generátoru DC)?",
+      "options": [
+        "Alternátor vyrábí střídavý proud (AC), generátor stejnosměrný (DC); alternátor je účinnější při nízkých otáčkách",
+        "Alternátor vyrábí DC přímo ze spalování; dynamo přes magnetické pole",
+        "Alternátor a dynamo jsou totéž; liší se jen výrobcem",
+        "Alternátor napájí avioniku, dynamo napájí motor"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Alternátor generuje AC, který je přes usměrňovač převeden na DC pro dobíjení baterie a napájení palubní sítě. Je efektivnější než DC dynamo zejména při nižších otáčkách (nižším RPM), které jsou běžné za letu. Baterie slouží jako záložní zdroj při výpadku alternátoru."
+    },
+    {
+      "id": "8-S169",
+      "categoryId": 8,
+      "question": "Jaká je funkce vakuového systému (vacuum system) na palubě letadla?",
+      "options": [
+        "Napájí podtlakové pneumatické brzdy podvozku",
+        "Pohání gyroskopické přístroje (umělý horizont a směrový gyroskop) podtlakem z vakuového čerpadla poháněného motorem",
+        "Udržuje tlak v kabině na přijatelné hodnotě",
+        "Pohání hydraulické pumpy jako záložní zdroj tlaku"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Vakuové čerpadlo (suction pump) poháněné motorem odsává vzduch z gyroskopů – proud vzduchu roztáčí gyroskopický rotor. Výpadek vakuového systému způsobí postupné selhání AI a DI (cca 5–15 minut). Pilot musí rozpoznat selhání a přejít na záložní prostředky."
+    },
+    {
+      "id": "8-S170",
+      "categoryId": 8,
+      "question": "Jaké jsou příznaky výpadku magneta (jednoho ze dvou) za letu?",
+      "options": [
+        "Motor okamžitě zastaví",
+        "Pokles otáček o 25–75 RPM a mírné chvění; motor pokračuje v provozu na zbývajícím magnetu",
+        "Nárůst otáček způsobený menším odporem zapalování",
+        "Výpadek magneta nelze za letu zjistit – zjistí se jen při pre-flight mag check"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Letecké motory mají dvě nezávislá zapalovací soustava pro redundanci. Výpadek jednoho magneta způsobí mírný pokles výkonu a otáček (cca 25–75 RPM pokles při mag check). Motor pokračuje v chodu. Při pre-flight mag check se testuje každý magneto zvlášť a porovnává se pokles otáček."
+    },
+    {
+      "id": "8-S171",
+      "categoryId": 8,
+      "question": "Co je „carburettor heat\" (karburátorové teplo) a kdy se používá?",
+      "options": [
+        "Systém chlazení karburátoru pro případ přehřátí motoru",
+        "Systém přivádějící teplý vzduch do karburátoru za účelem předcházení nebo odstraňování karburátorového přimrzání",
+        "Topení paliva před vstupem do motoru pro lepší atomizaci za studena",
+        "Ekvivalent ke „cowl flaps\" – reguluje teplotu válců"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Carb heat přivádí teplý vzduch (ohřátý od výfuku) do karburátoru, čímž taje eventuální led. Pozor: teplý vzduch je méně hustý → mírné snížení výkonu. Při použití carb heat v podmínkách bez přimrzání výkon klesne – to je normální. Pokud přimrzání existuje, výkon nejprve dočasně klesne, pak se vrátí, jak taje led."
+    },
+    {
+      "id": "8-S172",
+      "categoryId": 8,
+      "question": "Jaké je použití „cowl flaps\" (žaluzií motoru)?",
+      "options": [
+        "Regulují přísun paliva do karburátoru při různých výškových podmínkách",
+        "Regulují průtok chladicího vzduchu kolem válců motoru pro udržení optimální pracovní teploty",
+        "Uzavírají motorový prostor při výpadku motoru za účelem snížení odporu",
+        "Slouží jako alternativní nasávání vzduchu při zablokování hlavního filtru"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Cowl flaps jsou žaluzie v motorovém krytu regulující množství vzduchu obtékajícího motor. Při stoupání (vysoký výkon, malá rychlost) se otevírají pro intenzivní chlazení. Při klesání (malý výkon, velká rychlost) se zavírají, aby motor nezchladl příliš rychle (thermal shock)."
+    },
+    {
+      "id": "8-S173",
+      "categoryId": 8,
+      "question": "Co je hlavní řídicí funkcí „mixture control\" (regulátor bohatosti směsi)?",
+      "options": [
+        "Reguluje poměr paliva a vzduchu vstupujícího do motoru; ve větší výšce je třeba směs ochuzovat, protože vzduch je řidší",
+        "Přepíná mezi primárním a záložním palivovým čerpadlem",
+        "Reguluje tlak mazacího oleje v závislosti na výšce",
+        "Slouží k přepínání mezi tanky paliva (levý/pravý tank)"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Motor vyžaduje přesný poměr vzduch/palivo (stoichiometrický, cca 15:1 hmotnostně). Ve větší výšce je vzduch řidší → méně kyslíku → pilot musí ochuzovat (lean) směs, aby motor správně pracoval. Příliš bohatá směs = nárůst spotřeby a saze. Příliš chudá = přehřátí válců a výpadky."
+    },
+    {
+      "id": "8-S174",
+      "categoryId": 8,
+      "question": "Jak funguje mechanismus stall warning (varování před pádem) na typickém lehkém letounu?",
+      "options": [
+        "Výpočetní jednotka sleduje výšku a rychlost a předpovídá pád",
+        "Váhový senzor v sedadle pilota spustí alarm při překročení váhy",
+        "Mechanický nebo elektrický senzor (typicky na náběžné hraně křídla) detekuje polohu odtrhnutí mezní vrstvy vzduchového proudění a spustí zvukový nebo haptický alarm",
+        "GPS sleduje podélný sklon a aktivuje alarm při sklonu nad 20°"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Stall warning vane nebo slot-type senzor je umístěn na náběžné hraně křídla poblíž dělicího bodu proudu. Při blízkosti kritického úhlu náběhu se mění tlakové rozložení a senzor aktivuje alarm – typicky 5–10 kt nad skutečnou pádovou rychlostí. Dává pilotovi časový polštář k reakci."
+    },
+    {
+      "id": "8-S175",
+      "categoryId": 8,
+      "question": "Ucpe-li se pitotova trubice a odtokový otvor je také zablokován, jak se bude typicky chovat rychloměr?",
+      "options": [
+        "Bude fungovat normálně",
+        "Bude se chovat jako výškoměr",
+        "Bude zamrznutý na poslední hodnotě nebo ukazovat nesmysl podle dalšího vývoje",
+        "Ukáže vždy nulu"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Při zablokování celé pitotové části se přístroj už nedostává k aktuálnímu dynamickému tlaku. Indikace pak může zamrznout nebo se měnit závisle na dalším tlakovém poli v systému."
+    },
+    {
+      "id": "8-S176",
+      "categoryId": 8,
+      "question": "Co se stane při ucpání pouze statického portu?",
+      "options": [
+        "Výškoměr i VSI budou nespolehlivé a IAS se bude chovat chybně při změně výšky",
+        "Vše bude fungovat normálně",
+        "Selže jen kompas",
+        "Motor ztratí výkon"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Statický tlak je vstupem pro výškoměr, VSI a částečně i rychloměr. Jeho zablokování proto ovlivní více přístrojů najednou."
+    },
+    {
+      "id": "8-S177",
+      "categoryId": 8,
+      "question": "Proč je olej v pístovém motoru důležitý i mimo mazání?",
+      "options": [
+        "Jen zbarvuje motor",
+        "Pomáhá také s odvodem tepla a nečistot",
+        "Nemá jiný účel",
+        "Slouží jen při startu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Motorový olej není jen mazivo. Podílí se i na chlazení a odnášení nečistot, proto jsou jeho tlak a teplota důležitými ukazateli stavu motoru."
+    },
+    {
+      "id": "8-S178",
+      "categoryId": 8,
+      "question": "Jaký je běžný smysl alternátoru v letadle?",
+      "options": [
+        "Tvorit podtlak pro pitot",
+        "Dodávat elektrickou energii a dobíjet baterii během chodu motoru",
+        "Měnit směr vrtule",
+        "Rizdit směs"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Alternátor je hlavní zdroj elektrické energie za chodu motorů. Selhání se může projevit poklesem napětí a postupnou závislosti na baterii."
+    },
+    {
+      "id": "8-S179",
+      "categoryId": 8,
+      "question": "Proč je karburátorová námraza možná i při relativně mírných teplotách?",
+      "options": [
+        "Protože v karburátoru dochází k ochlazení proudícího vzduchu",
+        "Protože motor vydává méně tepla",
+        "Jen když sněží",
+        "Není to možné"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "V difuzoru karburátoru klesá tlak a teplota a odpařování paliva ochlazení ještě zvýší. Proto může námraza vzniknout i při teplotách nad bodem mrazu v okolním vzduchu."
+    },
+    {
+      "id": "8-S180",
+      "categoryId": 8,
+      "question": "K čemu slouží magnety v běžném leteckém zapalování?",
+      "options": [
+        "K napájení radiostanice",
+        "K nezávislému vytváření zapalovacích impulsů bez závislosti na baterii",
+        "K řízení klapek",
+        "Jen k testu před letem"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Magneto systém umožňuje zapalování nezávisle na palubní elektrické síti. To zlepšuje spolehlivost chodu motorů a je důvodem, proč se provádí magnet check."
+    },
+    {
+      "id": "8-S181",
+      "categoryId": 8,
+      "question": "Co je hlavním důvodem, proč se při run-up kontrolují obě zapalování?",
+      "options": [
+        "Aby se zahřál interiér",
+        "Aby se ověřila funkce obou nezávislých zapalovacích větví",
+        "Kvůli tlaku v pneu",
+        "Aby se snížila spotřeba"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pokles otáček při přepnutí na jednotlivé větve potvrzuje, že obě větve fungují. Nepravidelnost nebo příliš velký pokles může ukazovat na problém v zapalování."
+    },
+    {
+      "id": "8-S182",
+      "categoryId": 8,
+      "question": "Jaká je hlavní úloha trim tab(u) nebo trimovacího systému?",
+      "options": [
+        "Zvednout maximální rychlost",
+        "Zmenšit sílu potřebnou k držení řízení",
+        "Nahradit klapky",
+        "Vyrovnat bohaté směsi"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Trim mění aerodynamické nebo mechanické vyvážení řízení tak, aby pilot nemusel dlouho držet velkou sílu. Jde o komfort i přesnost vedení letu."
+    },
+    {
+      "id": "8-S183",
+      "categoryId": 8,
+      "question": "Proč je nebezpečné dlouhé pojíždění s omezenou znalostí elektrického systému po poruše alternátoru?",
+      "options": [
+        "Protože se může rychle vyčerpat baterie pro důležité systémy",
+        "Protože se přepálí barva přístrojů",
+        "Protože se zastaví vrtule",
+        "Protože to nemá vliv"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Po ztrátě nabíjení se letadlo postupně opírá jen o baterii. Pilot musí vědět, které systémy jsou esenciální a jak omezit nepotřebnou zátěž."
+    },
+    {
+      "id": "8-S184",
+      "categoryId": 8,
+      "question": "Co nejlépe vystihuje rozdíl mezi indikovanou a skutečnou výškou?",
+      "options": [
+        "Není žádný",
+        "Indikovaná závisí na nastavení a podmínkách, skutečná je reálná geometrická výška nad MSL nebo terénem podle kontextu",
+        "Skutečná výška je vždy stejná jako tlaková",
+        "Týká se jen vrtulniku"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Výškoměr ukazuje tlakově odvozenou hodnotu a ta závisí na správném nastavení i atmosféře. Proto může být skutečná výška od indikace odlišná."
+    },
+    {
+      "id": "8-S185",
+      "categoryId": 8,
+      "question": "Jaký je hlavní praktický důsledek přepnutí na nesprávnou palivovou nádrž?",
+      "options": [
+        "Většinou žádný",
+        "Možná ztráta dodávky paliva a chodu motoru",
+        "Jen pomalejší rádio",
+        "Vyšší zobrazení QNH"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Palivový systém je třeba dobře znát, protože nesprávná konfigurace může přerušit přívod paliva. Chyba může vzniknout i při dostatku paliva na palubě."
+    },
+    {
+      "id": "8-S186",
+      "categoryId": 8,
+      "question": "Proč se sleduje teplota hlav nebo oleje u vzduchem chlazených motorů?",
+      "options": [
+        "Jen kvůli komfortu",
+        "Protože přehřev může signalizovat provozní nebo technický problém a ohrozit motor",
+        "Aby se nastavila radiostanice",
+        "Protože to vyžaduje GPS"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Teplotní ukazatele dávají pilotovi včasný signál, že motor pracuje mimo zdravý rozsah. Vysoká teplota může souviset se směsí, chlazením, výkonem nebo poruchou."
+    },
+    {
+      "id": "8-S187",
+      "categoryId": 8,
+      "question": "Co je hlavní funkce odpovídače transponderu?",
+      "options": [
+        "Mazat chyby GPS",
+        "Poskytovat sekundární radarové identifikace a další data podle módu",
+        "Řídit klapky",
+        "Ukazovat rychlost"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Transponder odpovídá na dotazy SSR a umožňuje ATS sledovat identitu, výšku a u některých módu i další informace. Není to navigační přístroj v úzkém slova smyslu."
+    },
+    {
+      "id": "8-S188",
+      "categoryId": 8,
+      "question": "Proč může být vrtule s konstantními otáčkami z hlediska pilota zrádná při hodnocení výkonu?",
+      "options": [
+        "Protože hluk a otáčky nemusí přímo odpovídat dostupnému tahu",
+        "Protože se nedá řídit",
+        "Protože funguje jen ve velké výšce",
+        "Protože nemá vliv na spotřebu"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "U CSP vrtule regulátor udržuje zvolené RPM, takže zvuk motorů nemusí pilotovi hned prozradit vše o dostupném tahu. Je třeba sledovat i další parametry."
+    },
+    {
+      "id": "9-S189",
+      "categoryId": 9,
+      "question": "Co je magnetická deklinace (variation) a jak ovlivňuje navigaci?",
+      "options": [
+        "Místní anomálie způsobená geologickými ložisky pod povrchem; nepoužívá se v letectví",
+        "Úhel mezi skutečným (geografickým) severem a magnetickým severem; pilot přičte nebo odečte deklinaci při převodu skutečného kurzu na magnetický",
+        "Odchylka kompasu způsobená elektromagnetickým vybavením letadla",
+        "Rozdíl mezi kurtem letu a magnetickým kurzem způsobený větrem"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Magnetická deklinace (variation) se liší místo od místa a mění se v čase. V ČR je přibližně 4–5° V (východní). Skutečný kurz → magnetický kurz: odečíst východní deklinaci (nebo přičíst západní). Zaznamenáno na mapách jako izogony (čáry stejné deklinace)."
+    },
+    {
+      "id": "9-S190",
+      "categoryId": 9,
+      "question": "Co je kompasová deviace (deviation) a čím je způsobena?",
+      "options": [
+        "Totéž co magnetická deklinace – jiné slovo pro stejný jev",
+        "Odchylka způsobená magnetickými poli elektrickým vybavením a feromagnetickými materiály letadla, odlišná pro každý kurs; kompenzuje se korekcí z deviační tabulky",
+        "Chyba způsobená pohybem letadla v prostoru – precese gyroskopů",
+        "Odchylka GPS od skutečné polohy způsobená ionosférickými poruchami"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Kompasová deviace je chyba konkrétního kompasu v konkrétním letadle – způsobena lokálními magnetickými poli (elektroinstalace, kovové části). Pro každý kurz je hodnota jiná, zapsána na deviační tabulce (deviation card) umístěné u kompasu. Pilot přičítá nebo odečítá tuto korekci."
+    },
+    {
+      "id": "9-S191",
+      "categoryId": 9,
+      "question": "Pilot letí s NDB (nekomerčním radiomajákem) a ADF (automatickým zaměřovačem). ADF ukazuje relativní úhel 45° vpravo. Co to znamená?",
+      "options": [
+        "Stanice NDB je 45° nalevo od nosu letadla",
+        "Stanice NDB je 45° napravo od nosu letadla (pravý předek 45°)",
+        "Letadlo letí kurtem 045°",
+        "Stanice je 45 nm vzdálená"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "ADF ukazuje relativní azimut (bearing) stanice od nosu letadla. Relativní 0° = přesně před letadlem, 90° vpravo = přímo vpravo. 45° vpravo = stanice je v pravém předku, 45° od nosu. Pro výpočet magnetického azimutu stanice: MC + relativní bearing = QDM (bearing to station)."
+    },
+    {
+      "id": "9-S192",
+      "categoryId": 9,
+      "question": "Pilot identifikuje VOR stanici a nastaví OBS na 270°. CDI (course deviation indicator) ukazuje plně vlevo. Pilot letí kurtem 270°. Co to znamená?",
+      "options": [
+        "Stanice je přesně vlevo od letadla",
+        "Letadlo je vpravo od radiálu 270°; pilot musí zatočit doleva",
+        "Letadlo je vlevo od radiálu 270°; pilot musí zatočit doprava",
+        "Stanice je za letadlem"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "CDI vlevo při letu „to\" stanici znamená, že zvolený radiál (270°) je vlevo od letadla → letadlo je vpravo od tratě. Korektní navigace: letět ve směru CDI (doleva), tzn. k radiálu. Pamatuj: CDI je jako silniční ukazatel – leť ve směru jehlice."
+    },
+    {
+      "id": "9-S193",
+      "categoryId": 9,
+      "question": "Co je QDM a QDR?",
+      "options": [
+        "QDM je magnetický azimut ze stanice k letadlu; QDR je magnetický azimut od letadla ke stanici",
+        "QDM je magnetický kurz k letadlu (bearing to station); QDR je magnetický kurz od stanice k letadlu (bearing from station)",
+        "QDM je kód nouzového squawku; QDR je kód rádiové tísně",
+        "QDM a QDR jsou meteorologické kódy pro teplotu a rosný bod"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Q-kódy: QDM = magnetický kurz, který musí letadlo letět k dosažení stanice (to station). QDR = magnetický azimut letadla od stanice (from station). QTE = skutečný azimut od stanice. QUJ = skutečný kurz k stanici."
+    },
+    {
+      "id": "9-S194",
+      "categoryId": 9,
+      "question": "Co je DME (Distance Measuring Equipment) a proč ukazuje „šikmou vzdálenost\"?",
+      "options": [
+        "DME měří vzdálenost od radionavigační stanice přímou horizontální linkou; šikmá vzdálenost je jen jiný název",
+        "DME měří vzdálenost přímou linií mezi letadlem a pozemní stanicí (slant range) – zahrnuje i výšku letadla; u malých výšek a vzdáleností je rozdíl od horizontální vzdálenosti zanedbatelný, u přiblížení na přistání může být patrný",
+        "DME měří délku tratě od vzletu",
+        "DME je typ GPS s přesností na míle"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "DME měří čas od vyslání tázacího signálu do přijetí odpovědi ze stanice a z toho počítá vzdálenost – která je ale přímá linie ve 3D prostoru (slant range). Pokud letíte ve výšce 6000 ft přímo nad stanicí, DME bude ukazovat přibližně 1 nm i přes nulovou horizontální vzdálenost."
+    },
+    {
+      "id": "9-S195",
+      "categoryId": 9,
+      "question": "Co je izogona a agona?",
+      "options": [
+        "Izogona je čára stejné magnetické deklinace; agona (nulová izogona) je čára nulové deklinace",
+        "Izogona je čára stejného magnetického pole; agona je čára bez magnetismu (Arktida)",
+        "Agona je kompasová korekce; izogona je deviační tabulka",
+        "Izogona je čára stejné výšky v meteorologii; agona označuje mlhové pásmo"
+      ],
+      "correctIndex": 0,
+      "supplement": true,
+      "explanation": "Na leteckých mapách jsou izogony vyznačeny jako čáry propojující místa se stejnou magnetickou deklinací. Agona = nulová izogona (místa, kde se skutečný a magnetický sever shodují). Izogony se roku od roku mírně posouvají, proto jsou mapy aktualizovány."
+    },
+    {
+      "id": "9-S196",
+      "categoryId": 9,
+      "question": "Jak pilot provede Dead Reckoning (DR) navigaci po uplynutí 30 minut od posledního fixu?",
+      "options": [
+        "Vyžádá si pomoc od ATC s polohou pomocí radaru",
+        "Použije poslední known fix, aplikuje magnetický kurz, rychlost TAS a vítr, a vypočítá odhadovanou polohu (EP – Estimated Position)",
+        "Přepne na GPS a zapoméně na DR",
+        "Stoupá do výšky, odkud vidí celkový terén, a naviguje vizuálně"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "DR (Dead Reckoning) = navigace z posledního fixu pomocí kurzu, rychlosti a času. EP = fix + (GS × čas) v zadaném kurzu. Čím déle od posledního fixu, tím větší je kumulovaná chyba (akumuluje se neznámý vliv větru, drobné odchylky). DR je základ, GPS je kontrola."
+    },
+    {
+      "id": "9-S197",
+      "categoryId": 9,
+      "question": "Jak se jmenuje navigační technika „double track error\" a kdy ji pilot použije?",
+      "options": [
+        "Technika kdy pilot zdvojnásobí kurz pro rychlý návrat na trasu",
+        "Metoda opravy kurzu po zjištění odklonu od trati: spočítá úhel odklonu a k nim přidá stejný úhel navíc pro návrat přímo na destination (2 × track error)",
+        "Přelétání tratě za bouřkového počasí zdvojnásobením výšky",
+        "Simultánní sledování dvou tras letových segmentů"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Double track error (také „closing angle method\"): přičteš úhel odklonu (track error angle – TE) dvakrát k aktuálnímu kurzu. TE získáš 1-in-60 pravidlem. Výsledek přesměruje letadlo na destination. Platí, pokud uletěná vzdálenost = zbývající vzdálenost. Jinak se počítá jinak."
+    },
+    {
+      "id": "9-S198",
+      "categoryId": 9,
+      "question": "Jaká jsou omezení GPS/GNSS navigace při VFR letu?",
+      "options": [
+        "GPS je naprosto spolehlivé a nemá omezení; je zákonnou náhradou všech ostatních navigačních prostředků",
+        "GPS může selhat vlivem ionosférické poruchy, výpadku satelitů, rušení (jamming) nebo spoofingu; pilot musí být schopen navigovat bez GPS a GPS není primárním navigačním prostředkem pro VFR bez dalšího schválení",
+        "GPS nefunguje v oblačnosti a v noci",
+        "GPS je povoleno pouze jako doplněk k NDB – vždy musí fungovat NDB paralelně"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "GPS je velmi spolehlivý, ale pilot musí být schopen ho nahradit (dead reckoning, vizuální navigace, radionavigace). GNSS může být cílem rušení (GPS jamming), a v blízkosti vojenských cvičišť nebo konfliktních oblastí jsou opakované incidenty. VFR pilot by nikdy neměl být zcela závislý na jediném navigačním prostředku."
+    },
+    {
+      "id": "9-S199",
+      "categoryId": 9,
+      "question": "Pilot letí kurtem 090° (na východ), TAS 110 kt, vítr 180°/15 kt. Jaký je přibližný drift?",
+      "options": [
+        "Žádný – vítr fouká přímo zpředu",
+        "Drift doleva (k severu), přibližně 8°",
+        "Drift doprava (k jihu), přibližně 8°",
+        "Zadní vítr – GS je 125 kt, bez driftu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Vítr 180° = jižní vítr (fouká od jihu na sever). Letadlo letí na východ. Jižní vítr fouká do pravého boku → unáší letadlo k severu (drift doleva). Počkat – fouká od jihu, tedy unáší na sever. Unáší doleva od kurzu 090°. WCA: pilot musí letět mírně jižněji, tedy drift je doleva (k severu). Správná odpověď: B. Oprava: Vítr 180° = fouká Ze jihu na sever → drift k severu = doleva. Správná odpověď B."
+    },
+    {
+      "id": "9-S200",
+      "categoryId": 9,
+      "question": "Jaká je přibližná rychlost/vzdálenost pro výpočet „top of descent\" (TOD)?",
+      "options": [
+        "Začít klesat 3 nm před letištěm pro každých 1000 ft výšky",
+        "Pravidlo 3:1 – 3 nm horizontální vzdálenost na každých 1000 ft klesání (při úhlu 3°); pilot vypočítá TOD = výška ke klesání (v 1000s ft) × 3 nm",
+        "TOD se řídí výhradně ATC instrukcemi, pilot nemá počítat",
+        "Klesat 500 ft/nm pro standardní sestup při každém přiblížení"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Pravidlo 3:1 (nebo 300 ft/nm) je základní pilotní pravidlo pro plánování sestupu. Příklad: je třeba klesat z FL 085 na letiště ve výšce 1000 ft MSL → výškový rozdíl 7500 ft → 7,5 × 3 = 22,5 nm před letištěm začít klesat. Jednoduché a memorovatelné pravidlo pro každodenní VFR navigaci."
+    },
+    {
+      "id": "9-S201",
+      "categoryId": 9,
+      "question": "Plánuješ trať 90 NM při GS 90 kt. Po 30 minutách letu jsi podle fixu urazil jen 35 NM. Co to znamená?",
+      "options": [
+        "Jsi přesné v plánu",
+        "Skutečná GS je nižší než plánovaná",
+        "Máš vyšší GS než plán",
+        "Neda se nic říct"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Za 30 minut by při 90 kt mělo být uraženo 45 NM. Když je to jen 35 NM, znamená to protivítr nebo jinou chybu a je třeba přepočítat čas i palivo."
+    },
+    {
+      "id": "9-S202",
+      "categoryId": 9,
+      "question": "Co je drift?",
+      "options": [
+        "Chyba výškoměru",
+        "Úhel, o který vítr odchyluje stopu od směru, kterým míří osa letadla",
+        "Typ stoupání",
+        "Oprava QNH"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Drift vzniká vlivem bočního větru. Pilot musí letět s korekci do větru tak, aby výsledná stopa vedla po plánované trati."
+    },
+    {
+      "id": "9-S203",
+      "categoryId": 9,
+      "question": "Proč je nebezpečné slepě věřit jedinému GNSS zobrazení bez cross-checku?",
+      "options": [
+        "Protože GPS je vždy nezakonna",
+        "Protože jedna chyba zadání nebo interpretace může vést k systematickému omylu",
+        "Protože mapa v kabině nemá smysl",
+        "Protože GNSS nefunguje za dne"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Elektronická navigace je velmi užitečná, ale lidská chyba při zadání bodů nebo nepochopení zobrazení umí pilota dostat mimo plán. Proto je potřeba křížová kontrola s mapou, časem a realitou venku."
+    },
+    {
+      "id": "9-S204",
+      "categoryId": 9,
+      "question": "Jaký je hlavní smysl pravidelné poziční kontroly při VFR navigaci?",
+      "options": [
+        "Mit co říct na frekvenci",
+        "Včas zjistit odchylku a opravit ji, dokud je malá",
+        "Nahradit plán letu",
+        "Zvednout spotřebu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Malé odchylky se korigují snadno, velké se řeší pod tlakem a často pozdě. Průběžná navigační disciplína je základ bezpečného VFR přeletu."
+    },
+    {
+      "id": "9-S205",
+      "categoryId": 9,
+      "question": "Co je nejrozumnější první krok při ztrátě orientace?",
+      "options": [
+        "Klesnout co nejníž nad terén",
+        "Pokračovat odhadem stejným směrem",
+        "Stabilizovat let, analyzovat dostupné informace a včas požádat o pomoc",
+        "Vypnout GPS i rádio"
+      ],
+      "correctIndex": 2,
+      "supplement": true,
+      "explanation": "Ztráta orientace je situace workloadu, ne hrdinství. Nejprve je třeba udržet letadlo pod kontrolou, získat čas a pak systematicky určit polohu."
+    },
+    {
+      "id": "9-S206",
+      "categoryId": 9,
+      "question": "Jak ovlivní protivítr point of no return?",
+      "options": [
+        "Posune ho dale od startu",
+        "Posune ho blíže ke startu",
+        "Nemá vliv",
+        "Zrusi jeho smysl"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Silnější protivítr na cestě tam zhoršuje možnost návratu a point of no return se posouvá blíž ke startu. Je to důležité na delších úsecích nad oblastmi s omezenými alternativami."
+    },
+    {
+      "id": "9-S207",
+      "categoryId": 9,
+      "question": "Proč se v mapové navigaci sledují výrazné lineární body jako řeky, silnice nebo okraje měst?",
+      "options": [
+        "Protože vypadají hezky",
+        "Protože se dobře identifikují a pomáhají potvrdit polohu",
+        "Protože jsou přesnější než všechny radionavigace",
+        "Protože nahradí časovou kontrolu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Výrazné orientační body usnadňují potvrzení polohy, zejména při omezeném workloadu. Nejlepší je používat kombinaci času, směru a více vizuálních znaků."
+    },
+    {
+      "id": "9-S208",
+      "categoryId": 9,
+      "question": "Máš spočítanou trať, ale silný boční vítr tě systematicky nese. Co je správná reakce?",
+      "options": [
+        "Držet původní heading stůj co stůj",
+        "Upravit heading o korekci do větru tak, aby výsledná stopa šla po trati",
+        "Snížit rychlost, tím drift zmizí",
+        "Čekat, až vítr odezní"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Heading a track nejsou při větru totožné. Pilot musí aktivně přidat korekci, jinak bude geometrická odchylka narůstat."
+    },
+    {
+      "id": "9-S209",
+      "categoryId": 9,
+      "question": "Proč je ETA důležitá i při letu bez povinného letového plánu?",
+      "options": [
+        "Kvůli designu navigačního logu",
+        "Pomáhá sledovat, zda plán odpovídá realitě a kdy je třeba jednat",
+        "Jen kvůli cestujícím",
+        "Nemá žádný bezpečnostní význam"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "ETA je kontrolni veličina pro orientaci, palivo i rozhodování. Když se začne výrazně rozchazet s realitou, signalizuje to problém nebo zmenu podmínek."
+    },
+    {
+      "id": "9-S210",
+      "categoryId": 9,
+      "question": "Jaký je hlavní rozdíl mezi heading a track?",
+      "options": [
+        "Heading je čas, track je vzdálenost",
+        "Heading je směr osy letadla, track je skutečná dráha nad zemí",
+        "Heading se týká jen IFR",
+        "Žádný"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "V bezvětří mohou být heading a track stejně, ale při větru se liší. Track je to, co letadlo skutečně vykreslí nad zemí."
+    },
+    {
+      "id": "9-S211",
+      "categoryId": 9,
+      "question": "VFR pilot letí nad monotónním terénem s málem výrazných bodů. Co nejvíc pomáhá?",
+      "options": [
+        "Ignorovat čas a spoléhat na pocit",
+        "Přesné časové body, konzervativní nav log a včasná identifikace orientačních prvků",
+        "Letět nizko, aby bylo víc detailu",
+        "Často měnit trasu"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Monotonní terén zhoršuje odhad polohy a svadí k iluži, že 'to nekde sedi'. Proto je třeba více disciplíny v case, kurzu i hledání potvrzovacich bodů."
+    },
+    {
+      "id": "9-S212",
+      "categoryId": 9,
+      "question": "Co je častým důvodem, proč pilot přeletí bod bez jeho rozpoznání?",
+      "options": [
+        "Vždy chyba mapy",
+        "Fixace na jeden typ orientačního znaku a opomenutí času nebo vzdálenosti",
+        "Prilis častý cross-check",
+        "Spravne vedena navigace"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Když pilot čeká jeden konkrétní obraz a ten vypadá jinak, může bod minout. Proto se poloha potvrzuje více indicií najednou, nejen jedním znakem."
+    },
+    {
+      "id": "9-S213",
+      "categoryId": 9,
+      "question": "Proč je při odklonu na náhradní letiště vhodné rychle spočítat novou spotřebu a ETA?",
+      "options": [
+        "Aby byl hezký zápis v logu",
+        "Protože změna tratě mění čas, vítr i palivovou rezervu",
+        "Není to potřeba, když je po ruce GPS",
+        "Jen kvůli ATC"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Odklon mění celou energetiku letu. Pilot potřebuje vědět, jestli nová varianta dává smysl z hlediska paliva, počasí i dalších alternativ."
+    },
+    {
+      "id": "9-S214",
+      "categoryId": 9,
+      "question": "Jaký je největší omyl při vizuální navigaci za zhoršené dohlednosti?",
+      "options": [
+        "Používat víc zdrojů najednou",
+        "Pokračovat v naději, že se obraz terénu za chvíli sám potvrdí",
+        "Včas se rozhodnout pro odklon",
+        "Zpomalit workload"
+      ],
+      "correctIndex": 1,
+      "supplement": true,
+      "explanation": "Při zhoršené dohlednosti je snadné sklouznout k wishful thinking. Bez pevných bodů se pilot může dostat do spirály nejistoty, ze které je pozdě se vracet."
     }
   ]
 }

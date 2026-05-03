@@ -202,6 +202,16 @@ export default function QuizPage({
 
       {/* Question */}
       <div className="bg-white/10 backdrop-blur border border-white/10 rounded-xl p-6 mb-6">
+        {currentQuestion.supplement && (
+          <div className="mb-3">
+            <span
+              className="inline-block px-2 py-0.5 text-xs font-semibold rounded-md bg-orange-500/20 text-orange-300 border border-orange-500/40"
+              title="Doplňková otázka — AI-generovaná, neoficiální"
+            >
+              Doplňková
+            </span>
+          </div>
+        )}
         <p className="text-white text-lg whitespace-pre-line leading-relaxed">
           {currentQuestion.question}
         </p>
@@ -287,6 +297,7 @@ export default function QuizPage({
               correctIndex={currentQuestion.correctIndex}
               selectedIndex={selectedAnswer!}
               image={currentQuestion.image}
+              prebuiltExplanation={currentQuestion.explanation}
             />
           ) : (
             <button

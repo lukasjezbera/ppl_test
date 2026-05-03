@@ -7,6 +7,8 @@ export interface Question {
   options: string[];
   correctIndex: number;
   image?: string;
+  supplement?: boolean;
+  explanation?: string;
 }
 
 export interface Category {
