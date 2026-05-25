@@ -11,6 +11,7 @@ import {
   resetCategoryErrors,
   resetAllStats,
   resetAllErrors,
+  resetEverything,
 } from "@/lib/scoring";
 import { getErrorCount } from "@/lib/prioritization";
 
@@ -47,6 +48,13 @@ export default function Dashboard() {
   function handleResetAllErrors() {
     if (!confirm("Opravdu chceš smazat chybné odpovědi pro všechny okruhy?")) return;
     resetAllErrors();
+    setRefreshKey((k) => k + 1);
+  }
+
+  function handleResetEverything() {
+    if (!confirm("Opravdu chceš smazat VŠECHNA data — skóre, chyby i historii testů? Tuto akci nelze vrátit.")) return;
+    if (!confirm("Poslední potvrzení: opravdu úplný reset?")) return;
+    resetEverything();
     setRefreshKey((k) => k + 1);
   }
 
@@ -247,6 +255,15 @@ export default function Dashboard() {
             </p>
           </button>
         )}
+      </div>
+
+      <div className="mt-12 pt-6 border-t border-white/5 flex justify-center">
+        <button
+          onClick={handleResetEverything}
+          className="text-xs text-white/20 hover:text-incorrect transition-colors"
+        >
+          ⚠️ Reset vše (skóre + chyby + historie)
+        </button>
       </div>
     </main>
   );

@@ -173,6 +173,17 @@ export function hasErrors(): boolean {
   return Object.values(data.questions).some((s) => isError(s));
 }
 
+export function resetEverything(): void {
+  saveScoreData({ questions: {}, sessions: [] });
+
+  import("./sync")
+    .then((m) => {
+      m.markDirty();
+      m.push();
+    })
+    .catch(() => {});
+}
+
 export function resetAllStats(): void {
   const data = getScoreData();
   for (const stats of Object.values(data.questions)) {
