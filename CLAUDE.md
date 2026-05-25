@@ -33,7 +33,11 @@ lib/
 data/
   questions.json              — Generovaný soubor s otázkami (NEeditovat ručně)
 scripts/
-  parse-pdfs.py               — Parser PDF → questions.json (PyMuPDF)
+  parse-pdfs.py               — Parser 9 PDF → questions.json (PyMuPDF)
+  parse-supplement.py         — DISABLED. Parser PPL_Supplement_2026.pdf (zachován pro budoucí obnovu)
+  merge-questions.py          — DISABLED stub. Dřív mergoval supplement do questions.json
+  validate-all-answers.py     — Nezávislý validátor: pixel detekce + regex, ověří správné odpovědi
+  validate-answers.py         — Starší jednodušší validátor
   Code.gs                     — Google Apps Script backend (reference)
 middleware.ts                  — Auth guard: kontroluje cookie ppl-auth, redirect na /login
 public/
@@ -45,7 +49,9 @@ public/
 - `npm run dev` — dev server
 - `npm run build` — produkční build
 - `npm run lint` — ESLint
-- `python3 scripts/parse-pdfs.py [cesta_k_pdf]` — přegenerovat questions.json
+- `python3 scripts/parse-pdfs.py [cesta_k_pdf]` — přegenerovat questions.json (894 otázek z 9 PDF)
+- `python3 scripts/validate-all-answers.py` — ověřit správné odpovědi proti zdrojovým PDF
+- `vercel --prod --yes` — manuální deploy do produkce (jinak auto z `main`)
 
 ## Env proměnné
 
@@ -63,6 +69,7 @@ Definované v `.env.local` (na Vercelu nastavené v dashboard):
 - Otázky mají ID formát `{categoryId}-{number}` (např. `1-42`)
 - Obrázky k otázkám: pattern `(ALW-011)` v textu → pole `image: "ALW-011.jpg"`
 - Data v localStorage pod klíčem `ppl-quiz-scores`
+- Reset-pending flag pod klíčem `ppl-quiz-reset-pending` (gate pro pull merge po resetu)
 - Sync strategie: localStorage = cache, Google Sheet = source of truth
 - Sync push po každé odpovědi + konci testu + 30s interval + beforeunload/visibilitychange
 - API sync proxy: POST musí ručně sledovat 302 redirect (Apps Script mění POST→GET)
@@ -72,9 +79,13 @@ Definované v `.env.local` (na Vercelu nastavené v dashboard):
 - **Apps Script 302 redirect:** `fetch()` s `redirect: "follow"` mění POST→GET. V `api/sync/route.ts` se používá `redirect: "manual"` + ruční follow s POST.
 - **Parser page breaks:** Otázky rozlomené přes dvě stránky PDF — parser detekuje bold text po 4 kompletních odpovědích jako novou otázku.
 - **Parser multi-line options:** Každý checkbox v PDF může začít jen jednu odpověď (claimed tracking).
+- **Reset vs. pull race:** `pull()` při mountu běží paralelně s userskou akcí. Po resetu by prázdný local prohrál v `merge()` s neprázdným remote a obnovil staré skóre. Proto `pull()` bailne pokud `dirty=true` NEBO existuje `ppl-quiz-reset-pending` v localStorage. Reset marker se nastavuje **synchronně** před jakýmkoli `await`, aby uzavřel mikrotask okno přes dynamický import sync modulu.
+- **Sync cirkulární import:** `scoring.ts` ↔ `sync.ts` se importují navzájem — proto v scoring se sync nahrává přes `await import("./sync")`, ne staticky.
 
 ## Důležité
 
 - `data/questions.json` se generuje parserem — needitovat ručně, spustit parser
 - Obrázky v `public/images/` pojmenované přesně jako kód v závorce + `.jpg`
 - Při přidání nového PDF stačí spustit parser, automaticky detekuje kategorii z názvu souboru
+- Supplement PDF (`PPL_Supplement_2026.pdf`) je vědomě vynechán — appka obsahuje jen 894 originálních otázek z 9 PDF. Pro reaktivaci: revert commitu, který odstranil supplement, nebo vytáhnout `merge-questions.py` z historie.
+- Reset všeho (skóre + chyby + sessions): tlačítko dole v dashboardu → `resetEverything()` vyčistí localStorage, awaituje POST do Sheetu, pak zruší reset-pending flag.
