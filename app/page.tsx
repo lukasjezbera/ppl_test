@@ -51,11 +51,18 @@ export default function Dashboard() {
     setRefreshKey((k) => k + 1);
   }
 
-  function handleResetEverything() {
+  const [resetting, setResetting] = useState(false);
+
+  async function handleResetEverything() {
     if (!confirm("Opravdu chceš smazat VŠECHNA data — skóre, chyby i historii testů? Tuto akci nelze vrátit.")) return;
     if (!confirm("Poslední potvrzení: opravdu úplný reset?")) return;
-    resetEverything();
-    setRefreshKey((k) => k + 1);
+    setResetting(true);
+    try {
+      await resetEverything();
+      setRefreshKey((k) => k + 1);
+    } finally {
+      setResetting(false);
+    }
   }
 
   function handleCategoryClick(id: number | "mix" | "errors") {
@@ -260,9 +267,10 @@ export default function Dashboard() {
       <div className="mt-12 pt-6 border-t border-white/5 flex justify-center">
         <button
           onClick={handleResetEverything}
-          className="text-xs text-white/20 hover:text-incorrect transition-colors"
+          disabled={resetting}
+          className="text-xs text-white/20 hover:text-incorrect transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
         >
-          ⚠️ Reset vše (skóre + chyby + historie)
+          {resetting ? "Resetuji…" : "⚠️ Reset vše (skóre + chyby + historie)"}
         </button>
       </div>
     </main>

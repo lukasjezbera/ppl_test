@@ -8,6 +8,10 @@ export function markDirty(): void {
   dirty = true;
 }
 
+export function clearDirty(): void {
+  dirty = false;
+}
+
 export function isDirty(): boolean {
   return dirty;
 }
@@ -21,6 +25,15 @@ export async function pull(): Promise<void> {
     if (!res.ok) return;
     const remote: ScoreData = await res.json();
     if (!remote.questions && !remote.sessions) return;
+    // Local has pending writes (e.g., user just reset) — don't overwrite.
+    // The next push will sync local → Sheet; subsequent pulls will merge.
+    if (dirty) return;
+    if (
+      typeof window !== "undefined" &&
+      localStorage.getItem("ppl-quiz-reset-pending") === "1"
+    ) {
+      return;
+    }
     const local = getScoreData();
     const merged = merge(local, remote);
     saveScoreData(merged);

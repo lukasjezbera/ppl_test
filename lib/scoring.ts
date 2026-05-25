@@ -173,15 +173,39 @@ export function hasErrors(): boolean {
   return Object.values(data.questions).some((s) => isError(s));
 }
 
-export function resetEverything(): void {
-  saveScoreData({ questions: {}, sessions: [] });
+const RESET_PENDING_KEY = "ppl-quiz-reset-pending";
 
-  import("./sync")
-    .then((m) => {
-      m.markDirty();
-      m.push();
-    })
-    .catch(() => {});
+export async function resetEverything(): Promise<void> {
+  const empty: ScoreData = { questions: {}, sessions: [] };
+
+  // Set the reset marker SYNCHRONOUSLY before any await. Any in-flight pull
+  // checks this marker; without it, the pull's merge step would resurrect
+  // remote data (empty local always loses to non-empty remote in merge).
+  if (typeof window !== "undefined") {
+    localStorage.setItem(RESET_PENDING_KEY, "1");
+  }
+  saveScoreData(empty);
+
+  // Now lazy-load sync and mark its in-memory dirty flag too — the periodic
+  // SyncProvider push uses that.
+  const sync = await import("./sync");
+  sync.markDirty();
+
+  // Synchronously wipe the Sheet so subsequent pulls return empty.
+  try {
+    await fetch("/api/sync", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(empty),
+    });
+    sync.clearDirty();
+    if (typeof window !== "undefined") {
+      localStorage.removeItem(RESET_PENDING_KEY);
+    }
+  } catch {
+    // POST failed — leave dirty=true and the reset marker so periodic push
+    // retries and pulls continue to skip merging.
+  }
 }
 
 export function resetAllStats(): void {
